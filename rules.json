@@ -1,0 +1,4689 @@
+{
+  "@eslint-community/eslint-comments/disable-enable-pair": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@eslint-community/eslint-comments/no-aggregating-enable": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@eslint-community/eslint-comments/no-duplicate-disable": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@eslint-community/eslint-comments/no-restricted-disable": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@eslint-community/eslint-comments/no-unlimited-disable": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@eslint-community/eslint-comments/no-unused-disable": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@eslint-community/eslint-comments/no-unused-enable": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@eslint-community/eslint-comments/no-use": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@eslint-community/eslint-comments/require-description": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/alphabetize": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/description-style": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/executable-definitions": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/fields-on-correct-type": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/fragments-on-composite-type": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/input-name": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/known-argument-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/known-directives": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/known-fragment-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/known-type-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/lone-anonymous-operation": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/lone-executable-definition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/lone-schema-definition": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/match-document-filename": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/naming-convention": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "VariableDefinition": "camelCase",
+        "OperationDefinition": {
+          "style": "PascalCase",
+          "forbiddenPrefixes": [
+            "Query",
+            "Mutation",
+            "Subscription",
+            "Get"
+          ],
+          "forbiddenSuffixes": [
+            "Query",
+            "Mutation",
+            "Subscription"
+          ]
+        },
+        "FragmentDefinition": {
+          "style": "PascalCase",
+          "forbiddenPrefixes": [
+            "Fragment"
+          ],
+          "forbiddenSuffixes": [
+            "Fragment"
+          ]
+        }
+      }
+    ]
+  },
+  "@graphql-eslint/no-anonymous-operations": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-deprecated": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-duplicate-fields": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-fragment-cycles": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-hashtag-description": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-one-place-fragments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/no-root-type": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/no-scalar-result-type-on-mutation": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/no-typename-prefix": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-undefined-variables": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-unreachable-types": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-unused-fields": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/no-unused-fragments": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/no-unused-variables": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/one-field-subscriptions": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/overlapping-fields-can-be-merged": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/possible-fragment-spread": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/possible-type-extension": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/provided-required-arguments": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/relay-arguments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/relay-connection-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/relay-edge-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/relay-page-info": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/require-deprecation-date": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/require-deprecation-reason": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/require-description": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "types": true,
+        "DirectiveDefinition": true,
+        "rootField": true
+      }
+    ]
+  },
+  "@graphql-eslint/require-field-of-type-query-in-mutation-result": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/require-import-fragment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/require-nullable-fields-with-oneof": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/require-nullable-result-in-root": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/require-selections": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/require-type-pattern-with-oneof": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@graphql-eslint/scalar-leafs": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/selection-set-depth": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "maxDepth": 7
+      }
+    ]
+  },
+  "@graphql-eslint/strict-id-in-types": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-argument-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-directive-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-directive-names-per-location": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-enum-value-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-field-definition-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-fragment-name": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-input-field-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-operation-name": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-operation-types": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-type-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/unique-variable-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/value-literals-of-correct-type": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/variables-are-input-types": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@graphql-eslint/variables-in-allowed-position": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/adjacent-overload-signatures": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/array-type": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/await-thenable": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/ban-ts-comment": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "minimumDescriptionLength": 10
+      }
+    ]
+  },
+  "@typescript-eslint/ban-tslint-comment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/class-literal-property-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/class-methods-use-this": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/consistent-generic-constructors": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/consistent-indexed-object-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/consistent-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/consistent-type-assertions": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/consistent-type-definitions": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/consistent-type-exports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/consistent-type-imports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/default-param-last": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/dot-notation": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/explicit-function-return-type": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/explicit-member-accessibility": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/explicit-module-boundary-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/init-declarations": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/max-params": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/member-ordering": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/method-signature-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/naming-convention": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-array-constructor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-array-delete": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-base-to-string": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-confusing-non-null-assertion": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-confusing-void-expression": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-deprecated": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-dupe-class-members": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-duplicate-enum-values": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-duplicate-type-constituents": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-dynamic-delete": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-empty-function": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-empty-interface": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-empty-object-type": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-explicit-any": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-extra-non-null-assertion": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-extraneous-class": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-floating-promises": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-for-in-array": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-implied-eval": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-import-type-side-effects": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-inferrable-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-invalid-this": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-invalid-void-type": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-loop-func": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-loss-of-precision": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-magic-numbers": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-meaningless-void-operator": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-misused-new": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-misused-promises": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-misused-spread": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-mixed-enums": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-namespace": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-non-null-asserted-nullish-coalescing": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-non-null-asserted-optional-chain": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-non-null-assertion": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-redeclare": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-redundant-type-constituents": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-require-imports": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-restricted-imports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-restricted-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-shadow": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-this-alias": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-type-alias": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-boolean-literal-compare": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-condition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-parameter-property-assignment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-qualifier": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-template-expression": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-type-arguments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-type-assertion": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-type-constraint": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-unnecessary-type-conversion": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unnecessary-type-parameters": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-argument": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-assignment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-call": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-declaration-merging": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-unsafe-enum-comparison": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-function-type": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-unsafe-member-access": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-type-assertion": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unsafe-unary-minus": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unused-expressions": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-unused-private-class-members": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-unused-vars": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-use-before-define": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-useless-constructor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/no-useless-default-assignment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-useless-empty-export": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-var-requires": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/no-wrapper-object-types": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/non-nullable-type-assertion-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/only-throw-error": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/parameter-properties": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-as-const": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/prefer-destructuring": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-enum-initializers": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-find": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-for-of": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-function-type": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-includes": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-literal-enum-member": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/prefer-namespace-keyword": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/prefer-nullish-coalescing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-optional-chain": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-promise-reject-errors": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-readonly": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-readonly-parameter-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-reduce-type-parameter": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-regexp-exec": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-return-this-type": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-string-starts-ends-with": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/prefer-ts-expect-error": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/promise-function-async": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/related-getter-setter-pairs": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/require-array-sort-compare": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/require-await": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/restrict-plus-operands": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/restrict-template-expressions": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/return-await": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/sort-type-constituents": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/strict-boolean-expressions": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/strict-void-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/switch-exhaustiveness-check": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/triple-slash-reference": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/typedef": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/unbound-method": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@typescript-eslint/unified-signatures": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "@typescript-eslint/use-unknown-in-catch-callback-variable": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "accessor-pairs": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "setWithoutGet": true,
+        "enforceForClassMembers": true
+      }
+    ]
+  },
+  "array-bracket-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "array-bracket-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "array-callback-return": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allowImplicit": false,
+        "checkForEach": false
+      }
+    ]
+  },
+  "array-element-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "arrow-body-style": {
+    "enabled": false,
+    "severity": 0
+  },
+  "arrow-parens": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "arrow-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "block-scoped-var": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "block-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "brace-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "callback-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "camelcase": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allow": [
+          "^UNSAFE_"
+        ],
+        "properties": "never",
+        "ignoreGlobals": true
+      }
+    ]
+  },
+  "capitalized-comments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "class-methods-use-this": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "comma-dangle": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "comma-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "comma-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "complexity": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "computed-property-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "consistent-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "consistent-this": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "constructor-super": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "curly": {
+    "enabled": false,
+    "severity": 0
+  },
+  "default-case": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "default-case-last": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "default-param-last": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "dot-location": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "dot-notation": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "eol-last": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "eqeqeq": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "always",
+      {
+        "null": "ignore"
+      }
+    ]
+  },
+  "for-direction": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "func-call-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "func-name-matching": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "func-names": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "func-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "function-call-argument-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "function-paren-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "generator-star-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "getter-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "global-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "grouped-accessor-pairs": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "guard-for-in": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "handle-callback-err": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "id-blacklist": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "id-denylist": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "id-length": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "id-match": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "implicit-arrow-linebreak": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/consistent-type-specifier-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/default": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/dynamic-import-chunkname": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/export": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "import-x/exports-last": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/extensions": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/first": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "import-x/group-exports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/imports-first": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/max-dependencies": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/named": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/namespace": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/newline-after-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-absolute-path": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "esmodule": true,
+        "commonjs": true,
+        "amd": false
+      }
+    ]
+  },
+  "import-x/no-amd": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-anonymous-default-export": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-commonjs": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-cycle": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-default-export": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-deprecated": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-duplicates": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "import-x/no-dynamic-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-empty-named-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-extraneous-dependencies": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-import-module-exports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-internal-modules": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-mutable-exports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-named-as-default": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-named-as-default-member": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-named-default": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "import-x/no-named-export": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-namespace": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-nodejs-modules": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-relative-packages": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-relative-parent-imports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-rename-default": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-restricted-paths": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-self-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-unassigned-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-unresolved": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-unused-modules": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-useless-path-segments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/no-webpack-loader-syntax": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "import-x/order": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/prefer-default-export": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/prefer-namespace-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "import-x/unambiguous": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "indent": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "indent-legacy": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "init-declarations": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/consistent-test-it": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/expect-expect": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "jest/max-expects": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/max-nested-describe": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-alias-methods": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-commented-out-tests": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "jest/no-conditional-expect": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-conditional-in-test": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-confusing-set-timeout": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-deprecated-functions": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-disabled-tests": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "jest/no-done-callback": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-duplicate-hooks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-error-equal": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-export": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-focused-tests": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-hooks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-identical-title": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-interpolation-in-snapshots": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-jasmine-globals": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-large-snapshots": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-mocks-import": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-restricted-jest-methods": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-restricted-matchers": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-standalone-expect": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-test-prefixes": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/no-test-return-statement": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-unnecessary-assertion": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-unneeded-async-expect-function": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/no-untyped-mock-factory": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-after-all-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-after-each-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-all": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-before-all-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-before-each-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-describe-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-expect-groups": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/padding-around-test-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-called-with": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-comparison-matcher": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-each": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-ending-with-an-expect": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-equality-matcher": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-expect-assertions": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-expect-resolves": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-hooks-in-order": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-hooks-on-top": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-importing-jest-globals": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-jest-mocked": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-lowercase-title": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-mock-promise-shorthand": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-mock-return-shorthand": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-snapshot-hint": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-spy-on": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-strict-equal": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-to-be": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-to-contain": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-to-have-been-called": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-to-have-been-called-times": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-to-have-length": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/prefer-todo": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/require-hook": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/require-to-throw-message": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/require-top-level-describe": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/unbound-method": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/valid-describe-callback": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/valid-expect": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/valid-expect-in-promise": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jest/valid-expect-with-promise": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/valid-mock-module-path": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jest/valid-title": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/array-bracket-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/array-bracket-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/array-element-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/auto": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/comma-dangle": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/comma-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/indent": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/key-name-casing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/key-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/no-bigint-literals": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-binary-expression": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-binary-numeric-literals": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-comments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/no-dupe-keys": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-escape-sequence-in-identifier": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-floating-decimal": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-hexadecimal-numeric-literals": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-infinity": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-irregular-whitespace": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/no-multi-str": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-nan": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-number-props": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-numeric-separators": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-octal": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-octal-escape": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/no-octal-numeric-literals": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-parenthesized": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-plus-sign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-regexp-literals": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-sparse-arrays": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-template-literals": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-undefined-value": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-unicode-codepoint-escapes": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/no-useless-escape": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/object-curly-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/object-curly-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/object-property-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/quote-props": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/quotes": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/sort-array-values": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/sort-keys": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "jsonc/space-unary-ops": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/valid-json-number": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsonc/vue-custom-block/no-parsing-error": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "jsx-quotes": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "key-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "keyword-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "line-comment-position": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "linebreak-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "lines-around-comment": {
+    "enabled": false,
+    "severity": 0
+  },
+  "lines-around-directive": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "lines-between-class-members": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "logical-assignment-operators": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-classes-per-file": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-depth": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-len": {
+    "enabled": false,
+    "severity": 0
+  },
+  "max-lines": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-lines-per-function": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-nested-callbacks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-params": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-statements": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "max-statements-per-line": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "multiline-comment-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "multiline-ternary": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/callback-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/exports-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/file-extension-in-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/global-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/handle-callback-err": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "^(err|error)$"
+    ]
+  },
+  "n/hashbang": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-callback-literal": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "n/no-deprecated-api": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "n/no-exports-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "n/no-extraneous-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-extraneous-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-hide-core-modules": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-missing-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-missing-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-mixed-requires": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-new-require": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "n/no-path-concat": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "n/no-process-env": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-process-exit": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-restricted-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-restricted-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-sync": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-top-level-await": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-unpublished-bin": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-unpublished-import": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-unpublished-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-unsupported-features/es-builtins": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-unsupported-features/es-syntax": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/no-unsupported-features/node-builtins": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-global/buffer": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-global/console": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-global/process": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-global/text-decoder": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-global/text-encoder": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-global/url": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-global/url-search-params": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-node-protocol": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-promises/dns": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/prefer-promises/fs": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "n/process-exit-as-throw": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "n/shebang": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "new-cap": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "newIsCap": true,
+        "capIsNew": false,
+        "properties": true
+      }
+    ]
+  },
+  "new-parens": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "newline-after-var": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "newline-before-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "newline-per-chained-call": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-alert": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-array-constructor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-async-promise-executor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-await-in-loop": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-bitwise": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-buffer-constructor": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-caller": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-case-declarations": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-catch-all/no-catch-all": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-catch-shadow": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-class-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-compare-neg-zero": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-cond-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-confusing-arrow": {
+    "enabled": false,
+    "severity": 0
+  },
+  "no-console": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-const-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-constant-binary-expression": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-constant-condition": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "checkLoops": false
+      }
+    ]
+  },
+  "no-constructor-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-continue": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-control-regex": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-debugger": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-delete-var": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-div-regex": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-dupe-args": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-dupe-class-members": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-dupe-else-if": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-dupe-keys": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-duplicate-case": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-duplicate-imports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-else-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-empty": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allowEmptyCatch": true
+      }
+    ]
+  },
+  "no-empty-character-class": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-empty-function": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-empty-pattern": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-empty-static-block": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-eq-null": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-eval": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-ex-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-extend-native": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-extra-bind": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-extra-boolean-cast": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-extra-label": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-extra-parens": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-extra-semi": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-fallthrough": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-floating-decimal": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-func-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-global-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-implicit-coercion": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-implicit-globals": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-implied-eval": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-import-assign": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-inline-comments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-inner-declarations": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-invalid-regexp": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-invalid-this": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-irregular-whitespace": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-iterator": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-label-var": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-labels": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allowLoop": false,
+        "allowSwitch": false
+      }
+    ]
+  },
+  "no-lone-blocks": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-lonely-if": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-loop-func": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-loss-of-precision": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-magic-numbers": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-misleading-character-class": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-mixed-operators": {
+    "enabled": false,
+    "severity": 0
+  },
+  "no-mixed-requires": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-mixed-spaces-and-tabs": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-multi-assign": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-multi-spaces": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-multi-str": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-multiple-empty-lines": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-native-reassign": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-negated-condition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-negated-in-lhs": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-nested-ternary": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-new": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-new-func": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-new-native-nonconstructor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-new-object": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-new-require": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-new-symbol": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-new-wrappers": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-nonoctal-decimal-escape": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-obj-calls": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-object-constructor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-octal": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-octal-escape": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-param-reassign": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-path-concat": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-plusplus": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-process-env": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-process-exit": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-promise-executor-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-proto": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-prototype-builtins": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-redeclare": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "builtinGlobals": false
+      }
+    ]
+  },
+  "no-regex-spaces": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-restricted-exports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-restricted-globals": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-restricted-imports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-restricted-modules": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-restricted-properties": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-restricted-syntax": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-return-assign": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "except-parens"
+    ]
+  },
+  "no-return-await": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-script-url": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-self-assign": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "props": true
+      }
+    ]
+  },
+  "no-self-compare": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-sequences": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-setter-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-shadow": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-shadow-restricted-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-spaced-func": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-sparse-arrays": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-sync": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-tabs": {
+    "enabled": false,
+    "severity": 0
+  },
+  "no-template-curly-in-string": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-ternary": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-this-before-super": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-throw-literal": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-trailing-spaces": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-unassigned-vars": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-undef": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-undef-init": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-undefined": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-underscore-dangle": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-unexpected-multiline": {
+    "enabled": false,
+    "severity": 0
+  },
+  "no-unmodified-loop-condition": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unneeded-ternary": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "defaultAssignment": false
+      }
+    ]
+  },
+  "no-unreachable": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unreachable-loop": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unsafe-finally": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unsafe-negation": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unsafe-optional-chaining": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unused-expressions": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true,
+        "allowTaggedTemplates": true
+      }
+    ]
+  },
+  "no-unused-labels": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unused-private-class-members": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-unused-vars": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "args": "none",
+        "caughtErrors": "none",
+        "ignoreRestSiblings": true,
+        "vars": "all"
+      }
+    ]
+  },
+  "no-use-before-define": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "functions": false,
+        "classes": false,
+        "variables": false
+      }
+    ]
+  },
+  "no-useless-assignment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-useless-backreference": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-useless-call": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-useless-catch": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-useless-computed-key": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-useless-concat": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-useless-constructor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-useless-escape": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-useless-rename": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-useless-return": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-var": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "no-void": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "no-warning-comments": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-whitespace-before-property": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "no-with": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "nonblock-statement-body-position": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "object-curly-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "object-curly-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "object-property-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "object-shorthand": {
+    "enabled": true,
+    "severity": "warn",
+    "options": [
+      "properties"
+    ]
+  },
+  "one-var": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "initialized": "never"
+      }
+    ]
+  },
+  "one-var-declaration-per-line": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "operator-assignment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "operator-linebreak": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "padded-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "padding-line-between-statements": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-arrow-callback": {
+    "enabled": false,
+    "severity": 0
+  },
+  "prefer-const": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "destructuring": "all"
+      }
+    ]
+  },
+  "prefer-destructuring": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-exponentiation-operator": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-named-capture-group": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-numeric-literals": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-object-has-own": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-object-spread": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-promise-reject-errors": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "prefer-reflect": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prefer-regex-literals": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "disallowRedundantWrapping": true
+      }
+    ]
+  },
+  "prefer-rest-params": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "prefer-spread": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "prefer-template": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "preserve-caught-error": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "prettier/prettier": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "promise/always-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/avoid-new": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/catch-or-return": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-callback-in-promise": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-multiple-resolved": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-native": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-nesting": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-new-statics": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-promise-in-callback": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-return-in-finally": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/no-return-wrap": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/param-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "promise/prefer-await-to-callbacks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/prefer-await-to-then": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/prefer-catch": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/spec-only": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "promise/valid-params": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "quote-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "quotes": {
+    "enabled": false,
+    "severity": 0
+  },
+  "radix": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/boolean-prop-naming": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/button-has-type": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/checked-requires-onchange-or-readonly": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/default-props-match-prop-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/destructuring-assignment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/display-name": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/forbid-component-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/forbid-dom-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/forbid-elements": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/forbid-foreign-prop-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/forbid-prop-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/forward-ref-uses-ref": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/function-component-definition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/hook-use-state": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/iframe-missing-sandbox": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-boolean-value": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/jsx-child-element-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-closing-bracket-location": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-closing-tag-location": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-curly-brace-presence": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-curly-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-curly-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-equals-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-filename-extension": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-first-prop-new-line": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-fragments": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "syntax"
+    ]
+  },
+  "react/jsx-handler-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/jsx-indent": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-indent-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-key": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "checkFragmentShorthand": true
+      }
+    ]
+  },
+  "react/jsx-max-depth": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-max-props-per-line": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-no-bind": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-no-comment-textnodes": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/jsx-no-constructed-context-values": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-no-duplicate-props": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/jsx-no-leaked-render": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-no-literals": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-no-script-url": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-no-target-blank": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "enforceDynamicLinks": "always"
+      }
+    ]
+  },
+  "react/jsx-no-undef": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allowGlobals": true
+      }
+    ]
+  },
+  "react/jsx-no-useless-fragment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-one-expression-per-line": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-pascal-case": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-props-no-multi-spaces": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-props-no-spread-multi": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-props-no-spreading": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-sort-default-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-sort-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-space-before-closing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-tag-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/jsx-uses-react": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/jsx-uses-vars": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/jsx-wrap-multilines": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-access-state-in-setstate": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-adjacent-inline-elements": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-array-index-key": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-arrow-function-lifecycle": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-children-prop": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/no-danger": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-danger-with-children": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/no-deprecated": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/no-did-mount-set-state": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-did-update-set-state": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-direct-mutation-state": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/no-find-dom-node": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/no-invalid-html-attribute": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-is-mounted": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/no-multi-comp": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-namespace": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-object-type-as-default-prop": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-redundant-should-component-update": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-render-return-value": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/no-set-state": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-string-refs": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "noTemplateLiterals": true
+      }
+    ]
+  },
+  "react/no-this-in-sfc": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-typos": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-unescaped-entities": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "forbid": [
+          ">",
+          "}"
+        ]
+      }
+    ]
+  },
+  "react/no-unknown-property": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-unsafe": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-unstable-nested-components": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-unused-class-component-methods": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-unused-prop-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-unused-state": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/no-will-update-set-state": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/prefer-es6-class": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/prefer-exact-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/prefer-read-only-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/prefer-stateless-function": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/prop-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/react-in-jsx-scope": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/require-default-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/require-optimization": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/require-render-return": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/self-closing-comp": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "react/sort-comp": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/sort-default-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/sort-prop-types": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/state-in-constructor": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/static-property-placement": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/style-prop-object": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "react/void-dom-elements-no-children": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "require-atomic-updates": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "require-await": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "require-unicode-regexp": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "require-yield": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "rest-spread-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "security/detect-bidi-characters": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-buffer-noassert": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-child-process": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-disable-mustache-escape": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-eval-with-expression": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-new-buffer": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-no-csrf-before-method-override": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-non-literal-fs-filename": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-non-literal-regexp": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-non-literal-require": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-object-injection": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-possible-timing-attacks": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-pseudoRandomBytes": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "security/detect-unsafe-regex": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "semi": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "semi-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "semi-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "sort-imports": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "sort-keys": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "sort-vars": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "space-before-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "space-before-function-paren": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "space-in-parens": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "space-infix-ops": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "space-unary-ops": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "spaced-comment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "strict": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "switch-colon-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "symbol-description": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "template-curly-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "template-tag-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "unicode-bom": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "never"
+    ]
+  },
+  "use-isnan": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "enforceForSwitchCase": true,
+        "enforceForIndexOf": true
+      }
+    ]
+  },
+  "valid-typeof": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "requireStringLiterals": true
+      }
+    ]
+  },
+  "vars-on-top": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/array-bracket-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/array-bracket-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/array-element-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/arrow-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/attribute-hyphenation": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/attributes-order": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/block-lang": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "script": {
+          "lang": [
+            "ts"
+          ],
+          "allowNoLang": false
+        }
+      }
+    ]
+  },
+  "vue/block-order": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/block-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/block-tag-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/brace-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/camelcase": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/comma-dangle": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/comma-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/comma-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/comment-directive": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/component-api-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/component-definition-name-casing": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/component-name-in-template-casing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/component-options-name-casing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/component-tags-order": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/custom-event-name-casing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/define-emits-declaration": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/define-macros-order": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/define-props-declaration": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/dot-location": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/dot-notation": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/enforce-style-attribute": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/eqeqeq": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/first-attribute-linebreak": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/func-call-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-button-has-type": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-closing-bracket-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-closing-bracket-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-comment-content-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-comment-content-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-comment-indent": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-end-tags": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-indent": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-quotes": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/html-self-closing": {
+    "enabled": false,
+    "severity": 0
+  },
+  "vue/jsx-uses-vars": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/key-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/keyword-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/match-component-file-name": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/match-component-import-name": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/max-attributes-per-line": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/max-len": {
+    "enabled": false,
+    "severity": 0
+  },
+  "vue/max-lines-per-block": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/max-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/max-template-depth": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/multi-word-component-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/multiline-html-element-content-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/multiline-ternary": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/mustache-interpolation-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/new-line-between-multi-line-property": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/next-tick-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-arrow-functions-in-watch": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-async-in-computed-properties": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-bare-strings-in-template": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-boolean-default": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-child-content": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-computed-properties-in-data": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-console": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-constant-condition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-custom-modifiers-on-v-model": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-deprecated-data-object-declaration": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-delete-set": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-deprecated-destroyed-lifecycle": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-dollar-listeners-api": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-dollar-scopedslots-api": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-events-api": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-filter": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-functional-template": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-html-element-is": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-inline-template": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-model-definition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-deprecated-props-default-this": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-router-link-tag-prop": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-scope-attribute": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-slot-attribute": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-slot-scope-attribute": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-v-bind-sync": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-v-is": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-v-on-native-modifier": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-v-on-number-modifiers": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-deprecated-vue-config-keycodes": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-dupe-keys": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-dupe-v-else-if": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-duplicate-attr-inheritance": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-duplicate-attributes": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-empty-component-block": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-empty-pattern": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-export-in-script-setup": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-expose-after-await": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-extra-parens": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-implicit-coercion": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-invalid-model-keys": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-irregular-whitespace": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-lifecycle-after-await": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-lone-template": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/no-loss-of-precision": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-multi-spaces": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-multiple-objects-in-class": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-multiple-slot-args": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/no-multiple-template-root": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-mutating-props": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-parsing-error": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-potential-component-option-typo": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-ref-as-operand": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-ref-object-destructure": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-ref-object-reactivity-loss": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-required-prop-with-default": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-reserved-component-names": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-reserved-keys": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-reserved-props": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-restricted-block": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-call-after-await": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-class": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-component-names": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-component-options": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-custom-event": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-html-elements": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-static-attribute": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-syntax": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-v-bind": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-restricted-v-on": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-root-v-if": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-setup-props-destructure": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-setup-props-reactivity-loss": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-shared-component-data": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-side-effects-in-computed-properties": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-spaces-around-equal-signs-in-attribute": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-sparse-arrays": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-static-inline-styles": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-template-key": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-template-shadow": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/no-template-target-blank": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-textarea-mustache": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-this-in-before-route-enter": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-undef-components": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-undef-properties": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-unsupported-features": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-unused-components": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-unused-emit-declarations": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-unused-properties": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-unused-refs": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-unused-vars": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-use-computed-property-like-method": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-use-v-else-with-v-for": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-use-v-if-with-v-for": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-useless-concat": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-useless-mustaches": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-useless-template-attributes": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-useless-v-bind": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-v-for-template-key": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-v-for-template-key-on-child": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-v-html": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/no-v-model-argument": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-v-text": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-v-text-v-html-on-component": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/no-watch-after-await": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/object-curly-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/object-curly-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/object-property-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/object-shorthand": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/one-component-per-file": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/operator-linebreak": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/order-in-components": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/padding-line-between-blocks": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/padding-line-between-tags": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/padding-lines-in-component-definition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prefer-define-options": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prefer-import-from-vue": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/prefer-prop-type-boolean-first": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prefer-separate-static-class": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prefer-template": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prefer-true-attribute-shorthand": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prefer-use-template-ref": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prop-name-casing": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/quote-props": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-component-is": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/require-default-export": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-default-prop": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/require-direct-export": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-emit-validator": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-explicit-emits": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/require-explicit-slots": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-expose": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-macro-variable-name": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-name-property": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-prop-comment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-prop-type-constructor": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/require-prop-types": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/require-render-return": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/require-slots-as-functions": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/require-toggle-inside-transition": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/require-typed-object-prop": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-typed-ref": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/require-v-for-key": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/require-valid-default-prop": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/restricted-component-names": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/return-in-computed-property": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/return-in-emits-validator": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/script-indent": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/script-setup-uses-vars": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/singleline-html-element-content-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/slot-name-casing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/sort-keys": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/space-in-parens": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/space-infix-ops": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/space-unary-ops": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/static-class-names-order": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/template-curly-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/this-in-template": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/use-v-on-exact": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/v-bind-style": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/v-for-delimiter-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/v-if-else-key": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/v-on-event-hyphenation": {
+    "enabled": true,
+    "severity": "warn",
+    "options": [
+      "always",
+      {
+        "autofix": true
+      }
+    ]
+  },
+  "vue/v-on-function-call": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/v-on-handler-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/v-on-style": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/v-slot-style": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vue/valid-attribute-name": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-define-emits": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-define-options": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/valid-define-props": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-model-definition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/valid-next-tick": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-template-root": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-bind": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-bind-sync": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/valid-v-cloak": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-else": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-else-if": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-for": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-html": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-if": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-is": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-memo": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-model": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-on": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-once": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-pre": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-show": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-slot": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vue/valid-v-text": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "wrap-iife": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "wrap-regex": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yield-star-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/block-mapping": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/block-mapping-colon-indicator-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/block-mapping-question-indicator-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/block-sequence": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/block-sequence-hyphen-indicator-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/file-extension": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/flow-mapping-curly-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/flow-mapping-curly-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/flow-sequence-bracket-newline": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/flow-sequence-bracket-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/indent": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/key-name-casing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/key-spacing": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/no-empty-document": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "yml/no-empty-key": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "yml/no-empty-mapping-value": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "yml/no-empty-sequence-entry": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "yml/no-irregular-whitespace": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "yml/no-multiple-empty-lines": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/no-tab-indent": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "yml/no-trailing-zeros": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/plain-scalar": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/quotes": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/require-string-key": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/sort-keys": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/sort-sequence-values": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/spaced-comment": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "yml/vue-custom-block/no-parsing-error": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "yoda": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "never"
+    ]
+  }
+}

@@ -16,7 +16,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
-    "inspect-rules": "tsx scripts/inspect-rules.ts"
+    "inspect-rules": "tsx scripts/inspect-rules.ts",
+    "inspect-rules:check": "tsx scripts/inspect-rules.ts | diff rules.json -"
   },
   "peerDependencies": {
     "eslint": ">= 9"
