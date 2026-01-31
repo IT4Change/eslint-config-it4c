@@ -6,7 +6,7 @@ import pluginJsonc from 'eslint-plugin-jsonc';
 import pluginYml from 'eslint-plugin-yml';
 import pluginN from 'eslint-plugin-n';
 import neostandard from 'neostandard';
-import prettier from 'eslint-config-prettier';
+import pluginPrettier from 'eslint-plugin-prettier/recommended';
 
 const config: Linter.Config[] = [
   eslint.configs.recommended,
@@ -24,7 +24,7 @@ const config: Linter.Config[] = [
       },
     },
   },
-  prettier,
+  pluginPrettier as Linter.Config,
 ] as Linter.Config[];
 
 export default config;
