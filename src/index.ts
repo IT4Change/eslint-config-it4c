@@ -1,4 +1,3 @@
-/* eslint-disable import-x/no-named-as-default-member */
 import eslint from "@eslint/js";
 import pluginComments from "@eslint-community/eslint-plugin-eslint-comments";
 import graphqlPlugin, {
@@ -21,6 +20,7 @@ import neostandard from "neostandard";
 import type { Linter } from "eslint";
 
 const { plugins: _, ...importXTypescript } =
+  // eslint-disable-next-line import-x/no-named-as-default-member
   pluginImportX.flatConfigs.typescript;
 
 const config: Linter.Config[] = defineConfigWithVueTs(
@@ -29,12 +29,15 @@ const config: Linter.Config[] = defineConfigWithVueTs(
   pluginVue.configs["flat/recommended"],
   vueTsConfigs.strict,
   ...(pluginJsonc.configs["flat/recommended-with-jsonc"] as Linter.Config[]),
+  // eslint-disable-next-line import-x/no-named-as-default-member
   ...(pluginYml.configs["flat/recommended"] as Linter.Config[]),
   {
     plugins: { "@eslint-community/eslint-comments": pluginComments },
+    // eslint-disable-next-line import-x/no-named-as-default-member
     rules: (pluginComments.configs.recommended as { rules: Linter.RulesRecord })
       .rules,
   },
+  // eslint-disable-next-line import-x/no-named-as-default-member
   pluginSecurity.configs.recommended as Linter.Config,
   {
     plugins: { "no-catch-all": pluginNoCatchAll },

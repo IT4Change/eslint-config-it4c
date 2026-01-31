@@ -1,4 +1,4 @@
-/* eslint-disable n/file-extension-in-import */
+// eslint-disable-next-line n/file-extension-in-import
 import config from "./dist/index.js";
 
 export default [

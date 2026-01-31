@@ -1,4 +1,3 @@
-/* eslint-disable no-console, n/no-sync */
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,6 +12,7 @@ interface RuleEntry {
 }
 
 const rules: Record<string, RuleEntry> = JSON.parse(
+  // eslint-disable-next-line n/no-sync
   readFileSync(resolve(rootDir, "rules.json"), "utf-8"),
 );
 
@@ -90,7 +90,9 @@ for (const [rule, entry] of Object.entries(rules)) {
 
 // Generate markdown files per plugin in docs/
 const docsDir = resolve(rootDir, "docs");
+// eslint-disable-next-line n/no-sync
 rmSync(docsDir, { recursive: true, force: true });
+// eslint-disable-next-line n/no-sync
 mkdirSync(docsDir, { recursive: true });
 
 const indexLines: string[] = [
@@ -120,7 +122,7 @@ for (const [group, entries] of groups) {
 
   lines.push("");
 
-  // eslint-disable-next-line security/detect-non-literal-fs-filename
+  // eslint-disable-next-line security/detect-non-literal-fs-filename, n/no-sync
   writeFileSync(resolve(docsDir, fileName), lines.join("\n"));
   const active = entries.filter(([, e]) => e.enabled).length;
   indexLines.push(
@@ -130,5 +132,7 @@ for (const [group, entries] of groups) {
 
 indexLines.push("");
 
+// eslint-disable-next-line n/no-sync
 writeFileSync(resolve(rootDir, "RULES.md"), indexLines.join("\n"));
+// eslint-disable-next-line no-console
 console.log("RULES.md and docs/ generated");
