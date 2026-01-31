@@ -19,7 +19,7 @@
     "inspect-rules": "tsx scripts/inspect-rules.ts",
     "inspect-rules:check": "tsx scripts/inspect-rules.ts | diff rules.json -",
     "generate-rules-md": "tsx scripts/generate-rules-md.ts",
-    "update-rules": "npm run inspect-rules > rules.json && npm run generate-rules-md"
+    "update-rules": "tsx scripts/inspect-rules.ts > rules.json && npm run generate-rules-md"
   },
   "peerDependencies": {
     "eslint": ">= 9"

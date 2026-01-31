@@ -16,7 +16,7 @@ const rules: Record<string, RuleEntry> = JSON.parse(
 );
 
 function getDocUrl(rule: string): string | null {
-  const urlMap: Record<string, (name: string) => string> = {
+  const urlMap: Record<string, (name?: string) => string> = {
     "@eslint-community/eslint-comments": (name) =>
       `https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/${name}.html`,
     "@graphql-eslint": (name) =>
@@ -31,18 +31,16 @@ function getDocUrl(rule: string): string | null {
       `https://ota-meshi.github.io/eslint-plugin-jsonc/rules/${name}.html`,
     n: (name) =>
       `https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/${name}.md`,
-    "no-catch-all": (_name) =>
+    "no-catch-all": () =>
       `https://github.com/buschtoens/eslint-plugin-no-catch-all`,
-    prettier: (_name) =>
-      `https://github.com/prettier/eslint-plugin-prettier`,
+    prettier: () => `https://github.com/prettier/eslint-plugin-prettier`,
     promise: (name) =>
       `https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/${name}.md`,
     react: (name) =>
       `https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/${name}.md`,
     security: (name) =>
       `https://github.com/eslint-community/eslint-plugin-security/blob/main/docs/rules/${name}.md`,
-    vue: (name) =>
-      `https://eslint.vuejs.org/rules/${name}.html`,
+    vue: (name) => `https://eslint.vuejs.org/rules/${name}.html`,
     yml: (name) =>
       `https://ota-meshi.github.io/eslint-plugin-yml/rules/${name}.html`,
   };
@@ -74,7 +72,10 @@ for (const [rule, entry] of Object.entries(rules)) {
   let groupKey: string;
   if (rule.startsWith("@")) {
     const secondSlash = rule.indexOf("/", slashIndex + 1);
-    groupKey = secondSlash > 0 ? rule.substring(0, secondSlash) : rule.substring(0, slashIndex);
+    groupKey =
+      secondSlash > 0
+        ? rule.substring(0, secondSlash)
+        : rule.substring(0, slashIndex);
   } else {
     groupKey = prefix;
   }
@@ -82,6 +83,7 @@ for (const [rule, entry] of Object.entries(rules)) {
   if (!groups.has(groupKey)) {
     groups.set(groupKey, []);
   }
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   groups.get(groupKey)!.push([rule, entry]);
 }
 

@@ -1,4 +1,4 @@
-name: Inspect Rules
+name: Lint
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
   pull_request: null
 
 jobs:
-  inspect-rules:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -15,4 +15,4 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - run: npm run inspect-rules:check
+      - run: npm run lint
