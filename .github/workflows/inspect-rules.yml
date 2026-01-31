@@ -2,6 +2,8 @@ name: Inspect Rules
 
 on:
   push:
+    branches:
+      - master
   pull_request:
 
 jobs:
