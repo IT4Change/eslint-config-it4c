@@ -10,6 +10,7 @@ import pluginPromise from 'eslint-plugin-promise';
 import pluginComments from '@eslint-community/eslint-plugin-eslint-comments';
 import pluginSecurity from 'eslint-plugin-security';
 import pluginNoCatchAll from 'eslint-plugin-no-catch-all';
+import pluginJest from 'eslint-plugin-jest';
 import neostandard from 'neostandard';
 import pluginPrettier from 'eslint-plugin-prettier/recommended';
 
@@ -29,6 +30,10 @@ const config: Linter.Config[] = [
     plugins: { 'no-catch-all': pluginNoCatchAll },
     rules: { 'no-catch-all/no-catch-all': 'error' },
   },
+  {
+    ...pluginJest.configs['flat/recommended'],
+    files: ['**/*.test.ts', '**/*.test.js', '**/*.spec.ts', '**/*.spec.js'],
+  } as Linter.Config,
   ...neostandard() as Linter.Config[],
   {
     files: ['*.vue', '**/*.vue'],
