@@ -121,7 +121,9 @@ for (const [group, entries] of groups) {
 
   writeFileSync(resolve(docsDir, fileName), lines.join("\n"));
   const active = entries.filter(([, e]) => e.enabled).length;
-  indexLines.push(`- [${group}](docs/${fileName}) (${active}/${entries.length})`);
+  indexLines.push(
+    `- [${group}](docs/${fileName}) (${active}/${entries.length})`,
+  );
 }
 
 indexLines.push("");
