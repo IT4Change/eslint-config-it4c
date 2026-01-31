@@ -2,9 +2,19 @@
   "name": "eslint-config-it4c",
   "version": "0.1.0",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "exports": {
-    ".": "./index.js"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
   },
   "peerDependencies": {
     "eslint": ">= 9"
@@ -14,5 +24,9 @@
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-vue": "^9.32.0",
     "typescript-eslint": "^8.21.0"
+  },
+  "devDependencies": {
+    "@types/eslint__js": "^8.42.3",
+    "typescript": "^5.9.3"
   }
 }

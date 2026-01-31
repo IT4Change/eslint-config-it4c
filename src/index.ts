@@ -1,9 +1,10 @@
+import type { Linter } from 'eslint';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
 import prettier from 'eslint-config-prettier';
 
-export default [
+const config: Linter.Config[] = [
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   ...pluginVue.configs['flat/recommended'],
@@ -16,4 +17,6 @@ export default [
     },
   },
   prettier,
-];
+] as Linter.Config[];
+
+export default config;
