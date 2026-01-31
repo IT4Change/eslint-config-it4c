@@ -1,6 +1,8 @@
-import type { Linter } from "eslint";
 import { builtinRules } from "eslint/use-at-your-own-risk";
-import config from "../src/index.js";
+
+import config from "../src/index";
+
+import type { Linter } from "eslint";
 
 interface RuleEntry {
   enabled: boolean;

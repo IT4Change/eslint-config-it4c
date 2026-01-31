@@ -1,7 +1,12 @@
 {
   "@eslint-community/eslint-comments/disable-enable-pair": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "options": [
+      {
+        "allowWholeFile": true
+      }
+    ]
   },
   "@eslint-community/eslint-comments/no-aggregating-enable": {
     "enabled": true,
@@ -12,8 +17,8 @@
     "severity": "error"
   },
   "@eslint-community/eslint-comments/no-restricted-disable": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@eslint-community/eslint-comments/no-unlimited-disable": {
     "enabled": true,
@@ -1096,12 +1101,12 @@
     "severity": "off"
   },
   "import-x/consistent-type-specifier-style": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/default": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/dynamic-import-chunkname": {
     "enabled": false,
@@ -1116,8 +1121,8 @@
     "severity": "off"
   },
   "import-x/extensions": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/first": {
     "enabled": true,
@@ -1140,39 +1145,32 @@
     "severity": "off"
   },
   "import-x/namespace": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/newline-after-import": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-absolute-path": {
     "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "esmodule": true,
-        "commonjs": true,
-        "amd": false
-      }
-    ]
+    "severity": "error"
   },
   "import-x/no-amd": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-anonymous-default-export": {
     "enabled": false,
     "severity": "off"
   },
   "import-x/no-commonjs": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-cycle": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-default-export": {
     "enabled": false,
@@ -1187,36 +1185,36 @@
     "severity": "error"
   },
   "import-x/no-dynamic-require": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-empty-named-blocks": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-extraneous-dependencies": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-import-module-exports": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-internal-modules": {
     "enabled": false,
     "severity": "off"
   },
   "import-x/no-mutable-exports": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-named-as-default": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-named-as-default-member": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-named-default": {
     "enabled": true,
@@ -1227,20 +1225,27 @@
     "severity": "off"
   },
   "import-x/no-namespace": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-nodejs-modules": {
     "enabled": false,
     "severity": "off"
   },
   "import-x/no-relative-packages": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-relative-parent-imports": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "ignore": [
+          "@/*"
+        ]
+      }
+    ]
   },
   "import-x/no-rename-default": {
     "enabled": false,
@@ -1251,32 +1256,64 @@
     "severity": "off"
   },
   "import-x/no-self-import": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-unassigned-import": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-unresolved": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-unused-modules": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-useless-path-segments": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-webpack-loader-syntax": {
     "enabled": true,
     "severity": "error"
   },
   "import-x/order": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index",
+          "object",
+          "type"
+        ],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "@?*/**",
+            "group": "external",
+            "position": "after"
+          },
+          {
+            "pattern": "@/**",
+            "group": "external",
+            "position": "after"
+          }
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "distinctGroup": true
+      }
+    ]
   },
   "import-x/prefer-default-export": {
     "enabled": false,
@@ -1847,16 +1884,19 @@
     "severity": "off"
   },
   "n/exports-style": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/file-extension-in-import": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "never"
+    ]
   },
   "n/global-require": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/handle-callback-err": {
     "enabled": true,
@@ -1890,8 +1930,8 @@
     "severity": "off"
   },
   "n/no-hide-core-modules": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-missing-import": {
     "enabled": false,
@@ -1902,8 +1942,8 @@
     "severity": "off"
   },
   "n/no-mixed-requires": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-new-require": {
     "enabled": true,
@@ -1914,24 +1954,24 @@
     "severity": "error"
   },
   "n/no-process-env": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-process-exit": {
     "enabled": false,
     "severity": "off"
   },
   "n/no-restricted-import": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-restricted-require": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-sync": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-top-level-await": {
     "enabled": false,
@@ -1942,12 +1982,12 @@
     "severity": "off"
   },
   "n/no-unpublished-import": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-unpublished-require": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/no-unsupported-features/es-builtins": {
     "enabled": false,
@@ -1962,52 +2002,52 @@
     "severity": "off"
   },
   "n/prefer-global/buffer": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-global/console": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-global/process": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-global/text-decoder": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-global/text-encoder": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-global/url": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-global/url-search-params": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-node-protocol": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-promises/dns": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/prefer-promises/fs": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "n/process-exit-as-throw": {
     "enabled": true,
     "severity": "error"
   },
   "n/shebang": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "new-cap": {
     "enabled": true,
@@ -2093,8 +2133,8 @@
     "severity": 0
   },
   "no-console": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "no-const-assign": {
     "enabled": true,
@@ -2851,8 +2891,8 @@
     "severity": "off"
   },
   "promise/avoid-new": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/catch-or-return": {
     "enabled": false,
@@ -2863,8 +2903,8 @@
     "severity": "off"
   },
   "promise/no-multiple-resolved": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/no-native": {
     "enabled": false,
@@ -2895,20 +2935,20 @@
     "severity": "error"
   },
   "promise/prefer-await-to-callbacks": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/prefer-await-to-then": {
     "enabled": false,
     "severity": "off"
   },
   "promise/prefer-catch": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/spec-only": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/valid-params": {
     "enabled": false,
