@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "build": "tsc",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "inspect-rules": "tsx scripts/inspect-rules.ts"
   },
   "peerDependencies": {
     "eslint": ">= 9"
@@ -39,6 +40,7 @@
   "devDependencies": {
     "@types/eslint-plugin-security": "^3.0.1",
     "eslint": "^9.39.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   }
 }
