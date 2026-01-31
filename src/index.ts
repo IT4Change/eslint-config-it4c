@@ -6,6 +6,7 @@ import pluginJsonc from 'eslint-plugin-jsonc';
 import pluginYml from 'eslint-plugin-yml';
 import pluginN from 'eslint-plugin-n';
 import pluginImportX from 'eslint-plugin-import-x';
+import pluginPromise from 'eslint-plugin-promise';
 import neostandard from 'neostandard';
 import pluginPrettier from 'eslint-plugin-prettier/recommended';
 
@@ -18,6 +19,7 @@ const config: Linter.Config[] = [
   pluginN.configs['flat/recommended'] as Linter.Config,
   pluginImportX.flatConfigs.recommended as Linter.Config,
   pluginImportX.flatConfigs.typescript as Linter.Config,
+  pluginPromise.configs['flat/recommended'] as Linter.Config,
   ...neostandard() as Linter.Config[],
   {
     files: ['*.vue', '**/*.vue'],
