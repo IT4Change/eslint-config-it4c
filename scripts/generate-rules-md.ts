@@ -1,4 +1,4 @@
-/* eslint-disable no-console */
+/* eslint-disable no-console, n/no-sync */
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
