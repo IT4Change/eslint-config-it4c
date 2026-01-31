@@ -11,6 +11,7 @@ import pluginComments from '@eslint-community/eslint-plugin-eslint-comments';
 import pluginSecurity from 'eslint-plugin-security';
 import pluginNoCatchAll from 'eslint-plugin-no-catch-all';
 import pluginJest from 'eslint-plugin-jest';
+import { configs as graphqlConfigs } from '@graphql-eslint/eslint-plugin';
 import neostandard from 'neostandard';
 import pluginPrettier from 'eslint-plugin-prettier/recommended';
 
@@ -34,6 +35,8 @@ const config: Linter.Config[] = [
     ...pluginJest.configs['flat/recommended'],
     files: ['**/*.test.ts', '**/*.test.js', '**/*.spec.ts', '**/*.spec.js'],
   } as Linter.Config,
+  graphqlConfigs['flat/schema-recommended'] as Linter.Config,
+  graphqlConfigs['flat/operations-recommended'] as Linter.Config,
   ...neostandard() as Linter.Config[],
   {
     files: ['*.vue', '**/*.vue'],
