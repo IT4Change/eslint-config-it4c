@@ -13,7 +13,7 @@ import pluginPrettier from 'eslint-plugin-prettier/recommended';
 
 const config: Linter.Config[] = [
   eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.strict,
   ...pluginVue.configs['flat/recommended'],
   ...pluginJsonc.configs['flat/recommended-with-jsonc'] as Linter.Config[],
   ...pluginYml.configs['flat/recommended'] as Linter.Config[],
