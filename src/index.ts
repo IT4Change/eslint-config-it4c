@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
 import pluginJsonc from 'eslint-plugin-jsonc';
 import pluginYml from 'eslint-plugin-yml';
+import neostandard from 'neostandard';
 import prettier from 'eslint-config-prettier';
 
 const config: Linter.Config[] = [
@@ -12,6 +13,7 @@ const config: Linter.Config[] = [
   ...pluginVue.configs['flat/recommended'],
   ...pluginJsonc.configs['flat/recommended-with-jsonc'] as Linter.Config[],
   ...pluginYml.configs['flat/recommended'] as Linter.Config[],
+  ...neostandard() as Linter.Config[],
   {
     files: ['*.vue', '**/*.vue'],
     languageOptions: {
