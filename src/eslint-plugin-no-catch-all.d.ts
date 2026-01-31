@@ -1,5 +1,5 @@
-declare module 'eslint-plugin-no-catch-all' {
-  import type { ESLint } from 'eslint';
+declare module "eslint-plugin-no-catch-all" {
+  import type { ESLint } from "eslint";
 
   const plugin: ESLint.Plugin;
 
