@@ -1,3 +1,4 @@
+/* eslint-disable no-console, import-x/no-relative-parent-imports */
 import { builtinRules } from "eslint/use-at-your-own-risk";
 
 import config from "../src/index";
