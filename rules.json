@@ -46,7 +46,12 @@
   },
   "@graphql-eslint/description-style": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "options": [
+      {
+        "style": "inline"
+      }
+    ]
   },
   "@graphql-eslint/executable-definitions": {
     "enabled": true,
@@ -699,7 +704,13 @@
   },
   "@typescript-eslint/no-unused-vars": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "options": [
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ]
   },
   "@typescript-eslint/no-use-before-define": {
     "enabled": false,
@@ -1576,8 +1587,8 @@
     "severity": "off"
   },
   "jest/prefer-to-have-length": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "jest/prefer-todo": {
     "enabled": false,
@@ -1596,8 +1607,8 @@
     "severity": "off"
   },
   "jest/unbound-method": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "jest/valid-describe-callback": {
     "enabled": true,
@@ -2746,7 +2757,12 @@
   },
   "no-void": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "options": [
+      {
+        "allowAsStatement": true
+      }
+    ]
   },
   "no-warning-comments": {
     "enabled": false,

@@ -20,7 +20,6 @@ import neostandard from "neostandard";
 
 import type { Linter } from "eslint";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const { plugins: _, ...importXTypescript } =
   pluginImportX.flatConfigs.typescript;
 
@@ -70,6 +69,7 @@ const config: Linter.Config[] = defineConfigWithVueTs(
 
       // general
       "no-console": "error",
+      "no-void": ["error", { allowAsStatement: true }],
 
       // import-x
       "import-x/export": "error",
@@ -180,6 +180,25 @@ const config: Linter.Config[] = defineConfigWithVueTs(
       "promise/prefer-await-to-callbacks": "error",
       "promise/prefer-catch": "error",
       "promise/spec-only": "error",
+
+      // typescript-eslint
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
+    },
+  },
+  {
+    files: ["**/*.graphql"],
+    rules: {
+      "@graphql-eslint/description-style": ["error", { style: "inline" }],
+    },
+  },
+  {
+    files: ["**/*.test.ts", "**/*.test.js", "**/*.spec.ts", "**/*.spec.js"],
+    rules: {
+      "jest/prefer-to-have-length": "error",
+      "jest/unbound-method": "error",
     },
   },
 ) as Linter.Config[];
