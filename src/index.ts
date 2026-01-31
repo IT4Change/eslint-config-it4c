@@ -1,7 +1,10 @@
 import type { Linter } from 'eslint';
 import eslint from '@eslint/js';
-import tseslint from 'typescript-eslint';
 import pluginVue from 'eslint-plugin-vue';
+import {
+  defineConfigWithVueTs,
+  vueTsConfigs,
+} from '@vue/eslint-config-typescript';
 import pluginJsonc from 'eslint-plugin-jsonc';
 import pluginYml from 'eslint-plugin-yml';
 import pluginN from 'eslint-plugin-n';
@@ -15,10 +18,10 @@ import { configs as graphqlConfigs } from '@graphql-eslint/eslint-plugin';
 import neostandard from 'neostandard';
 import pluginPrettier from 'eslint-plugin-prettier/recommended';
 
-const config: Linter.Config[] = [
+const config: Linter.Config[] = defineConfigWithVueTs(
   eslint.configs.recommended,
-  ...tseslint.configs.strict,
-  ...pluginVue.configs['flat/recommended'],
+  pluginVue.configs['flat/recommended'],
+  vueTsConfigs.strict,
   ...pluginJsonc.configs['flat/recommended-with-jsonc'] as Linter.Config[],
   ...pluginYml.configs['flat/recommended'] as Linter.Config[],
   pluginN.configs['flat/recommended'] as Linter.Config,
@@ -38,15 +41,7 @@ const config: Linter.Config[] = [
   graphqlConfigs['flat/schema-recommended'] as Linter.Config,
   graphqlConfigs['flat/operations-recommended'] as Linter.Config,
   ...neostandard() as Linter.Config[],
-  {
-    files: ['*.vue', '**/*.vue'],
-    languageOptions: {
-      parserOptions: {
-        parser: tseslint.parser,
-      },
-    },
-  },
   pluginPrettier as Linter.Config,
-] as Linter.Config[];
+) as Linter.Config[];
 
 export default config;
