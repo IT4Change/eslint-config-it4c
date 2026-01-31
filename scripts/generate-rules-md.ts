@@ -119,6 +119,7 @@ for (const [group, entries] of groups) {
 
   lines.push("");
 
+  // eslint-disable-next-line security/detect-non-literal-fs-filename
   writeFileSync(resolve(docsDir, fileName), lines.join("\n"));
   const active = entries.filter(([, e]) => e.enabled).length;
   indexLines.push(

@@ -28,33 +28,33 @@ for (const entry of config) {
 }
 
 // Collect all configured rules from config entries
-const configuredRules: Record<string, Linter.RuleEntry> = {};
+const configuredRules = new Map<string, Linter.RuleEntry>();
 for (const entry of config) {
   if (entry.rules) {
     for (const [name, value] of Object.entries(entry.rules)) {
       if (value !== undefined) {
-        configuredRules[name] = value;
+        configuredRules.set(name, value);
       }
     }
   }
 }
 
 // Build result
-const result: Record<string, RuleEntry> = {};
+const result = new Map<string, RuleEntry>();
 for (const name of [...availableRules].sort((a, b) => a.localeCompare(b))) {
-  const setting = configuredRules[name];
+  const setting = configuredRules.get(name);
   const severity = Array.isArray(setting) ? setting[0] : setting;
 
   const enabled =
     severity !== undefined && severity !== "off" && severity !== 0;
 
-  result[name] = {
+  result.set(name, {
     enabled,
     severity: severity ?? "off",
     ...(Array.isArray(setting) && setting.length > 1
       ? { options: setting.slice(1) }
       : {}),
-  };
+  });
 }
 
-console.log(JSON.stringify(result, null, 2));
+console.log(JSON.stringify(Object.fromEntries(result), null, 2));

@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "lint": "eslint .",
+    "lint": "eslint --max-warnings 0 .",
     "inspect-rules": "tsx scripts/inspect-rules.ts",
     "inspect-rules:check": "tsx scripts/inspect-rules.ts | diff rules.json -",
     "generate-rules-md": "tsx scripts/generate-rules-md.ts",
