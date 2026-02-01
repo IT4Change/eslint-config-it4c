@@ -1,6 +1,7 @@
-/* eslint-disable no-console, import-x/no-relative-parent-imports */
+// eslint-disable-next-line import-x/no-deprecated
 import { builtinRules } from "eslint/use-at-your-own-risk";
 
+// eslint-disable-next-line import-x/no-relative-parent-imports
 import config from "../src/index";
 
 import type { Linter } from "eslint";
@@ -14,6 +15,7 @@ interface RuleEntry {
 // Collect all available rules from built-in and plugins
 const availableRules = new Set<string>();
 
+// eslint-disable-next-line import-x/no-deprecated
 for (const [name] of builtinRules) {
   availableRules.add(name);
 }
@@ -60,4 +62,5 @@ for (const name of [...availableRules].sort((a, b) => a.localeCompare(b))) {
   });
 }
 
+// eslint-disable-next-line no-console
 console.log(JSON.stringify(Object.fromEntries(result), null, 2));
