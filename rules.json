@@ -391,8 +391,8 @@
     "severity": "off"
   },
   "@typescript-eslint/consistent-type-definitions": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/consistent-type-exports": {
     "enabled": false,
@@ -419,8 +419,8 @@
     "severity": "off"
   },
   "@typescript-eslint/explicit-module-boundary-types": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/init-declarations": {
     "enabled": false,
@@ -435,8 +435,8 @@
     "severity": "off"
   },
   "@typescript-eslint/method-signature-style": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/naming-convention": {
     "enabled": false,
@@ -519,8 +519,8 @@
     "severity": "off"
   },
   "@typescript-eslint/no-import-type-side-effects": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-inferrable-types": {
     "enabled": false,
@@ -535,8 +535,8 @@
     "severity": "error"
   },
   "@typescript-eslint/no-loop-func": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-loss-of-precision": {
     "enabled": false,
@@ -603,8 +603,8 @@
     "severity": "off"
   },
   "@typescript-eslint/no-shadow": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-this-alias": {
     "enabled": true,
@@ -713,8 +713,8 @@
     ]
   },
   "@typescript-eslint/no-use-before-define": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-useless-constructor": {
     "enabled": true,
@@ -725,8 +725,8 @@
     "severity": "off"
   },
   "@typescript-eslint/no-useless-empty-export": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-var-requires": {
     "enabled": false,
@@ -765,8 +765,8 @@
     "severity": "off"
   },
   "@typescript-eslint/prefer-for-of": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-function-type": {
     "enabled": false,
@@ -998,8 +998,8 @@
     "severity": "off"
   },
   "constructor-super": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "curly": {
     "enabled": false,
@@ -2092,8 +2092,8 @@
     "severity": "off"
   },
   "no-array-constructor": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-async-promise-executor": {
     "enabled": true,
@@ -2128,8 +2128,8 @@
     "severity": "off"
   },
   "no-class-assign": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-compare-neg-zero": {
     "enabled": true,
@@ -2148,8 +2148,8 @@
     "severity": "error"
   },
   "no-const-assign": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-constant-binary-expression": {
     "enabled": true,
@@ -2189,20 +2189,20 @@
     "severity": "off"
   },
   "no-dupe-args": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-dupe-class-members": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-dupe-else-if": {
     "enabled": true,
     "severity": "error"
   },
   "no-dupe-keys": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-duplicate-case": {
     "enabled": true,
@@ -2286,8 +2286,8 @@
     "severity": "off"
   },
   "no-func-assign": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-global-assign": {
     "enabled": true,
@@ -2302,12 +2302,12 @@
     "severity": "off"
   },
   "no-implied-eval": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-import-assign": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-inline-comments": {
     "enabled": false,
@@ -2424,8 +2424,8 @@
     "severity": "error"
   },
   "no-new-native-nonconstructor": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-new-object": {
     "enabled": false,
@@ -2448,8 +2448,8 @@
     "severity": "error"
   },
   "no-obj-calls": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-object-constructor": {
     "enabled": true,
@@ -2496,13 +2496,8 @@
     "severity": "error"
   },
   "no-redeclare": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "builtinGlobals": false
-      }
-    ]
+    "enabled": false,
+    "severity": "off"
   },
   "no-regex-spaces": {
     "enabled": true,
@@ -2601,12 +2596,12 @@
     "severity": "off"
   },
   "no-this-before-super": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-throw-literal": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-trailing-spaces": {
     "enabled": false,
@@ -2617,8 +2612,8 @@
     "severity": "off"
   },
   "no-undef": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-undef-init": {
     "enabled": true,
@@ -2650,8 +2645,8 @@
     ]
   },
   "no-unreachable": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-unreachable-loop": {
     "enabled": true,
@@ -2662,23 +2657,16 @@
     "severity": "error"
   },
   "no-unsafe-negation": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-unsafe-optional-chaining": {
     "enabled": true,
     "severity": "error"
   },
   "no-unused-expressions": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "allowShortCircuit": true,
-        "allowTernary": true,
-        "allowTaggedTemplates": true
-      }
-    ]
+    "enabled": false,
+    "severity": "off"
   },
   "no-unused-labels": {
     "enabled": true,
@@ -2689,27 +2677,12 @@
     "severity": "error"
   },
   "no-unused-vars": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "args": "none",
-        "caughtErrors": "none",
-        "ignoreRestSiblings": true,
-        "vars": "all"
-      }
-    ]
+    "enabled": false,
+    "severity": "off"
   },
   "no-use-before-define": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "functions": false,
-        "classes": false,
-        "variables": false
-      }
-    ]
+    "enabled": false,
+    "severity": "off"
   },
   "no-useless-assignment": {
     "enabled": false,
@@ -2736,8 +2709,8 @@
     "severity": "off"
   },
   "no-useless-constructor": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-useless-escape": {
     "enabled": true,
@@ -2753,7 +2726,7 @@
   },
   "no-var": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "error"
   },
   "no-void": {
     "enabled": true,
@@ -2773,8 +2746,8 @@
     "severity": "off"
   },
   "no-with": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "nonblock-statement-body-position": {
     "enabled": false,
@@ -2834,12 +2807,7 @@
   },
   "prefer-const": {
     "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "destructuring": "all"
-      }
-    ]
+    "severity": "error"
   },
   "prefer-destructuring": {
     "enabled": false,
@@ -2866,8 +2834,8 @@
     "severity": "off"
   },
   "prefer-promise-reject-errors": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "prefer-reflect": {
     "enabled": false,
