@@ -187,6 +187,10 @@ const config: Linter.Config[] = defineConfigWithVueTs(
 
       // typescript-eslint
       "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/no-floating-promises": [
+        "error",
+        { ignoreVoid: true },
+      ],
       "@typescript-eslint/no-unused-vars": [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
