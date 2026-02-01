@@ -17,7 +17,7 @@ const rules: Record<string, RuleEntry> = JSON.parse(
 );
 
 function getDocUrl(rule: string): string | null {
-  const urlMap: Record<string, (name?: string) => string> = {
+  const urlMap: Record<string, (name: string) => string> = {
     "@eslint-community/eslint-comments": (name) =>
       `https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/${name}.html`,
     "@graphql-eslint": (name) =>
@@ -117,7 +117,7 @@ for (const [group, entries] of groups) {
   for (const [rule, entry] of entries) {
     const url = getDocUrl(rule);
     const ruleCol = url ? `[${rule}](${url})` : rule;
-    lines.push(`| ${ruleCol} | \`${entry.severity}\` |`);
+    lines.push(`| ${ruleCol} | \`${entry.severity.toString()}\` |`);
   }
 
   lines.push("");
@@ -126,7 +126,7 @@ for (const [group, entries] of groups) {
   writeFileSync(resolve(docsDir, fileName), lines.join("\n"));
   const active = entries.filter(([, e]) => e.enabled).length;
   indexLines.push(
-    `- [${group}](docs/${fileName}) (${active}/${entries.length})`,
+    `- [${group}](docs/${fileName}) (${active.toString()}/${entries.length.toString()})`,
   );
 }
 
