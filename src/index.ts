@@ -236,7 +236,6 @@ const config: Linter.Config[] = defineConfigWithVueTs(
       "@typescript-eslint/prefer-string-starts-ends-with": "error",
       "@typescript-eslint/promise-function-async": "error",
       "@typescript-eslint/require-array-sort-compare": "error",
-      "@typescript-eslint/strict-boolean-expressions": "error",
       "@typescript-eslint/switch-exhaustiveness-check": "error",
       "no-loop-func": "off",
       "no-shadow": "off",
