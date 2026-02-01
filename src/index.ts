@@ -206,6 +206,7 @@ const config: Linter.Config[] = defineConfigWithVueTs(
     files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts", "**/*.vue"],
     rules: {
       // typescript-eslint
+      "@typescript-eslint/no-deprecated": "off", //duplicate of import-x/no-deprecated
       "@typescript-eslint/consistent-type-definitions": "error",
       "@typescript-eslint/consistent-type-exports": "error",
       "@typescript-eslint/consistent-type-imports": "error",
