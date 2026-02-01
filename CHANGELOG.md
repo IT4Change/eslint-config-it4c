@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.3.0...eslint-config-it4c-v0.3.1) (2026-02-01)
+
+
+### Bug Fixes
+
+* **eslint:** add eslint-import-resolver-typescript ([#16](https://github.com/IT4Change/eslint-config-it4c/issues/16)) ([38ae944](https://github.com/IT4Change/eslint-config-it4c/commit/38ae94420707058e4c5aeb1f1169cc1e8db4d741))
+
 ## [0.3.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.2.0...eslint-config-it4c-v0.3.0) (2026-02-01)
 
 
