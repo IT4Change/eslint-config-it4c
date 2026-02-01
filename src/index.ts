@@ -145,6 +145,7 @@ const config: Linter.Config[] = defineConfigWithVueTs(
           distinctGroup: true,
         },
       ],
+      "import-x/no-deprecated": "error",
       "import-x/prefer-default-export": "off",
 
       // n
