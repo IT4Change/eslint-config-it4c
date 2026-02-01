@@ -399,8 +399,8 @@
     "severity": "off"
   },
   "@typescript-eslint/consistent-type-imports": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/default-param-last": {
     "enabled": false,
@@ -1188,8 +1188,8 @@
     "severity": "off"
   },
   "import-x/no-deprecated": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "import-x/no-duplicates": {
     "enabled": true,
@@ -2903,20 +2903,20 @@
     "severity": "error"
   },
   "promise/always-return": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/avoid-new": {
     "enabled": true,
     "severity": "error"
   },
   "promise/catch-or-return": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/no-callback-in-promise": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "promise/no-multiple-resolved": {
     "enabled": true,
@@ -2927,24 +2927,24 @@
     "severity": "off"
   },
   "promise/no-nesting": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "promise/no-new-statics": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/no-promise-in-callback": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "promise/no-return-in-finally": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "promise/no-return-wrap": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "promise/param-names": {
     "enabled": true,
@@ -2967,8 +2967,8 @@
     "severity": "error"
   },
   "promise/valid-params": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "quote-props": {
     "enabled": false,
