@@ -194,16 +194,20 @@ const config: Linter.Config[] = defineConfigWithVueTs(
       "promise/prefer-await-to-callbacks": "error",
       "promise/prefer-catch": "error",
       "promise/spec-only": "error",
-
+    },
+  },
+  {
+    files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts", "**/*.vue"],
+    rules: {
       // typescript-eslint
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
       "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/no-floating-promises": [
         "error",
         { ignoreVoid: true },
-      ],
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
     },
   },
