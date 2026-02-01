@@ -16,6 +16,7 @@ import pluginSecurity from "eslint-plugin-security";
 import pluginVue from "eslint-plugin-vue";
 import pluginYml from "eslint-plugin-yml";
 import neostandard from "neostandard";
+import tseslint from "typescript-eslint";
 
 import type { Linter } from "eslint";
 
@@ -30,7 +31,7 @@ const config: Linter.Config[] = defineConfigWithVueTs(
   vueTsConfigs.strict,
   ...(pluginJsonc.configs["flat/recommended-with-jsonc"] as Linter.Config[]),
   // eslint-disable-next-line import-x/no-named-as-default-member
-  ...(pluginYml.configs["flat/recommended"] as Linter.Config[]),
+  ...pluginYml.configs["flat/recommended"],
   {
     plugins: { "@eslint-community/eslint-comments": pluginComments },
     // eslint-disable-next-line import-x/no-named-as-default-member
@@ -38,7 +39,7 @@ const config: Linter.Config[] = defineConfigWithVueTs(
       .rules,
   },
   // eslint-disable-next-line import-x/no-named-as-default-member
-  pluginSecurity.configs.recommended as Linter.Config,
+  pluginSecurity.configs.recommended,
   {
     plugins: { "no-catch-all": pluginNoCatchAll },
     rules: { "no-catch-all/no-catch-all": "error" },
@@ -58,9 +59,9 @@ const config: Linter.Config[] = defineConfigWithVueTs(
     files: ["**/*.graphql"],
     ...graphqlConfigs["flat/operations-recommended"],
   } as Linter.Config,
-  ...(neostandard({ noStyle: true }) as Linter.Config[]),
+  ...neostandard({ noStyle: true }),
   importXTypescript as Linter.Config,
-  pluginPrettier as Linter.Config,
+  pluginPrettier,
   {
     rules: {
       // eslint-comments
@@ -196,6 +197,11 @@ const config: Linter.Config[] = defineConfigWithVueTs(
       "promise/spec-only": "error",
     },
   },
+  // eslint-disable-next-line import-x/no-named-as-default-member
+  ...(tseslint.configs.strictTypeChecked as Linter.Config[]).map((cfg) => ({
+    ...cfg,
+    files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts", "**/*.vue"],
+  })),
   {
     files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts", "**/*.vue"],
     rules: {
