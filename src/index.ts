@@ -145,6 +145,7 @@ const config: Linter.Config[] = defineConfigWithVueTs(
           distinctGroup: true,
         },
       ],
+      "import-x/no-deprecated": "error",
       "import-x/prefer-default-export": "off",
 
       // n
@@ -177,17 +178,36 @@ const config: Linter.Config[] = defineConfigWithVueTs(
       "n/shebang": "error",
 
       // promise
+      "promise/always-return": "error",
       "promise/avoid-new": "error",
+      "promise/catch-or-return": "error",
+      "promise/no-callback-in-promise": "warn",
+      "promise/no-nesting": "warn",
+      "promise/no-new-statics": "error",
+      "promise/no-promise-in-callback": "warn",
+      "promise/no-return-in-finally": "warn",
+      "promise/no-return-wrap": "error",
+      "promise/param-names": "error",
+      "promise/valid-params": "warn",
       "promise/no-multiple-resolved": "error",
       "promise/no-native": "off",
       "promise/prefer-await-to-callbacks": "error",
       "promise/prefer-catch": "error",
       "promise/spec-only": "error",
-
+    },
+  },
+  {
+    files: ["**/*.ts", "**/*.tsx", "**/*.mts", "**/*.cts", "**/*.vue"],
+    rules: {
       // typescript-eslint
       "@typescript-eslint/no-unused-vars": [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
+      "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/no-floating-promises": [
+        "error",
+        { ignoreVoid: true },
       ],
     },
   },

@@ -8,7 +8,12 @@ export default [
     files: ["scripts/**/*.ts"],
     languageOptions: {
       parserOptions: {
-        project: "./tsconfig.eslint.json",
+        projectService: {
+          allowDefaultProject: [
+            "scripts/generate-rules-md.ts",
+            "scripts/inspect-rules.ts",
+          ],
+        },
       },
     },
   },
