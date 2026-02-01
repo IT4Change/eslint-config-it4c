@@ -1,5 +1,6 @@
-// eslint-disable-next-line n/file-extension-in-import
 import config from "./dist/index.js";
+
+import type { Linter } from "eslint";
 
 export default [
   ...config,
@@ -17,4 +18,4 @@ export default [
       },
     },
   },
-];
+] satisfies Linter.Config[];
