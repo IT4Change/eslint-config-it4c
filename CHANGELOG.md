@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.2.0...eslint-config-it4c-v0.3.0) (2026-02-01)
+
+
+### Features
+
+* **eslint:** it4c dev rules ([#13](https://github.com/IT4Change/eslint-config-it4c/issues/13)) ([85e2e6f](https://github.com/IT4Change/eslint-config-it4c/commit/85e2e6ff71378bbebb16265b0ad496d939c29fee))
+* **eslint:** typescript rules ([#15](https://github.com/IT4Change/eslint-config-it4c/issues/15)) ([8a1a62e](https://github.com/IT4Change/eslint-config-it4c/commit/8a1a62ecd63777f0330ce4723bac24714a39c972))
+
 ## [0.2.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.1.0...eslint-config-it4c-v0.2.0) (2026-01-31)
 
 
