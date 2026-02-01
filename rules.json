@@ -3606,8 +3606,8 @@
     ]
   },
   "vue/block-order": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/block-spacing": {
     "enabled": false,
@@ -3657,10 +3657,6 @@
     "enabled": false,
     "severity": "off"
   },
-  "vue/component-tags-order": {
-    "enabled": true,
-    "severity": "warn"
-  },
   "vue/custom-event-name-casing": {
     "enabled": false,
     "severity": "off"
@@ -3674,6 +3670,10 @@
     "severity": "off"
   },
   "vue/define-props-declaration": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/define-props-destructuring": {
     "enabled": false,
     "severity": "off"
   },
@@ -3846,8 +3846,8 @@
     "severity": "error"
   },
   "vue/no-deprecated-delete-set": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/no-deprecated-destroyed-lifecycle": {
     "enabled": true,
@@ -3882,8 +3882,8 @@
     "severity": "error"
   },
   "vue/no-deprecated-model-definition": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/no-deprecated-props-default-this": {
     "enabled": true,
@@ -3941,6 +3941,10 @@
     "enabled": true,
     "severity": "error"
   },
+  "vue/no-duplicate-class-names": {
+    "enabled": false,
+    "severity": "off"
+  },
   "vue/no-empty-component-block": {
     "enabled": false,
     "severity": "off"
@@ -3965,7 +3969,7 @@
     "enabled": false,
     "severity": "off"
   },
-  "vue/no-invalid-model-keys": {
+  "vue/no-import-compiler-macros": {
     "enabled": false,
     "severity": "off"
   },
@@ -3976,6 +3980,10 @@
   "vue/no-lifecycle-after-await": {
     "enabled": true,
     "severity": "error"
+  },
+  "vue/no-literals-in-template": {
+    "enabled": false,
+    "severity": "off"
   },
   "vue/no-lone-template": {
     "enabled": true,
@@ -4005,6 +4013,14 @@
     "enabled": true,
     "severity": "error"
   },
+  "vue/no-negated-condition": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-negated-v-if-condition": {
+    "enabled": false,
+    "severity": "off"
+  },
   "vue/no-parsing-error": {
     "enabled": true,
     "severity": "error"
@@ -4017,17 +4033,13 @@
     "enabled": true,
     "severity": "error"
   },
-  "vue/no-ref-object-destructure": {
-    "enabled": false,
-    "severity": "off"
-  },
   "vue/no-ref-object-reactivity-loss": {
     "enabled": false,
     "severity": "off"
   },
   "vue/no-required-prop-with-default": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/no-reserved-component-names": {
     "enabled": true,
@@ -4093,10 +4105,6 @@
     "enabled": false,
     "severity": "off"
   },
-  "vue/no-setup-props-destructure": {
-    "enabled": false,
-    "severity": "off"
-  },
   "vue/no-setup-props-reactivity-loss": {
     "enabled": false,
     "severity": "off"
@@ -4142,6 +4150,10 @@
     "severity": "off"
   },
   "vue/no-undef-components": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-undef-directives": {
     "enabled": false,
     "severity": "off"
   },
@@ -4401,10 +4413,6 @@
     "enabled": false,
     "severity": "off"
   },
-  "vue/script-setup-uses-vars": {
-    "enabled": false,
-    "severity": "off"
-  },
   "vue/singleline-html-element-content-newline": {
     "enabled": false,
     "severity": "off"
@@ -4467,10 +4475,6 @@
       }
     ]
   },
-  "vue/v-on-function-call": {
-    "enabled": false,
-    "severity": "off"
-  },
   "vue/v-on-handler-style": {
     "enabled": false,
     "severity": "off"
@@ -4492,8 +4496,8 @@
     "severity": "error"
   },
   "vue/valid-define-options": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/valid-define-props": {
     "enabled": true,
