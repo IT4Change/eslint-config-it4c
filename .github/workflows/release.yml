@@ -46,9 +46,8 @@ jobs:
         with:
           node-version: lts/*
           registry-url: https://npm.pkg.github.com
-          scope: '@it4change'
+          scope: "@it4change"
       - run: npm pkg set name='@it4change/eslint-config-it4c'
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
