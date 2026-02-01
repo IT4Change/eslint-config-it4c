@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.3.1...eslint-config-it4c-v0.4.0) (2026-02-01)
+
+
+### Features
+
+* **workflow:** publish also on github ([#18](https://github.com/IT4Change/eslint-config-it4c/issues/18)) ([82d1814](https://github.com/IT4Change/eslint-config-it4c/commit/82d1814c2436250313660c2901f7a7f1b4661c59))
+
 ## [0.3.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.3.0...eslint-config-it4c-v0.3.1) (2026-02-01)
 
 
