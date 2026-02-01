@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.4.0...eslint-config-it4c-v0.4.1) (2026-02-01)
+
+
+### Bug Fixes
+
+* **workflow:** fix package name for github ([#20](https://github.com/IT4Change/eslint-config-it4c/issues/20)) ([ae39fe0](https://github.com/IT4Change/eslint-config-it4c/commit/ae39fe0ba9df1ec6e95936a2ecbb228160680133))
+
 ## [0.4.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.3.1...eslint-config-it4c-v0.4.0) (2026-02-01)
 
 
