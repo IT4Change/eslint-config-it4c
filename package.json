@@ -18,9 +18,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:js && npm run build:types",
-    "build:js": "tsx scripts/build.ts",
-    "build:types": "tsc --emitDeclarationOnly",
+    "build": "vite build",
     "lint": "eslint --max-warnings 0 .",
     "inspect-rules": "tsx scripts/inspect-rules.ts",
     "inspect-rules:check": "tsx scripts/inspect-rules.ts | diff rules.json -",
@@ -50,9 +48,10 @@
   },
   "devDependencies": {
     "@types/eslint-plugin-security": "^3.0.1",
-    "esbuild": "^0.25.0",
     "eslint": "^9.39.2",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^6.0.0",
+    "vite-plugin-dts": "^4.5.0"
   }
 }
