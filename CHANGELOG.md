@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.5.1...eslint-config-it4c-v0.6.0) (2026-02-05)
+
+
+### Features
+
+* **eslint:** build with vite ([#28](https://github.com/IT4Change/eslint-config-it4c/issues/28)) ([bbc91e3](https://github.com/IT4Change/eslint-config-it4c/commit/bbc91e39c91967766d353dd4f0d4922e819b3945))
+
 ## [0.5.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.5.0...eslint-config-it4c-v0.5.1) (2026-02-05)
 
 
