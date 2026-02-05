@@ -1,9 +1,9 @@
-import pluginJsonc from "eslint-plugin-jsonc";
+import pluginJsonc from 'eslint-plugin-jsonc'
 
-import type { Linter } from "eslint";
+import type { Linter } from 'eslint'
 
 const config: Linter.Config[] = pluginJsonc.configs[
-  "flat/recommended-with-jsonc"
-] as Linter.Config[];
+  'flat/recommended-with-jsonc'
+] as Linter.Config[]
 
-export default config;
+export default config

@@ -1,4 +1,4 @@
-name: "test:lint pull request CI"
+name: 'test:lint pull request CI'
 
 on:
   pull_request_target:

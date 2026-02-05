@@ -1,39 +1,35 @@
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
-import { resolve, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs'
+import { resolve, dirname } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const rootDir = resolve(__dirname, "..");
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const rootDir = resolve(__dirname, '..')
 
 interface RuleEntry {
-  enabled: boolean;
-  severity: string | number;
-  options?: unknown[];
+  enabled: boolean
+  severity: string | number
+  options?: unknown[]
 }
 
 const rules = JSON.parse(
   // eslint-disable-next-line n/no-sync
-  readFileSync(resolve(rootDir, "rules.json"), "utf-8"),
-) as Record<string, RuleEntry>;
+  readFileSync(resolve(rootDir, 'rules.json'), 'utf-8'),
+) as Record<string, RuleEntry>
 
 function getDocUrl(rule: string): string | null {
   const urlMap: Record<string, (name: string) => string> = {
-    "@eslint-community/eslint-comments": (name) =>
+    '@eslint-community/eslint-comments': (name) =>
       `https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/${name}.html`,
-    "@graphql-eslint": (name) =>
-      `https://the-guild.dev/graphql/eslint/rules/${name}`,
-    "@typescript-eslint": (name) =>
-      `https://typescript-eslint.io/rules/${name}/`,
-    "import-x": (name) =>
+    '@graphql-eslint': (name) => `https://the-guild.dev/graphql/eslint/rules/${name}`,
+    '@typescript-eslint': (name) => `https://typescript-eslint.io/rules/${name}/`,
+    'import-x': (name) =>
       `https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/${name}.md`,
     jest: (name) =>
       `https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/${name}.md`,
-    jsonc: (name) =>
-      `https://ota-meshi.github.io/eslint-plugin-jsonc/rules/${name}.html`,
+    jsonc: (name) => `https://ota-meshi.github.io/eslint-plugin-jsonc/rules/${name}.html`,
     n: (name) =>
       `https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/${name}.md`,
-    "no-catch-all": () =>
-      `https://github.com/buschtoens/eslint-plugin-no-catch-all`,
+    'no-catch-all': () => `https://github.com/buschtoens/eslint-plugin-no-catch-all`,
     prettier: () => `https://github.com/prettier/eslint-plugin-prettier`,
     promise: (name) =>
       `https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/${name}.md`,
@@ -42,97 +38,93 @@ function getDocUrl(rule: string): string | null {
     security: (name) =>
       `https://github.com/eslint-community/eslint-plugin-security/blob/main/docs/rules/${name}.md`,
     vue: (name) => `https://eslint.vuejs.org/rules/${name}.html`,
-    yml: (name) =>
-      `https://ota-meshi.github.io/eslint-plugin-yml/rules/${name}.html`,
-  };
+    yml: (name) => `https://ota-meshi.github.io/eslint-plugin-yml/rules/${name}.html`,
+  }
 
   // Built-in eslint rules (no prefix)
-  if (!rule.includes("/")) {
-    return `https://eslint.org/docs/latest/rules/${rule}`;
+  if (!rule.includes('/')) {
+    return `https://eslint.org/docs/latest/rules/${rule}`
   }
 
   // Find matching prefix
   for (const [prefix, fn] of Object.entries(urlMap)) {
-    if (rule.startsWith(prefix + "/")) {
-      const name = rule.slice(prefix.length + 1);
-      return fn(name);
+    if (rule.startsWith(prefix + '/')) {
+      const name = rule.slice(prefix.length + 1)
+      return fn(name)
     }
   }
 
-  return null;
+  return null
 }
 
 // Group rules by plugin prefix
-const groups = new Map<string, [string, RuleEntry][]>();
+const groups = new Map<string, [string, RuleEntry][]>()
 
 for (const [rule, entry] of Object.entries(rules)) {
-  const slashIndex = rule.indexOf("/");
-  const prefix = slashIndex > 0 ? rule.substring(0, slashIndex) : "eslint";
+  const slashIndex = rule.indexOf('/')
+  const prefix = slashIndex > 0 ? rule.substring(0, slashIndex) : 'eslint'
 
   // Handle scoped packages like @eslint-community/eslint-comments
-  let groupKey: string;
-  if (rule.startsWith("@")) {
-    const secondSlash = rule.indexOf("/", slashIndex + 1);
-    groupKey =
-      secondSlash > 0
-        ? rule.substring(0, secondSlash)
-        : rule.substring(0, slashIndex);
+  let groupKey: string
+  if (rule.startsWith('@')) {
+    const secondSlash = rule.indexOf('/', slashIndex + 1)
+    groupKey = secondSlash > 0 ? rule.substring(0, secondSlash) : rule.substring(0, slashIndex)
   } else {
-    groupKey = prefix;
+    groupKey = prefix
   }
 
   if (!groups.has(groupKey)) {
-    groups.set(groupKey, []);
+    groups.set(groupKey, [])
   }
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-  groups.get(groupKey)!.push([rule, entry]);
+  groups.get(groupKey)!.push([rule, entry])
 }
 
 // Generate markdown files per plugin in docs/
-const docsDir = resolve(rootDir, "docs");
+const docsDir = resolve(rootDir, 'docs')
 // eslint-disable-next-line n/no-sync
-rmSync(docsDir, { recursive: true, force: true });
+rmSync(docsDir, { recursive: true, force: true })
 // eslint-disable-next-line n/no-sync
-mkdirSync(docsDir, { recursive: true });
+mkdirSync(docsDir, { recursive: true })
 
 const indexLines: string[] = [
-  "# Rules",
-  "",
-  "This file is auto-generated by `npm run generate-rules-md`.",
-  "",
-];
+  '# Rules',
+  '',
+  'This file is auto-generated by `npm run generate-rules-md`.',
+  '',
+]
 
 for (const [group, entries] of groups) {
-  const fileName = `${group.replace(/\//g, "_").replace(/^@/, "")}.md`;
+  const fileName = `${group.replace(/\//g, '_').replace(/^@/, '')}.md`
 
   const lines: string[] = [
     `# ${group}`,
-    "",
-    "This file is auto-generated by `npm run generate-rules-md`.",
-    "",
-    "| Rule | Severity |",
-    "| --- | --- |",
-  ];
+    '',
+    'This file is auto-generated by `npm run generate-rules-md`.',
+    '',
+    '| Rule | Severity |',
+    '| --- | --- |',
+  ]
 
   for (const [rule, entry] of entries) {
-    const url = getDocUrl(rule);
-    const ruleCol = url ? `[${rule}](${url})` : rule;
-    lines.push(`| ${ruleCol} | \`${entry.severity.toString()}\` |`);
+    const url = getDocUrl(rule)
+    const ruleCol = url ? `[${rule}](${url})` : rule
+    lines.push(`| ${ruleCol} | \`${entry.severity.toString()}\` |`)
   }
 
-  lines.push("");
+  lines.push('')
 
   // eslint-disable-next-line security/detect-non-literal-fs-filename, n/no-sync
-  writeFileSync(resolve(docsDir, fileName), lines.join("\n"));
-  const active = entries.filter(([, e]) => e.enabled).length;
+  writeFileSync(resolve(docsDir, fileName), lines.join('\n'))
+  const active = entries.filter(([, e]) => e.enabled).length
   indexLines.push(
     `- [${group}](docs/${fileName}) (${active.toString()}/${entries.length.toString()})`,
-  );
+  )
 }
 
-indexLines.push("");
+indexLines.push('')
 
 // eslint-disable-next-line n/no-sync
-writeFileSync(resolve(rootDir, "RULES.md"), indexLines.join("\n"));
+writeFileSync(resolve(rootDir, 'RULES.md'), indexLines.join('\n'))
 // eslint-disable-next-line no-console
-console.log("RULES.md and docs/ generated");
+console.log('RULES.md and docs/ generated')

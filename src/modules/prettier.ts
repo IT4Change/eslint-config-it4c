@@ -1,7 +1,7 @@
-import pluginPrettier from "eslint-plugin-prettier/recommended";
+import pluginPrettier from 'eslint-plugin-prettier/recommended'
 
-import type { Linter } from "eslint";
+import type { Linter } from 'eslint'
 
-const config: Linter.Config[] = [pluginPrettier];
+const config: Linter.Config[] = [pluginPrettier]
 
-export default config;
+export default config
