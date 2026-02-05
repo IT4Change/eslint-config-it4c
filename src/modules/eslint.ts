@@ -7,6 +7,7 @@ const config: Linter.Config[] = [
   {
     rules: {
       'no-console': 'error',
+      'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       'no-void': ['error', { allowAsStatement: true }],
     },
   },
