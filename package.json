@@ -8,6 +8,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
+    },
+    "./prettier": {
+      "types": "./dist/prettier.d.ts",
+      "default": "./dist/prettier.js"
     }
   },
   "files": [

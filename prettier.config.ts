@@ -1,6 +1,6 @@
 import type { Config } from 'prettier'
 
-const config: Config = {
+export const prettierConfig: Config = {
   semi: false,
   printWidth: 100,
   singleQuote: true,
@@ -9,4 +9,4 @@ const config: Config = {
   bracketSpacing: true,
 }
 
-export default config
+export default prettierConfig
