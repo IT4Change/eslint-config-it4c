@@ -5,16 +5,14 @@ import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 
 const modulesDir = resolve(__dirname, 'src/modules')
+// eslint-disable-next-line n/no-sync
 const moduleEntries = readdirSync(modulesDir)
   .filter((f) => f.endsWith('.ts'))
-  .reduce(
-    (acc, f) => {
-      const name = f.replace('.ts', '')
-      acc[`modules/${name}`] = resolve(modulesDir, f)
-      return acc
-    },
-    {} as Record<string, string>,
-  )
+  .reduce<Record<string, string>>((acc, f) => {
+    const name = f.replace('.ts', '')
+    acc[`modules/${name}`] = resolve(modulesDir, f)
+    return acc
+  }, {})
 
 export default defineConfig({
   build: {
