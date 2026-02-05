@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.5.0...eslint-config-it4c-v0.5.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* **docu:** update docu ([#26](https://github.com/IT4Change/eslint-config-it4c/issues/26)) ([992ce39](https://github.com/IT4Change/eslint-config-it4c/commit/992ce39e2930760cc7926639e6c4f38169dcd779))
+
 ## [0.5.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.4.1...eslint-config-it4c-v0.5.0) (2026-02-05)
 
 
