@@ -3590,6 +3590,214 @@
     "enabled": false,
     "severity": "off"
   },
+  "vitest/consistent-test-filename": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/consistent-test-it": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/expect-expect": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vitest/max-expects": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/max-nested-describe": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-alias-methods": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-commented-out-tests": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vitest/no-conditional-expect": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-conditional-in-test": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-conditional-tests": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-disabled-tests": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-done-callback": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-duplicate-hooks": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-focused-tests": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-hooks": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-identical-title": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vitest/no-import-node-test": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vitest/no-interpolation-in-snapshots": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-large-snapshots": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-mocks-import": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-restricted-matchers": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-restricted-vi-methods": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-standalone-expect": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-test-prefixes": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/no-test-return-statement": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-called-with": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-comparison-matcher": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-each": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-equality-matcher": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-expect-assertions": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-expect-resolves": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-hooks-in-order": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-hooks-on-top": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-lowercase-title": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-mock-promise-shorthand": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-snapshot-hint": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-spy-on": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-strict-equal": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-to-be": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-to-be-falsy": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-to-be-object": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-to-be-truthy": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-to-contain": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-to-have-length": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/prefer-todo": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/require-hook": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/require-local-test-context-for-concurrent-snapshots": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vitest/require-to-throw-message": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/require-top-level-describe": {
+    "enabled": true,
+    "severity": "warn"
+  },
+  "vitest/valid-describe-callback": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vitest/valid-expect": {
+    "enabled": true,
+    "severity": "error"
+  },
+  "vitest/valid-title": {
+    "enabled": true,
+    "severity": "error"
+  },
   "vue/array-bracket-newline": {
     "enabled": false,
     "severity": "off"

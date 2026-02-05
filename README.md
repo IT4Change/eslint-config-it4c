@@ -67,6 +67,7 @@ export default [...eslint, ...typescript, ...importX, ...vue3, ...prettier]
 | `vue3` | Vue 3 + TypeScript support |
 | `vue2` | Vue 2 + TypeScript support |
 | `jest` | Jest testing rules |
+| `vitest` | Vitest testing rules |
 | `graphql` | GraphQL schema and operations linting |
 | `react` | React support (placeholder) |
 

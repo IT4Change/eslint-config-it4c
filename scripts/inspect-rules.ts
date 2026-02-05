@@ -2,12 +2,20 @@
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 
 // eslint-disable-next-line import-x/no-relative-parent-imports
-import config, { vue2, vue3, jest, graphql, react } from '../src/index'
+import config, { vue2, vue3, jest, vitest, graphql, react } from '../src/index'
 
 import type { Linter } from 'eslint'
 
 // Combine default config with all optional modules
-const allConfigs: Linter.Config[] = [...config, ...vue2, ...vue3, ...jest, ...graphql, ...react]
+const allConfigs: Linter.Config[] = [
+  ...config,
+  ...vue2,
+  ...vue3,
+  ...jest,
+  ...vitest,
+  ...graphql,
+  ...react,
+]
 
 interface RuleEntry {
   enabled: boolean
