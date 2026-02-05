@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.6.0...eslint-config-it4c-v0.6.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* **eslint:** fix typescript parser ([#30](https://github.com/IT4Change/eslint-config-it4c/issues/30)) ([ba4b6ac](https://github.com/IT4Change/eslint-config-it4c/commit/ba4b6ac0add855a6a089afe67cf6819a0fa36083))
+
 ## [0.6.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.5.1...eslint-config-it4c-v0.6.0) (2026-02-05)
 
 
