@@ -10,14 +10,7 @@ export default [
     files: ['**/*.ts'],
     languageOptions: {
       parserOptions: {
-        projectService: {
-          allowDefaultProject: [
-            'scripts/generate-rules-md.ts',
-            'scripts/inspect-rules.ts',
-            'eslint.config.ts',
-            'prettier.config.ts',
-          ],
-        },
+        projectService: true,
       },
     },
   },
