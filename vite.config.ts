@@ -19,7 +19,7 @@ export default defineConfig({
     lib: {
       entry: {
         index: resolve(__dirname, 'src/index.ts'),
-        prettier: resolve(__dirname, 'prettier.config.ts'),
+        prettier: resolve(__dirname, 'src/prettier.ts'),
         ...moduleEntries,
       },
       formats: ['es'],
@@ -45,6 +45,7 @@ export default defineConfig({
     dts({
       include: ['src/**/*.ts'],
       outDir: 'dist',
+      tsconfigPath: './tsconfig.json',
     }),
   ],
 })

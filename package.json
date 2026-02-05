@@ -12,6 +12,10 @@
     "./prettier": {
       "types": "./dist/prettier.d.ts",
       "default": "./dist/prettier.js"
+    },
+    "./modules/*": {
+      "types": "./dist/modules/*.d.ts",
+      "default": "./dist/modules/*.js"
     }
   },
   "files": [
