@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.7.0...eslint-config-it4c-v0.7.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* **eslint:** fix import x for aliases, no-unused-var ignore pattern ([#36](https://github.com/IT4Change/eslint-config-it4c/issues/36)) ([b943577](https://github.com/IT4Change/eslint-config-it4c/commit/b943577ac38188778133b47742fc0fb388efb654))
+
 ## [0.7.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.6.2...eslint-config-it4c-v0.7.0) (2026-02-05)
 
 
