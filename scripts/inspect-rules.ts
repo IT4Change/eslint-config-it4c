@@ -7,14 +7,7 @@ import config, { vue2, vue3, jest, graphql, react } from '../src/index'
 import type { Linter } from 'eslint'
 
 // Combine default config with all optional modules
-const allConfigs: Linter.Config[] = [
-  ...config,
-  ...(vue2 as Linter.Config[]),
-  ...(vue3 as Linter.Config[]),
-  ...(jest as Linter.Config[]),
-  ...(graphql as Linter.Config[]),
-  ...(react as Linter.Config[]),
-]
+const allConfigs: Linter.Config[] = [...config, ...vue2, ...vue3, ...jest, ...graphql, ...react]
 
 interface RuleEntry {
   enabled: boolean
