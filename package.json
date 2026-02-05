@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "npm run build:js && npm run build:types",
-    "build:js": "esbuild src/*.ts src/modules/*.ts --outdir=dist --format=esm --platform=node --bundle --external:@* --external:eslint* --external:neostandard --external:typescript-eslint --external:prettier",
+    "build:js": "tsx scripts/build.ts",
     "build:types": "tsc --emitDeclarationOnly",
     "lint": "eslint --max-warnings 0 .",
     "inspect-rules": "tsx scripts/inspect-rules.ts",

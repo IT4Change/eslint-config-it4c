@@ -10,7 +10,7 @@ const modulesDir = join(srcDir, 'modules')
 // Collect all entry points
 const entryPoints = [
   join(srcDir, 'index.ts'),
-  join(srcDir, 'prettier.ts'),
+  join(srcDir, '..', 'prettier.config.ts'),
   ...readdirSync(modulesDir)
     .filter((f) => f.endsWith('.ts'))
     .map((f) => join(modulesDir, f)),
