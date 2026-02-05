@@ -1,5 +1,4 @@
-// eslint-disable-next-line n/file-extension-in-import
-import config from './dist/index.js'
+import config from './src/index'
 
 import type { Linter } from 'eslint'
 
@@ -10,14 +9,7 @@ export default [
     files: ['**/*.ts'],
     languageOptions: {
       parserOptions: {
-        projectService: {
-          allowDefaultProject: [
-            'scripts/generate-rules-md.ts',
-            'scripts/inspect-rules.ts',
-            'eslint.config.ts',
-            'prettier.config.ts',
-          ],
-        },
+        projectService: true,
       },
     },
   },

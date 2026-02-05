@@ -5,10 +5,9 @@
     "moduleResolution": "Bundler",
     "declaration": true,
     "outDir": "dist",
-    "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
   },
-  "include": ["src"]
+  "include": ["src", "scripts", "*.config.ts"]
 }
