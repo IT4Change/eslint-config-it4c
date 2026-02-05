@@ -1,5 +1,4 @@
-// eslint-disable-next-line n/file-extension-in-import
-import config from './dist/index.js'
+import config from './src/index'
 
 import type { Linter } from 'eslint'
 
