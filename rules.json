@@ -1154,7 +1154,13 @@
   },
   "import-x/extensions": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "options": [
+      "never",
+      {
+        "json": "always"
+      }
+    ]
   },
   "import-x/first": {
     "enabled": true,
@@ -1274,7 +1280,7 @@
     "options": [
       {
         "ignore": [
-          "@/*"
+          "^#"
         ]
       }
     ]
@@ -1329,12 +1335,7 @@
         "newlines-between": "always",
         "pathGroups": [
           {
-            "pattern": "@?*/**",
-            "group": "external",
-            "position": "after"
-          },
-          {
-            "pattern": "@/**",
+            "pattern": "#**",
             "group": "external",
             "position": "after"
           }
