@@ -32,7 +32,7 @@ const config: Linter.Config[] = [
       'import-x/no-dynamic-require': 'error',
       'import-x/no-internal-modules': 'off',
       'import-x/no-relative-packages': 'error',
-      'import-x/no-relative-parent-imports': ['error', { ignore: ['#**'] }],
+      'import-x/no-relative-parent-imports': ['error', { ignore: ['^#'] }],
       'import-x/no-self-import': 'error',
       'import-x/no-unresolved': 'error',
       'import-x/no-useless-path-segments': 'error',
