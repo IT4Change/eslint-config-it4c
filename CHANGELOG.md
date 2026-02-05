@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.6.2...eslint-config-it4c-v0.7.0) (2026-02-05)
+
+
+### Features
+
+* **eslint:** vitest rules ([#34](https://github.com/IT4Change/eslint-config-it4c/issues/34)) ([8ec0cba](https://github.com/IT4Change/eslint-config-it4c/commit/8ec0cbae9452ed7fa3dbf97d6059421bc9384132))
+
 ## [0.6.2](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.6.1...eslint-config-it4c-v0.6.2) (2026-02-05)
 
 
