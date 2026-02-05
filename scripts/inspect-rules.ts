@@ -20,7 +20,7 @@ for (const [name] of builtinRules) {
   availableRules.add(name)
 }
 
-for (const entry of config as Linter.Config[]) {
+for (const entry of config) {
   const plugins = entry.plugins as Record<string, { rules?: Record<string, unknown> }> | undefined
   if (plugins) {
     for (const [prefix, plugin] of Object.entries(plugins)) {
@@ -35,7 +35,7 @@ for (const entry of config as Linter.Config[]) {
 
 // Collect all configured rules from config entries
 const configuredRules = new Map<string, Linter.RuleEntry>()
-for (const entry of config as Linter.Config[]) {
+for (const entry of config) {
   const rules = entry.rules as Record<string, Linter.RuleEntry> | undefined
   if (rules) {
     for (const [name, value] of Object.entries(rules)) {

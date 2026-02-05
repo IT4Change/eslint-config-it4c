@@ -41,16 +41,16 @@ export {
 // Default config: Base modules combined
 const config: Linter.Config[] = [
   { ignores: ['dist/'] },
-  ...(eslint as Linter.Config[]),
-  ...(typescript as Linter.Config[]),
-  ...(importX as Linter.Config[]),
-  ...(node as Linter.Config[]),
-  ...(promise as Linter.Config[]),
-  ...(security as Linter.Config[]),
-  ...(comments as Linter.Config[]),
-  ...(json as Linter.Config[]),
-  ...(yaml as Linter.Config[]),
-  ...(prettier as Linter.Config[]),
+  ...eslint,
+  ...typescript,
+  ...importX,
+  ...node,
+  ...promise,
+  ...security,
+  ...comments,
+  ...json,
+  ...yaml,
+  ...prettier,
 ]
 
 export default config
