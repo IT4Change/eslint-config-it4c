@@ -1,12 +1,19 @@
 import type { Config } from 'prettier'
 
 export const prettierConfig: Config = {
-  semi: false,
   printWidth: 100,
-  singleQuote: true,
-  trailingComma: 'all',
   tabWidth: 2,
-  bracketSpacing: true,
+  useTabs: false,
+  semi: false,
+  singleQuote: true,
+  jsxSingleQuote: true,
+  // trailingComma: "all",
+  // bracketSpacing: true,
+  // bracketSameLine: false,
+  // arrowParens: "always",
+  endOfLine: 'auto',
+  // quoteProps: "as-needed",
+  vueIndentScriptAndStyle: true,
 }
 
 export default prettierConfig
