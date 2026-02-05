@@ -2,9 +2,19 @@
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 
 // eslint-disable-next-line import-x/no-relative-parent-imports
-import config from '../src/index'
+import config, { vue2, vue3, jest, graphql, react } from '../src/index'
 
 import type { Linter } from 'eslint'
+
+// Combine default config with all optional modules
+const allConfigs: Linter.Config[] = [
+  ...config,
+  ...(vue2 as Linter.Config[]),
+  ...(vue3 as Linter.Config[]),
+  ...(jest as Linter.Config[]),
+  ...(graphql as Linter.Config[]),
+  ...(react as Linter.Config[]),
+]
 
 interface RuleEntry {
   enabled: boolean
@@ -20,7 +30,7 @@ for (const [name] of builtinRules) {
   availableRules.add(name)
 }
 
-for (const entry of config) {
+for (const entry of allConfigs) {
   const plugins = entry.plugins as Record<string, { rules?: Record<string, unknown> }> | undefined
   if (plugins) {
     for (const [prefix, plugin] of Object.entries(plugins)) {
@@ -35,7 +45,7 @@ for (const entry of config) {
 
 // Collect all configured rules from config entries
 const configuredRules = new Map<string, Linter.RuleEntry>()
-for (const entry of config) {
+for (const entry of allConfigs) {
   const rules = entry.rules as Record<string, Linter.RuleEntry> | undefined
   if (rules) {
     for (const [name, value] of Object.entries(rules)) {
