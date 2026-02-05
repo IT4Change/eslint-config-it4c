@@ -8,6 +8,14 @@ const config: Linter.Config[] = [
     plugins: { 'no-catch-all': pluginNoCatchAll },
     rules: { 'no-catch-all/no-catch-all': 'error' },
   },
+  {
+    files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+      },
+    },
+  },
   // eslint-disable-next-line import-x/no-named-as-default-member
   ...(tseslint.configs.strictTypeChecked as Linter.Config[]).map((cfg) => ({
     ...cfg,
