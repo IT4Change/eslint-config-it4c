@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.6.1...eslint-config-it4c-v0.6.2) (2026-02-05)
+
+
+### Bug Fixes
+
+* **eslint:** adjust prettier rules ([#32](https://github.com/IT4Change/eslint-config-it4c/issues/32)) ([5de3994](https://github.com/IT4Change/eslint-config-it4c/commit/5de39943912d9d94bdfd415f950ed2c136c6d841))
+
 ## [0.6.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.6.0...eslint-config-it4c-v0.6.1) (2026-02-05)
 
 
