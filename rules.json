@@ -350,8 +350,8 @@
     "severity": "off"
   },
   "@typescript-eslint/await-thenable": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/ban-ts-comment": {
     "enabled": true,
@@ -395,8 +395,8 @@
     "severity": "error"
   },
   "@typescript-eslint/consistent-type-exports": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/consistent-type-imports": {
     "enabled": true,
@@ -447,20 +447,20 @@
     "severity": "error"
   },
   "@typescript-eslint/no-array-delete": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-base-to-string": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-confusing-non-null-assertion": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/no-confusing-void-expression": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-deprecated": {
     "enabled": false,
@@ -475,8 +475,8 @@
     "severity": "error"
   },
   "@typescript-eslint/no-duplicate-type-constituents": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-dynamic-delete": {
     "enabled": true,
@@ -507,16 +507,21 @@
     "severity": "error"
   },
   "@typescript-eslint/no-floating-promises": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "ignoreVoid": true
+      }
+    ]
   },
   "@typescript-eslint/no-for-in-array": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-implied-eval": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-import-type-side-effects": {
     "enabled": true,
@@ -547,24 +552,24 @@
     "severity": "off"
   },
   "@typescript-eslint/no-meaningless-void-operator": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-misused-new": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-misused-promises": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-misused-spread": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-mixed-enums": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-namespace": {
     "enabled": true,
@@ -587,8 +592,8 @@
     "severity": "off"
   },
   "@typescript-eslint/no-redundant-type-constituents": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-require-imports": {
     "enabled": true,
@@ -615,84 +620,84 @@
     "severity": "off"
   },
   "@typescript-eslint/no-unnecessary-boolean-literal-compare": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-condition": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-parameter-property-assignment": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/no-unnecessary-qualifier": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-template-expression": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-type-arguments": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-type-assertion": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-type-constraint": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-type-conversion": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-type-parameters": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unsafe-argument": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unsafe-assignment": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unsafe-call": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unsafe-declaration-merging": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-unsafe-enum-comparison": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unsafe-function-type": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-unsafe-member-access": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unsafe-return": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unsafe-type-assertion": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/no-unsafe-unary-minus": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-unused-expressions": {
     "enabled": true,
@@ -704,13 +709,7 @@
   },
   "@typescript-eslint/no-unused-vars": {
     "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_"
-      }
-    ]
+    "severity": "error"
   },
   "@typescript-eslint/no-use-before-define": {
     "enabled": true,
@@ -721,8 +720,8 @@
     "severity": "error"
   },
   "@typescript-eslint/no-useless-default-assignment": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/no-useless-empty-export": {
     "enabled": true,
@@ -741,8 +740,8 @@
     "severity": "off"
   },
   "@typescript-eslint/only-throw-error": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/parameter-properties": {
     "enabled": false,
@@ -761,8 +760,8 @@
     "severity": "off"
   },
   "@typescript-eslint/prefer-find": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-for-of": {
     "enabled": true,
@@ -773,8 +772,8 @@
     "severity": "off"
   },
   "@typescript-eslint/prefer-includes": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-literal-enum-member": {
     "enabled": true,
@@ -785,72 +784,94 @@
     "severity": "error"
   },
   "@typescript-eslint/prefer-nullish-coalescing": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-optional-chain": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-promise-reject-errors": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-readonly": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-readonly-parameter-types": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/prefer-reduce-type-parameter": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-regexp-exec": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-return-this-type": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-string-starts-ends-with": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/prefer-ts-expect-error": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/promise-function-async": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/related-getter-setter-pairs": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/require-array-sort-compare": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/require-await": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/restrict-plus-operands": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNullish": false,
+        "allowNumberAndString": false,
+        "allowRegExp": false
+      }
+    ]
   },
   "@typescript-eslint/restrict-template-expressions": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNever": false,
+        "allowNullish": false,
+        "allowNumber": false,
+        "allowRegExp": false
+      }
+    ]
   },
   "@typescript-eslint/return-await": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      "error-handling-correctness-only"
+    ]
   },
   "@typescript-eslint/sort-type-constituents": {
     "enabled": false,
@@ -865,8 +886,8 @@
     "severity": "off"
   },
   "@typescript-eslint/switch-exhaustiveness-check": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/triple-slash-reference": {
     "enabled": true,
@@ -877,16 +898,16 @@
     "severity": "off"
   },
   "@typescript-eslint/unbound-method": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "@typescript-eslint/unified-signatures": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/use-unknown-in-catch-callback-variable": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "accessor-pairs": {
     "enabled": true,
@@ -2302,8 +2323,8 @@
     "severity": "off"
   },
   "no-implied-eval": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "no-import-assign": {
     "enabled": false,
@@ -2326,8 +2347,8 @@
     "severity": "off"
   },
   "no-irregular-whitespace": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "no-iterator": {
     "enabled": true,
@@ -2600,8 +2621,8 @@
     "severity": "off"
   },
   "no-throw-literal": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "no-trailing-spaces": {
     "enabled": false,
@@ -2681,8 +2702,15 @@
     "severity": "off"
   },
   "no-use-before-define": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "functions": false,
+        "classes": false,
+        "variables": false
+      }
+    ]
   },
   "no-useless-assignment": {
     "enabled": false,
@@ -2730,12 +2758,7 @@
   },
   "no-void": {
     "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "allowAsStatement": true
-      }
-    ]
+    "severity": "error"
   },
   "no-warning-comments": {
     "enabled": false,
@@ -2834,8 +2857,8 @@
     "severity": "off"
   },
   "prefer-promise-reject-errors": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "prefer-reflect": {
     "enabled": false,
@@ -3706,12 +3729,12 @@
     "severity": "off"
   },
   "vue/html-closing-bracket-newline": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/html-closing-bracket-spacing": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/html-comment-content-newline": {
     "enabled": false,
@@ -3726,20 +3749,20 @@
     "severity": "off"
   },
   "vue/html-end-tags": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/html-indent": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/html-quotes": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/html-self-closing": {
-    "enabled": false,
-    "severity": 0
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/jsx-uses-vars": {
     "enabled": true,
@@ -3762,8 +3785,8 @@
     "severity": "off"
   },
   "vue/max-attributes-per-line": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/max-len": {
     "enabled": false,
@@ -3786,16 +3809,16 @@
     "severity": "error"
   },
   "vue/multiline-html-element-content-newline": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/multiline-ternary": {
     "enabled": false,
     "severity": "off"
   },
   "vue/mustache-interpolation-spacing": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/new-line-between-multi-line-property": {
     "enabled": false,
@@ -3838,8 +3861,8 @@
     "severity": "off"
   },
   "vue/no-custom-modifiers-on-v-model": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/no-deprecated-data-object-declaration": {
     "enabled": true,
@@ -3994,8 +4017,8 @@
     "severity": "off"
   },
   "vue/no-multi-spaces": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/no-multiple-objects-in-class": {
     "enabled": false,
@@ -4006,8 +4029,8 @@
     "severity": "warn"
   },
   "vue/no-multiple-template-root": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/no-mutating-props": {
     "enabled": true,
@@ -4118,8 +4141,8 @@
     "severity": "error"
   },
   "vue/no-spaces-around-equal-signs-in-attribute": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/no-sparse-arrays": {
     "enabled": false,
@@ -4214,8 +4237,8 @@
     "severity": "off"
   },
   "vue/no-v-for-template-key": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/no-v-for-template-key-on-child": {
     "enabled": true,
@@ -4226,8 +4249,8 @@
     "severity": "warn"
   },
   "vue/no-v-model-argument": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/no-v-text": {
     "enabled": false,
@@ -4414,8 +4437,8 @@
     "severity": "off"
   },
   "vue/singleline-html-element-content-newline": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "warn"
   },
   "vue/slot-name-casing": {
     "enabled": false,
@@ -4504,8 +4527,8 @@
     "severity": "error"
   },
   "vue/valid-model-definition": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/valid-next-tick": {
     "enabled": true,
@@ -4520,8 +4543,8 @@
     "severity": "error"
   },
   "vue/valid-v-bind-sync": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error"
   },
   "vue/valid-v-cloak": {
     "enabled": true,
