@@ -11,10 +11,10 @@ interface RuleEntry {
   options?: unknown[];
 }
 
-const rules: Record<string, RuleEntry> = JSON.parse(
+const rules = JSON.parse(
   // eslint-disable-next-line n/no-sync
   readFileSync(resolve(rootDir, "rules.json"), "utf-8"),
-);
+) as Record<string, RuleEntry>;
 
 function getDocUrl(rule: string): string | null {
   const urlMap: Record<string, (name: string) => string> = {
