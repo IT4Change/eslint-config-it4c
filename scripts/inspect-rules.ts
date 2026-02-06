@@ -1,8 +1,6 @@
-import { builtinRules } from 'eslint/use-at-your-own-risk'
+import { Linter } from 'eslint'
 
 import config, { vue2, vue3, jest, vitest, graphql, react } from '#src/index'
-
-import type { Linter } from 'eslint'
 
 // Combine default config with all optional modules
 const allConfigs: Linter.Config[] = [
@@ -24,7 +22,8 @@ interface RuleEntry {
 // Collect all available rules from built-in and plugins
 const availableRules = new Set<string>()
 
-for (const [name] of builtinRules) {
+const linter = new Linter()
+for (const name of linter.getRules().keys()) {
   availableRules.add(name)
 }
 
