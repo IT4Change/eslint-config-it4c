@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.8.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.7.2...eslint-config-it4c-v0.8.0) (2026-02-06)
+
+
+### Features
+
+* **eslint:** disable n/no-unpublished-imports on test files ([#42](https://github.com/IT4Change/eslint-config-it4c/issues/42)) ([0a280e2](https://github.com/IT4Change/eslint-config-it4c/commit/0a280e23b2f607b3a4b47a118c45bb9baa86814b))
+
+
+### Bug Fixes
+
+* **docu:** better rule detection ([#44](https://github.com/IT4Change/eslint-config-it4c/issues/44)) ([3e68242](https://github.com/IT4Change/eslint-config-it4c/commit/3e68242206a6a07008027988b38f06db7010cccf))
+
 ## [0.7.2](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.7.1...eslint-config-it4c-v0.7.2) (2026-02-06)
 
 
