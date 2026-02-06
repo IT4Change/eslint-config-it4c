@@ -1,11 +1,9 @@
-import pluginImportX from 'eslint-plugin-import-x'
+import { flatConfigs as importXFlatConfigs } from 'eslint-plugin-import-x'
 import neostandard from 'neostandard'
 
 import type { Linter } from 'eslint'
 
-const { plugins: _, ...importXTypescript } =
-  // eslint-disable-next-line import-x/no-named-as-default-member
-  pluginImportX.flatConfigs.typescript
+const { plugins: _, ...importXTypescript } = importXFlatConfigs.typescript
 
 const config: Linter.Config[] = [
   ...neostandard({ noStyle: true }),
