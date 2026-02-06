@@ -33,6 +33,7 @@ const config: Linter.Config[] = [
     },
   },
   {
+    // eslint.config.ts and alike often contain imports from devDependencies
     files: ['*.config.{js,mjs,cjs,ts,mts,cts}'],
     rules: {
       'n/no-unpublished-import': 'off',
