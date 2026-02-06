@@ -32,6 +32,12 @@ const config: Linter.Config[] = [
       'n/shebang': 'error',
     },
   },
+  {
+    files: ['*.config.{js,mjs,cjs,ts,mts,cts}'],
+    rules: {
+      'n/no-unpublished-import': 'off',
+    },
+  },
 ]
 
 export default config
