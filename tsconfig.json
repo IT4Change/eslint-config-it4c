@@ -10,7 +10,8 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "#root/*": ["./*"]
+      "#root/*": ["./*"],
+      "#src/*": ["./src/*"]
     }
   },
   "include": ["src", "scripts", "*.config.ts"]
