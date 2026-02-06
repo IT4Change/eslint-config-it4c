@@ -16,10 +16,17 @@ const allConfigs: Linter.Config[] = [
   ...react,
 ]
 
+interface RuleException {
+  files: string[]
+  severity: string | number
+  options?: unknown[]
+}
+
 interface RuleEntry {
   enabled: boolean
   severity: string | number
   options?: unknown[]
+  exceptions?: RuleException[]
 }
 
 // Collect all available rules from built-in and plugins
@@ -44,29 +51,79 @@ for (const entry of allConfigs) {
 }
 
 // Collect all configured rules from config entries
-const configuredRules = new Map<string, Linter.RuleEntry>()
+// Separate global rules (no files) from file-specific exceptions
+const globalRules = new Map<string, Linter.RuleEntry>()
+const fileSpecificRules = new Map<string, Array<{ files: string[]; setting: Linter.RuleEntry }>>()
+
 for (const entry of allConfigs) {
   const rules = entry.rules as Record<string, Linter.RuleEntry> | undefined
-  if (rules) {
-    for (const [name, value] of Object.entries(rules)) {
-      configuredRules.set(name, value)
+  if (!rules) continue
+
+  const files = entry.files as string[] | undefined
+
+  for (const [name, value] of Object.entries(rules)) {
+    if (!files) {
+      // Global rule (no files restriction)
+      globalRules.set(name, value)
+    } else {
+      // File-specific rule
+      const existing = fileSpecificRules.get(name) ?? []
+      existing.push({ files, setting: value })
+      fileSpecificRules.set(name, existing)
     }
   }
 }
 
+// Helper to extract severity from rule setting
+const getSeverity = (setting: Linter.RuleEntry | undefined): string | number =>
+  setting === undefined ? 'off' : Array.isArray(setting) ? setting[0] : setting
+
+// Helper to extract options from rule setting
+const getOptions = (setting: Linter.RuleEntry): unknown[] | undefined =>
+  Array.isArray(setting) && setting.length > 1 ? setting.slice(1) : undefined
+
 // Build result
 const result = new Map<string, RuleEntry>()
 for (const name of [...availableRules].sort((a, b) => a.localeCompare(b))) {
-  const setting = configuredRules.get(name)
-  const severity = Array.isArray(setting) ? setting[0] : setting
+  const globalSetting = globalRules.get(name)
+  const fileSpecific = fileSpecificRules.get(name)
 
-  const enabled = severity !== undefined && severity !== 'off' && severity !== 0
+  const severity = getSeverity(globalSetting)
+  const enabled = severity !== 'off' && severity !== 0
 
-  result.set(name, {
+  const entry: RuleEntry = {
     enabled,
-    severity: severity ?? 'off',
-    ...(Array.isArray(setting) && setting.length > 1 ? { options: setting.slice(1) } : {}),
-  })
+    severity,
+  }
+
+  const options = globalSetting ? getOptions(globalSetting) : undefined
+  if (options) {
+    entry.options = options
+  }
+
+  // Add exceptions where file-specific severity differs from global
+  if (fileSpecific) {
+    const exceptions: RuleException[] = []
+    for (const { files, setting } of fileSpecific) {
+      const fileSeverity = getSeverity(setting)
+      if (fileSeverity !== severity) {
+        const exception: RuleException = {
+          files,
+          severity: fileSeverity,
+        }
+        const fileOptions = getOptions(setting)
+        if (fileOptions) {
+          exception.options = fileOptions
+        }
+        exceptions.push(exception)
+      }
+    }
+    if (exceptions.length > 0) {
+      entry.exceptions = exceptions
+    }
+  }
+
+  result.set(name, entry)
 }
 
 // eslint-disable-next-line no-console

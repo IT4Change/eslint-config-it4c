@@ -45,113 +45,338 @@
     "severity": "off"
   },
   "@graphql-eslint/description-style": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "style": "inline"
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "style": "inline"
+          }
+        ]
       }
     ]
   },
   "@graphql-eslint/executable-definitions": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/fields-on-correct-type": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/fragments-on-composite-type": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/input-name": {
     "enabled": false,
     "severity": "off"
   },
   "@graphql-eslint/known-argument-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/known-directives": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/known-fragment-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/known-type-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/lone-anonymous-operation": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/lone-executable-definition": {
     "enabled": false,
     "severity": "off"
   },
   "@graphql-eslint/lone-schema-definition": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/match-document-filename": {
     "enabled": false,
     "severity": "off"
   },
   "@graphql-eslint/naming-convention": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "VariableDefinition": "camelCase",
-        "OperationDefinition": {
-          "style": "PascalCase",
-          "forbiddenPrefixes": [
-            "Query",
-            "Mutation",
-            "Subscription",
-            "Get"
-          ],
-          "forbiddenSuffixes": [
-            "Query",
-            "Mutation",
-            "Subscription"
-          ]
-        },
-        "FragmentDefinition": {
-          "style": "PascalCase",
-          "forbiddenPrefixes": [
-            "Fragment"
-          ],
-          "forbiddenSuffixes": [
-            "Fragment"
-          ]
-        }
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "types": "PascalCase",
+            "FieldDefinition": "camelCase",
+            "InputValueDefinition": "camelCase",
+            "Argument": "camelCase",
+            "DirectiveDefinition": "camelCase",
+            "EnumValueDefinition": "UPPER_CASE",
+            "FieldDefinition[parent.name.value=Query]": {
+              "forbiddenPrefixes": [
+                "query",
+                "get"
+              ],
+              "forbiddenSuffixes": [
+                "Query"
+              ]
+            },
+            "FieldDefinition[parent.name.value=Mutation]": {
+              "forbiddenPrefixes": [
+                "mutation"
+              ],
+              "forbiddenSuffixes": [
+                "Mutation"
+              ]
+            },
+            "FieldDefinition[parent.name.value=Subscription]": {
+              "forbiddenPrefixes": [
+                "subscription"
+              ],
+              "forbiddenSuffixes": [
+                "Subscription"
+              ]
+            },
+            "EnumTypeDefinition,EnumTypeExtension": {
+              "forbiddenPrefixes": [
+                "Enum"
+              ],
+              "forbiddenSuffixes": [
+                "Enum"
+              ]
+            },
+            "InterfaceTypeDefinition,InterfaceTypeExtension": {
+              "forbiddenPrefixes": [
+                "Interface"
+              ],
+              "forbiddenSuffixes": [
+                "Interface"
+              ]
+            },
+            "UnionTypeDefinition,UnionTypeExtension": {
+              "forbiddenPrefixes": [
+                "Union"
+              ],
+              "forbiddenSuffixes": [
+                "Union"
+              ]
+            },
+            "ObjectTypeDefinition,ObjectTypeExtension": {
+              "forbiddenPrefixes": [
+                "Type"
+              ],
+              "forbiddenSuffixes": [
+                "Type"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "VariableDefinition": "camelCase",
+            "OperationDefinition": {
+              "style": "PascalCase",
+              "forbiddenPrefixes": [
+                "Query",
+                "Mutation",
+                "Subscription",
+                "Get"
+              ],
+              "forbiddenSuffixes": [
+                "Query",
+                "Mutation",
+                "Subscription"
+              ]
+            },
+            "FragmentDefinition": {
+              "style": "PascalCase",
+              "forbiddenPrefixes": [
+                "Fragment"
+              ],
+              "forbiddenSuffixes": [
+                "Fragment"
+              ]
+            }
+          }
+        ]
       }
     ]
   },
   "@graphql-eslint/no-anonymous-operations": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-deprecated": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-duplicate-fields": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-fragment-cycles": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-hashtag-description": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-one-place-fragments": {
     "enabled": false,
@@ -166,48 +391,134 @@
     "severity": "off"
   },
   "@graphql-eslint/no-typename-prefix": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-undefined-variables": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-unreachable-types": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-unused-fields": {
     "enabled": false,
     "severity": "off"
   },
   "@graphql-eslint/no-unused-fragments": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/no-unused-variables": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/one-field-subscriptions": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/overlapping-fields-can-be-merged": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/possible-fragment-spread": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/possible-type-extension": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/provided-required-arguments": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/relay-arguments": {
     "enabled": false,
@@ -230,17 +541,33 @@
     "severity": "off"
   },
   "@graphql-eslint/require-deprecation-reason": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/require-description": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "types": true,
-        "DirectiveDefinition": true,
-        "rootField": true
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "types": true,
+            "DirectiveDefinition": true,
+            "rootField": true
+          }
+        ]
       }
     ]
   },
@@ -261,85 +588,235 @@
     "severity": "off"
   },
   "@graphql-eslint/require-selections": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/require-type-pattern-with-oneof": {
     "enabled": false,
     "severity": "off"
   },
   "@graphql-eslint/scalar-leafs": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/selection-set-depth": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "maxDepth": 7
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "maxDepth": 7
+          }
+        ]
       }
     ]
   },
   "@graphql-eslint/strict-id-in-types": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-argument-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-directive-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-directive-names-per-location": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-enum-value-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-field-definition-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-fragment-name": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-input-field-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-operation-name": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-operation-types": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-type-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/unique-variable-names": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/value-literals-of-correct-type": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/variables-are-input-types": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@graphql-eslint/variables-in-allowed-position": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.graphql"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/adjacent-overload-signatures": {
     "enabled": false,
@@ -350,8 +827,19 @@
     "severity": "off"
   },
   "@typescript-eslint/await-thenable": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/ban-ts-comment": {
     "enabled": true,
@@ -391,16 +879,49 @@
     "severity": "off"
   },
   "@typescript-eslint/consistent-type-definitions": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/consistent-type-exports": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/consistent-type-imports": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/default-param-last": {
     "enabled": false,
@@ -419,8 +940,19 @@
     "severity": "off"
   },
   "@typescript-eslint/explicit-module-boundary-types": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/init-declarations": {
     "enabled": false,
@@ -435,8 +967,19 @@
     "severity": "off"
   },
   "@typescript-eslint/method-signature-style": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/naming-convention": {
     "enabled": false,
@@ -447,24 +990,68 @@
     "severity": "error"
   },
   "@typescript-eslint/no-array-delete": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-base-to-string": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-confusing-non-null-assertion": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/no-confusing-void-expression": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-deprecated": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-dupe-class-members": {
     "enabled": false,
@@ -475,8 +1062,19 @@
     "severity": "error"
   },
   "@typescript-eslint/no-duplicate-type-constituents": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-dynamic-delete": {
     "enabled": true,
@@ -507,25 +1105,78 @@
     "severity": "error"
   },
   "@typescript-eslint/no-floating-promises": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "ignoreVoid": true
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "ignoreVoid": true
+          }
+        ]
       }
     ]
   },
   "@typescript-eslint/no-for-in-array": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-implied-eval": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-import-type-side-effects": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-inferrable-types": {
     "enabled": false,
@@ -540,8 +1191,19 @@
     "severity": "error"
   },
   "@typescript-eslint/no-loop-func": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-loss-of-precision": {
     "enabled": false,
@@ -552,24 +1214,68 @@
     "severity": "off"
   },
   "@typescript-eslint/no-meaningless-void-operator": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-misused-new": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-misused-promises": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-misused-spread": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-mixed-enums": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-namespace": {
     "enabled": true,
@@ -592,8 +1298,19 @@
     "severity": "off"
   },
   "@typescript-eslint/no-redundant-type-constituents": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-require-imports": {
     "enabled": true,
@@ -608,8 +1325,19 @@
     "severity": "off"
   },
   "@typescript-eslint/no-shadow": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-this-alias": {
     "enabled": true,
@@ -620,84 +1348,249 @@
     "severity": "off"
   },
   "@typescript-eslint/no-unnecessary-boolean-literal-compare": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-condition": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-parameter-property-assignment": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/no-unnecessary-qualifier": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-template-expression": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-type-arguments": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-type-assertion": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-type-constraint": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-unnecessary-type-conversion": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-type-parameters": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-argument": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-assignment": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-call": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-declaration-merging": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-unsafe-enum-comparison": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-function-type": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-unsafe-member-access": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-return": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-type-assertion": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/no-unsafe-unary-minus": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unused-expressions": {
     "enabled": true,
@@ -712,20 +1605,53 @@
     "severity": "error"
   },
   "@typescript-eslint/no-use-before-define": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-useless-constructor": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/no-useless-default-assignment": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-useless-empty-export": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-var-requires": {
     "enabled": false,
@@ -740,8 +1666,19 @@
     "severity": "off"
   },
   "@typescript-eslint/only-throw-error": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/parameter-properties": {
     "enabled": false,
@@ -760,20 +1697,53 @@
     "severity": "off"
   },
   "@typescript-eslint/prefer-find": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-for-of": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-function-type": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/prefer-includes": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-literal-enum-member": {
     "enabled": true,
@@ -784,93 +1754,258 @@
     "severity": "error"
   },
   "@typescript-eslint/prefer-nullish-coalescing": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-optional-chain": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-promise-reject-errors": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-readonly": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-readonly-parameter-types": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/prefer-reduce-type-parameter": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-regexp-exec": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-return-this-type": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-string-starts-ends-with": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-ts-expect-error": {
     "enabled": false,
     "severity": "off"
   },
   "@typescript-eslint/promise-function-async": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/related-getter-setter-pairs": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/require-array-sort-compare": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/require-await": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/restrict-plus-operands": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "allowAny": false,
-        "allowBoolean": false,
-        "allowNullish": false,
-        "allowNumberAndString": false,
-        "allowRegExp": false
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "allowAny": false,
+            "allowBoolean": false,
+            "allowNullish": false,
+            "allowNumberAndString": false,
+            "allowRegExp": false
+          }
+        ]
       }
     ]
   },
   "@typescript-eslint/restrict-template-expressions": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "allowAny": false,
-        "allowBoolean": false,
-        "allowNever": false,
-        "allowNullish": false,
-        "allowNumber": false,
-        "allowRegExp": false
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "allowAny": false,
+            "allowBoolean": false,
+            "allowNever": false,
+            "allowNullish": false,
+            "allowNumber": false,
+            "allowRegExp": false
+          }
+        ]
       }
     ]
   },
   "@typescript-eslint/return-await": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
-      "error-handling-correctness-only"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error",
+        "options": [
+          "error-handling-correctness-only"
+        ]
+      }
     ]
   },
   "@typescript-eslint/sort-type-constituents": {
@@ -886,8 +2021,19 @@
     "severity": "off"
   },
   "@typescript-eslint/switch-exhaustiveness-check": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/triple-slash-reference": {
     "enabled": true,
@@ -898,16 +2044,38 @@
     "severity": "off"
   },
   "@typescript-eslint/unbound-method": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/unified-signatures": {
     "enabled": true,
     "severity": "error"
   },
   "@typescript-eslint/use-unknown-in-catch-callback-variable": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "accessor-pairs": {
     "enabled": true,
@@ -1019,8 +2187,39 @@
     "severity": "off"
   },
   "constructor-super": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "curly": {
     "enabled": false,
@@ -1093,8 +2292,39 @@
     "severity": "off"
   },
   "getter-return": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "global-require": {
     "enabled": false,
@@ -1377,8 +2607,19 @@
     "severity": "off"
   },
   "jest/expect-expect": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "jest/max-expects": {
     "enabled": false,
@@ -1389,16 +2630,49 @@
     "severity": "off"
   },
   "jest/no-alias-methods": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-commented-out-tests": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "jest/no-conditional-expect": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-conditional-in-test": {
     "enabled": false,
@@ -1409,16 +2683,49 @@
     "severity": "off"
   },
   "jest/no-deprecated-functions": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-disabled-tests": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "jest/no-done-callback": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-duplicate-hooks": {
     "enabled": false,
@@ -1429,36 +2736,102 @@
     "severity": "off"
   },
   "jest/no-export": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-focused-tests": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-hooks": {
     "enabled": false,
     "severity": "off"
   },
   "jest/no-identical-title": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-interpolation-in-snapshots": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-jasmine-globals": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-large-snapshots": {
     "enabled": false,
     "severity": "off"
   },
   "jest/no-mocks-import": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-restricted-jest-methods": {
     "enabled": false,
@@ -1469,12 +2842,34 @@
     "severity": "off"
   },
   "jest/no-standalone-expect": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-test-prefixes": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/no-test-return-statement": {
     "enabled": false,
@@ -1609,8 +3004,19 @@
     "severity": "off"
   },
   "jest/prefer-to-have-length": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/prefer-todo": {
     "enabled": false,
@@ -1629,20 +3035,64 @@
     "severity": "off"
   },
   "jest/unbound-method": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/valid-describe-callback": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/valid-expect": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/valid-expect-in-promise": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jest/valid-expect-with-promise": {
     "enabled": false,
@@ -1653,8 +3103,19 @@
     "severity": "off"
   },
   "jest/valid-title": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "jsonc/array-bracket-newline": {
     "enabled": false,
@@ -2015,8 +3476,19 @@
     "severity": "off"
   },
   "n/no-unpublished-import": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "*.config.{js,mjs,cjs,ts,mts,cts}",
+          "**/*.spec.{js,mjs,cjs,ts,mts,cts}",
+          "**/*.test.{js,mjs,cjs,ts,mts,cts}",
+          "**/__tests__/**/*.{js,mjs,cjs,ts,mts,cts}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "n/no-unpublished-require": {
     "enabled": true,
@@ -2150,8 +3622,39 @@
     "severity": "off"
   },
   "no-class-assign": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-compare-neg-zero": {
     "enabled": true,
@@ -2170,8 +3673,39 @@
     "severity": "error"
   },
   "no-const-assign": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-constant-binary-expression": {
     "enabled": true,
@@ -2211,20 +3745,113 @@
     "severity": "off"
   },
   "no-dupe-args": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-dupe-class-members": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-dupe-else-if": {
     "enabled": true,
     "severity": "error"
   },
   "no-dupe-keys": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-duplicate-case": {
     "enabled": true,
@@ -2308,8 +3935,39 @@
     "severity": "off"
   },
   "no-func-assign": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-global-assign": {
     "enabled": true,
@@ -2325,11 +3983,53 @@
   },
   "no-implied-eval": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-import-assign": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-inline-comments": {
     "enabled": false,
@@ -2348,8 +4048,19 @@
     "severity": "off"
   },
   "no-irregular-whitespace": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "*.yaml",
+          "**/*.yaml",
+          "*.yml",
+          "**/*.yml"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-iterator": {
     "enabled": true,
@@ -2446,8 +4157,39 @@
     "severity": "error"
   },
   "no-new-native-nonconstructor": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-new-object": {
     "enabled": false,
@@ -2470,8 +4212,39 @@
     "severity": "error"
   },
   "no-obj-calls": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-object-constructor": {
     "enabled": true,
@@ -2518,8 +4291,44 @@
     "severity": "error"
   },
   "no-redeclare": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "builtinGlobals": false
+      }
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-regex-spaces": {
     "enabled": true,
@@ -2582,8 +4391,39 @@
     "severity": "error"
   },
   "no-setter-return": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-shadow": {
     "enabled": false,
@@ -2618,12 +4458,54 @@
     "severity": "off"
   },
   "no-this-before-super": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-throw-literal": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-trailing-spaces": {
     "enabled": false,
@@ -2634,8 +4516,39 @@
     "severity": "off"
   },
   "no-undef": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-undef-init": {
     "enabled": true,
@@ -2667,8 +4580,39 @@
     ]
   },
   "no-unreachable": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-unreachable-loop": {
     "enabled": true,
@@ -2679,8 +4623,39 @@
     "severity": "error"
   },
   "no-unsafe-negation": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "no-unsafe-optional-chaining": {
     "enabled": true,
@@ -2710,6 +4685,17 @@
         "functions": false,
         "classes": false,
         "variables": false
+      }
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
       }
     ]
   },
@@ -2755,7 +4741,38 @@
   },
   "no-var": {
     "enabled": true,
-    "severity": "error"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-void": {
     "enabled": true,
@@ -2770,8 +4787,39 @@
     "severity": "off"
   },
   "no-with": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "nonblock-statement-body-position": {
     "enabled": false,
@@ -2831,7 +4879,12 @@
   },
   "prefer-const": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "options": [
+      {
+        "destructuring": "all"
+      }
+    ]
   },
   "prefer-destructuring": {
     "enabled": false,
@@ -2859,7 +4912,18 @@
   },
   "prefer-promise-reject-errors": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "prefer-reflect": {
     "enabled": false,
@@ -2875,12 +4939,74 @@
     ]
   },
   "prefer-rest-params": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "prefer-spread": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "prefer-template": {
     "enabled": false,
@@ -3592,212 +5718,784 @@
     "severity": "off"
   },
   "vitest/consistent-test-filename": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/consistent-test-it": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/expect-expect": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vitest/max-expects": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/max-nested-describe": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-alias-methods": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-commented-out-tests": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vitest/no-conditional-expect": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-conditional-in-test": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-conditional-tests": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-disabled-tests": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-done-callback": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-duplicate-hooks": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-focused-tests": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-hooks": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-identical-title": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vitest/no-import-node-test": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vitest/no-interpolation-in-snapshots": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-large-snapshots": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-mocks-import": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-restricted-matchers": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-restricted-vi-methods": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-standalone-expect": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-test-prefixes": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/no-test-return-statement": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-called-with": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-comparison-matcher": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-each": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-equality-matcher": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-expect-assertions": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-expect-resolves": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-hooks-in-order": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-hooks-on-top": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-lowercase-title": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-mock-promise-shorthand": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-snapshot-hint": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-spy-on": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-strict-equal": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-to-be": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-to-be-falsy": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-to-be-object": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-to-be-truthy": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-to-contain": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-to-have-length": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/prefer-todo": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/require-hook": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/require-local-test-context-for-concurrent-snapshots": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vitest/require-to-throw-message": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/require-top-level-describe": {
-    "enabled": true,
-    "severity": "warn"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vitest/valid-describe-callback": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vitest/valid-expect": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vitest/valid-title": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.test.ts",
+          "**/*.test.js",
+          "**/*.spec.ts",
+          "**/*.spec.js"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/array-bracket-newline": {
     "enabled": false,
@@ -3824,16 +6522,42 @@
     "severity": "warn"
   },
   "vue/block-lang": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
       {
-        "script": {
-          "lang": [
-            "ts"
-          ],
-          "allowNoLang": false
-        }
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "script": {
+              "lang": [
+                "ts"
+              ],
+              "allowNoLang": false
+            }
+          }
+        ]
+      },
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "script": {
+              "lang": [
+                "ts"
+              ],
+              "allowNoLang": false
+            }
+          }
+        ]
       }
     ]
   },
@@ -3870,8 +6594,38 @@
     "severity": "off"
   },
   "vue/comment-directive": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/component-api-style": {
     "enabled": false,
@@ -3974,8 +6728,38 @@
     "severity": "warn"
   },
   "vue/jsx-uses-vars": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "*.vue",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/key-spacing": {
     "enabled": false,
