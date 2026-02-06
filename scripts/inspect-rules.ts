@@ -1,8 +1,7 @@
-// eslint-disable-next-line import-x/no-deprecated
+// eslint-disable-next-line import-x/no-deprecated -- no stable alternative for flat config
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 
-// eslint-disable-next-line import-x/no-relative-parent-imports
-import config, { vue2, vue3, jest, vitest, graphql, react } from '../src/index'
+import config, { vue2, vue3, jest, vitest, graphql, react } from '#src/index'
 
 import type { Linter } from 'eslint'
 
@@ -26,7 +25,7 @@ interface RuleEntry {
 // Collect all available rules from built-in and plugins
 const availableRules = new Set<string>()
 
-// eslint-disable-next-line import-x/no-deprecated
+// eslint-disable-next-line import-x/no-deprecated -- no stable alternative for flat config
 for (const [name] of builtinRules) {
   availableRules.add(name)
 }

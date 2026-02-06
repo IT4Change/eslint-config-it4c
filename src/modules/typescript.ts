@@ -1,5 +1,5 @@
 import pluginNoCatchAll from 'eslint-plugin-no-catch-all'
-import tseslint from 'typescript-eslint'
+import { configs as tseslintConfigs } from 'typescript-eslint'
 
 import type { Linter } from 'eslint'
 
@@ -16,8 +16,7 @@ const config: Linter.Config[] = [
       },
     },
   },
-  // eslint-disable-next-line import-x/no-named-as-default-member
-  ...(tseslint.configs.strictTypeChecked as Linter.Config[]).map((cfg) => ({
+  ...(tseslintConfigs.strictTypeChecked as Linter.Config[]).map((cfg) => ({
     ...cfg,
     files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
   })),

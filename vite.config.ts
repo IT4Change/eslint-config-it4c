@@ -1,52 +1,57 @@
-import { readdirSync } from 'node:fs'
+import { readdir } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 const modulesDir = resolve(__dirname, 'src/modules')
-// eslint-disable-next-line n/no-sync
-const moduleEntries = readdirSync(modulesDir)
-  .filter((f) => f.endsWith('.ts'))
-  .reduce<Record<string, string>>((acc, f) => {
-    const name = f.replace('.ts', '')
-    acc[`modules/${name}`] = resolve(modulesDir, f)
-    return acc
-  }, {})
 
-export default defineConfig({
-  build: {
-    lib: {
-      entry: {
-        index: resolve(__dirname, 'src/index.ts'),
-        prettier: resolve(__dirname, 'src/prettier.ts'),
-        ...moduleEntries,
+export default defineConfig(async () => {
+  const files = await readdir(modulesDir)
+  const moduleEntries = files
+    .filter((f) => f.endsWith('.ts'))
+    .reduce<Record<string, string>>((acc, f) => {
+      const name = f.replace('.ts', '')
+      acc[`modules/${name}`] = resolve(modulesDir, f)
+      return acc
+    }, {})
+
+  return {
+    build: {
+      lib: {
+        entry: {
+          index: resolve(__dirname, 'src/index.ts'),
+          prettier: resolve(__dirname, 'src/prettier.ts'),
+          ...moduleEntries,
+        },
+        formats: ['es'],
+        fileName: (_: string, entryName: string) => `${entryName}.js`,
       },
-      formats: ['es'],
-      fileName: (_, entryName) => `${entryName}.js`,
-    },
-    rollupOptions: {
-      external: [
-        /^@eslint/,
-        /^@eslint-community/,
-        /^@graphql-eslint/,
-        /^@vue/,
-        /^@typescript-eslint/,
-        /^eslint/,
-        /^neostandard/,
-        /^typescript-eslint/,
-        /^prettier$/,
-      ],
-    },
-    outDir: 'dist',
-    emptyOutDir: true,
-  },
-  plugins: [
-    dts({
-      include: ['src/**/*.ts'],
+      rollupOptions: {
+        external: [
+          /^@eslint/,
+          /^@eslint-community/,
+          /^@graphql-eslint/,
+          /^@vue/,
+          /^@typescript-eslint/,
+          /^eslint/,
+          /^neostandard/,
+          /^typescript-eslint/,
+          /^prettier$/,
+        ],
+      },
       outDir: 'dist',
-      entryRoot: 'src',
-      tsconfigPath: './tsconfig.json',
-    }),
-  ],
+      emptyOutDir: true,
+    },
+    plugins: [
+      tsconfigPaths(),
+      dts({
+        include: ['src/**/*.ts'],
+        outDir: 'dist',
+        entryRoot: 'src',
+        tsconfigPath: './tsconfig.json',
+      }),
+    ],
+  }
 })
