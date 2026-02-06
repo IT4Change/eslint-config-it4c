@@ -15,6 +15,7 @@ interface RuleEntry {
   enabled: boolean
   severity: string | number
   options?: unknown[]
+  files?: string[]
   exceptions?: RuleException[]
 }
 
@@ -114,6 +115,14 @@ for (const [group, entries] of groups) {
     const url = getDocUrl(rule)
     const ruleCol = url ? `[${rule}](${url})` : rule
 
+    // Build severity column - include files restriction if present
+    let severityCol = `\`${entry.severity.toString()}\``
+    if (entry.files && entry.files.length > 0) {
+      const filesStr = entry.files.map((f) => `\`${f}\``).join(', ')
+      severityCol += ` (${filesStr})`
+    }
+
+    // Build exceptions column
     let exceptionsCol = ''
     if (entry.exceptions && entry.exceptions.length > 0) {
       const parts = entry.exceptions.map((ex) => {
@@ -123,7 +132,7 @@ for (const [group, entries] of groups) {
       exceptionsCol = parts.join('<br>')
     }
 
-    lines.push(`| ${ruleCol} | \`${entry.severity.toString()}\` | ${exceptionsCol} |`)
+    lines.push(`| ${ruleCol} | ${severityCol} | ${exceptionsCol} |`)
   }
 
   lines.push('')

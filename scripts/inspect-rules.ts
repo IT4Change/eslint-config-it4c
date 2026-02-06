@@ -26,6 +26,7 @@ interface RuleEntry {
   enabled: boolean
   severity: string | number
   options?: unknown[]
+  files?: string[]
   exceptions?: RuleException[]
 }
 
@@ -88,25 +89,58 @@ for (const name of [...availableRules].sort((a, b) => a.localeCompare(b))) {
   const globalSetting = globalRules.get(name)
   const fileSpecific = fileSpecificRules.get(name)
 
-  const severity = getSeverity(globalSetting)
-  const enabled = severity !== 'off' && severity !== 0
+  let severity: string | number
+  let options: unknown[] | undefined
+  let exceptions: RuleException[] | undefined
 
-  const entry: RuleEntry = {
-    enabled,
-    severity,
-  }
+  if (globalSetting !== undefined) {
+    // Has global rule - use it as base, file-specific as exceptions
+    severity = getSeverity(globalSetting)
+    options = getOptions(globalSetting)
 
-  const options = globalSetting ? getOptions(globalSetting) : undefined
-  if (options) {
-    entry.options = options
-  }
+    if (fileSpecific) {
+      const excs: RuleException[] = []
+      for (const { files, setting } of fileSpecific) {
+        const fileSeverity = getSeverity(setting)
+        if (fileSeverity !== severity) {
+          const exception: RuleException = {
+            files,
+            severity: fileSeverity,
+          }
+          const fileOptions = getOptions(setting)
+          if (fileOptions) {
+            exception.options = fileOptions
+          }
+          excs.push(exception)
+        }
+      }
+      if (excs.length > 0) {
+        exceptions = excs
+      }
+    }
+  } else if (fileSpecific && fileSpecific.length > 0) {
+    // No global rule, only file-specific - treat file-specific as enabled with files restriction
+    // Use the first file-specific rule as the primary definition
+    const primary = fileSpecific[0]
+    severity = getSeverity(primary.setting)
+    options = getOptions(primary.setting)
 
-  // Add exceptions where file-specific severity differs from global
-  if (fileSpecific) {
-    const exceptions: RuleException[] = []
-    for (const { files, setting } of fileSpecific) {
-      const fileSeverity = getSeverity(setting)
-      if (fileSeverity !== severity) {
+    // The files restriction is part of the main entry, not an exception
+    const entry: RuleEntry = {
+      enabled: severity !== 'off' && severity !== 0,
+      severity,
+      files: primary.files,
+    }
+    if (options) {
+      entry.options = options
+    }
+
+    // Additional file-specific rules with different config become exceptions
+    if (fileSpecific.length > 1) {
+      const excs: RuleException[] = []
+      for (let i = 1; i < fileSpecific.length; i++) {
+        const { files, setting } = fileSpecific[i]
+        const fileSeverity = getSeverity(setting)
         const exception: RuleException = {
           files,
           severity: fileSeverity,
@@ -115,12 +149,31 @@ for (const name of [...availableRules].sort((a, b) => a.localeCompare(b))) {
         if (fileOptions) {
           exception.options = fileOptions
         }
-        exceptions.push(exception)
+        excs.push(exception)
+      }
+      if (excs.length > 0) {
+        entry.exceptions = excs
       }
     }
-    if (exceptions.length > 0) {
-      entry.exceptions = exceptions
-    }
+
+    result.set(name, entry)
+    continue
+  } else {
+    severity = 'off'
+  }
+
+  const enabled = severity !== 'off' && severity !== 0
+
+  const entry: RuleEntry = {
+    enabled,
+    severity,
+  }
+
+  if (options) {
+    entry.options = options
+  }
+  if (exceptions) {
+    entry.exceptions = exceptions
   }
 
   result.set(name, entry)
