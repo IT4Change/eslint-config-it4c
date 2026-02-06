@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.2](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.7.1...eslint-config-it4c-v0.7.2) (2026-02-06)
+
+
+### Bug Fixes
+
+* **eslint:** no-unpublished-import exception ([#39](https://github.com/IT4Change/eslint-config-it4c/issues/39)) ([7ca1d89](https://github.com/IT4Change/eslint-config-it4c/commit/7ca1d893c938c735c0e552cae267f474881814ba))
+
 ## [0.7.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.7.0...eslint-config-it4c-v0.7.1) (2026-02-05)
 
 
