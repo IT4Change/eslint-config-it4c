@@ -139,6 +139,7 @@ for (const name of [...availableRules].sort((a, b) => a.localeCompare(b))) {
     if (fileSpecific.length > 1) {
       const excs: RuleException[] = []
       for (let i = 1; i < fileSpecific.length; i++) {
+        // eslint-disable-next-line security/detect-object-injection -- index is controlled by loop
         const { files, setting } = fileSpecific[i]
         const fileSeverity = getSeverity(setting)
         const exception: RuleException = {
