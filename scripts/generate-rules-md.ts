@@ -73,10 +73,12 @@ for (const [rule, entry] of Object.entries(rules)) {
     groupKey = prefix
   }
 
-  if (!groups.has(groupKey)) {
-    groups.set(groupKey, [])
+  const existing = groups.get(groupKey)
+  if (existing) {
+    existing.push([rule, entry])
+  } else {
+    groups.set(groupKey, [[rule, entry]])
   }
-  groups.get(groupKey)!.push([rule, entry])
 }
 
 // Generate markdown files per plugin in docs/
