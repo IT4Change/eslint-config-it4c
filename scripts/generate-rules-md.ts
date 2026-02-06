@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs'
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -11,10 +11,8 @@ interface RuleEntry {
   options?: unknown[]
 }
 
-const rules = JSON.parse(readFileSync(resolve(rootDir, 'rules.json'), 'utf-8')) as Record<
-  string,
-  RuleEntry
->
+const rulesPath = resolve(rootDir, 'rules.json')
+const rules = JSON.parse(await readFile(rulesPath, 'utf-8')) as Record<string, RuleEntry>
 
 function getDocUrl(rule: string): string | null {
   const urlMap: Record<string, (name: string) => string> = {
@@ -83,8 +81,8 @@ for (const [rule, entry] of Object.entries(rules)) {
 
 // Generate markdown files per plugin in docs/
 const docsDir = resolve(rootDir, 'docs')
-rmSync(docsDir, { recursive: true, force: true })
-mkdirSync(docsDir, { recursive: true })
+await rm(docsDir, { recursive: true, force: true })
+await mkdir(docsDir, { recursive: true })
 
 const indexLines: string[] = [
   '# Rules',
@@ -113,7 +111,8 @@ for (const [group, entries] of groups) {
 
   lines.push('')
 
-  writeFileSync(resolve(docsDir, fileName), lines.join('\n'))
+  const filePath = resolve(docsDir, fileName)
+  await writeFile(filePath, lines.join('\n'))
   const active = entries.filter(([, e]) => e.enabled).length
   indexLines.push(
     `- [${group}](docs/${fileName}) (${active.toString()}/${entries.length.toString()})`,
@@ -122,6 +121,7 @@ for (const [group, entries] of groups) {
 
 indexLines.push('')
 
-writeFileSync(resolve(rootDir, 'RULES.md'), indexLines.join('\n'))
+const rulesMarkdownPath = resolve(rootDir, 'RULES.md')
+await writeFile(rulesMarkdownPath, indexLines.join('\n'))
 // eslint-disable-next-line no-console
 console.log('RULES.md and docs/ generated')
