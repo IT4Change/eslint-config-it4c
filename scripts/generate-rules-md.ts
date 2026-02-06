@@ -111,8 +111,8 @@ for (const [group, entries] of groups) {
 
   lines.push('')
 
-  const filePath = resolve(docsDir, fileName)
-  await writeFile(filePath, lines.join('\n'))
+  // eslint-disable-next-line security/detect-non-literal-fs-filename -- path is derived from rules.json keys, not user input
+  await writeFile(resolve(docsDir, fileName), lines.join('\n'))
   const active = entries.filter(([, e]) => e.enabled).length
   indexLines.push(
     `- [${group}](docs/${fileName}) (${active.toString()}/${entries.length.toString()})`,
