@@ -11,10 +11,10 @@ interface RuleEntry {
   options?: unknown[]
 }
 
-const rules = JSON.parse(
-  // eslint-disable-next-line n/no-sync
-  readFileSync(resolve(rootDir, 'rules.json'), 'utf-8'),
-) as Record<string, RuleEntry>
+const rules = JSON.parse(readFileSync(resolve(rootDir, 'rules.json'), 'utf-8')) as Record<
+  string,
+  RuleEntry
+>
 
 function getDocUrl(rule: string): string | null {
   const urlMap: Record<string, (name: string) => string> = {
@@ -76,15 +76,12 @@ for (const [rule, entry] of Object.entries(rules)) {
   if (!groups.has(groupKey)) {
     groups.set(groupKey, [])
   }
-  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
   groups.get(groupKey)!.push([rule, entry])
 }
 
 // Generate markdown files per plugin in docs/
 const docsDir = resolve(rootDir, 'docs')
-// eslint-disable-next-line n/no-sync
 rmSync(docsDir, { recursive: true, force: true })
-// eslint-disable-next-line n/no-sync
 mkdirSync(docsDir, { recursive: true })
 
 const indexLines: string[] = [
@@ -114,7 +111,6 @@ for (const [group, entries] of groups) {
 
   lines.push('')
 
-  // eslint-disable-next-line security/detect-non-literal-fs-filename, n/no-sync
   writeFileSync(resolve(docsDir, fileName), lines.join('\n'))
   const active = entries.filter(([, e]) => e.enabled).length
   indexLines.push(
@@ -124,7 +120,6 @@ for (const [group, entries] of groups) {
 
 indexLines.push('')
 
-// eslint-disable-next-line n/no-sync
 writeFileSync(resolve(rootDir, 'RULES.md'), indexLines.join('\n'))
 // eslint-disable-next-line no-console
 console.log('RULES.md and docs/ generated')

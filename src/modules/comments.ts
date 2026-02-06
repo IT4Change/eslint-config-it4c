@@ -1,12 +1,13 @@
-import pluginComments from '@eslint-community/eslint-plugin-eslint-comments'
+import pluginComments, {
+  configs as commentsConfigs,
+} from '@eslint-community/eslint-plugin-eslint-comments'
 
 import type { Linter } from 'eslint'
 
 const config: Linter.Config[] = [
   {
     plugins: { '@eslint-community/eslint-comments': pluginComments },
-    // eslint-disable-next-line import-x/no-named-as-default-member
-    rules: (pluginComments.configs.recommended as { rules: Linter.RulesRecord }).rules,
+    rules: (commentsConfigs.recommended as { rules: Linter.RulesRecord }).rules,
   },
   {
     rules: {
