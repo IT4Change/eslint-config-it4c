@@ -32,6 +32,13 @@ const config: Linter.Config[] = [
       'n/shebang': 'error',
     },
   },
+  {
+    // eslint.config.ts and alike often contain imports from devDependencies
+    files: ['*.config.{js,mjs,cjs,ts,mts,cts}'],
+    rules: {
+      'n/no-unpublished-import': 'off',
+    },
+  },
 ]
 
 export default config

@@ -2015,8 +2015,8 @@
     "severity": "off"
   },
   "n/no-unpublished-import": {
-    "enabled": true,
-    "severity": "error"
+    "enabled": false,
+    "severity": "off"
   },
   "n/no-unpublished-require": {
     "enabled": true,
