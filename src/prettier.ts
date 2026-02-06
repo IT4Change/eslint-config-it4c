@@ -1,4 +1,3 @@
-// eslint-disable-next-line import-x/no-relative-parent-imports
-import prettier from '../prettier.config'
+import prettier from '#root/prettier.config'
 
 export default prettier

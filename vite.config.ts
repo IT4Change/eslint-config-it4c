@@ -3,6 +3,7 @@ import { resolve } from 'node:path'
 
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 const modulesDir = resolve(__dirname, 'src/modules')
 
@@ -44,6 +45,7 @@ export default defineConfig(async () => {
       emptyOutDir: true,
     },
     plugins: [
+      tsconfigPaths(),
       dts({
         include: ['src/**/*.ts'],
         outDir: 'dist',
