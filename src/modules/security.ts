@@ -1,7 +1,8 @@
-import { configs as securityConfigs } from 'eslint-plugin-security'
+import pluginSecurity from 'eslint-plugin-security'
 
 import type { Linter } from 'eslint'
 
-const config: Linter.Config[] = [securityConfigs.recommended]
+// eslint-disable-next-line import-x/no-named-as-default-member -- no named export available
+const config: Linter.Config[] = [pluginSecurity.configs.recommended]
 
 export default config
