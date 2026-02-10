@@ -13,6 +13,8 @@ const config: Linter.Config[] = [
       ...(pluginVitest.configs.all.rules as Linter.RulesRecord),
       // allow beforeEach, afterEach, etc. in tests
       'vitest/no-hooks': 'off',
+      // requiring expect.assertions() or expect.hasAssertions() in every test is too strict
+      'vitest/prefer-expect-assertions': 'off',
     },
   },
 ]
