@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.9.0...eslint-config-it4c-v0.10.0) (2026-02-10)
+
+
+### Features
+
+* **eslint:** switch vitest plugin ([#54](https://github.com/IT4Change/eslint-config-it4c/issues/54)) ([fb797f0](https://github.com/IT4Change/eslint-config-it4c/commit/fb797f0fe86cab16fc83a037d1de3932f9b67a73))
+
 ## [0.9.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.8.0...eslint-config-it4c-v0.9.0) (2026-02-10)
 
 
