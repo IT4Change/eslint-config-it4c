@@ -11,6 +11,12 @@ const config: Linter.Config[] = [
     rules: {
       ...(pluginVitest.configs.recommended.rules as Linter.RulesRecord),
       ...(pluginVitest.configs.all.rules as Linter.RulesRecord),
+      // allow beforeEach, afterEach, etc. in tests
+      'vitest/no-hooks': 'off',
+      // requiring expect.assertions() or expect.hasAssertions() in every test is too strict
+      'vitest/prefer-expect-assertions': 'off',
+      // enforce *.spec.ts/js naming convention
+      'vitest/consistent-test-filename': ['error', { pattern: '.*\\.spec\\.[tj]sx?$' }],
     },
   },
 ]

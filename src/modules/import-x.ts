@@ -46,7 +46,12 @@ const config: Linter.Config[] = [
       'import-x/no-duplicates': 'error',
       'import-x/no-named-default': 'error',
       'import-x/no-namespace': 'error',
-      'import-x/no-unassigned-import': 'error',
+      'import-x/no-unassigned-import': [
+        'error',
+        {
+          allow: ['**/*.css', '**/*.scss'],
+        },
+      ],
       'import-x/order': [
         'error',
         {
