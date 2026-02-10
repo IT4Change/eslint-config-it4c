@@ -34,6 +34,7 @@ export default defineConfig(async () => {
           /^@eslint-community/,
           /^@graphql-eslint/,
           /^@vue/,
+          /^@vitest/,
           /^@typescript-eslint/,
           /^eslint/,
           /^neostandard/,

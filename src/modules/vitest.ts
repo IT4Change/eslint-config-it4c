@@ -1,4 +1,4 @@
-import pluginVitest from 'eslint-plugin-vitest'
+import pluginVitest from '@vitest/eslint-plugin'
 
 import type { Linter } from 'eslint'
 
