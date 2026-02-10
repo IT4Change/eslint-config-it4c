@@ -4,7 +4,16 @@ const config: Linter.Config[] = [
   {
     rules: {
       'n/exports-style': 'error',
-      'n/file-extension-in-import': ['error', 'never'],
+      'n/file-extension-in-import': [
+        'error',
+        'never',
+        {
+          '.vue': 'always',
+          '.json': 'always',
+          '.css': 'always',
+          '.scss': 'always',
+        },
+      ],
       'n/global-require': 'error',
       'n/no-callback-literal': 'error',
       'n/no-extraneous-import': 'off',
