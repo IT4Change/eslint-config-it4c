@@ -5173,6 +5173,16 @@
     "enabled": false,
     "severity": "off"
   },
+  "vitest/consistent-each-for": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
   "vitest/consistent-test-filename": {
     "enabled": true,
     "severity": "error",
@@ -5198,9 +5208,29 @@
       "**/*.spec.js"
     ]
   },
+  "vitest/consistent-vitest-vi": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
   "vitest/expect-expect": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/hoisted-apis-on-top": {
+    "enabled": true,
+    "severity": "warn",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5240,7 +5270,7 @@
   },
   "vitest/no-commented-out-tests": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5289,14 +5319,8 @@
     ]
   },
   "vitest/no-done-callback": {
-    "enabled": true,
-    "severity": "warn",
-    "files": [
-      "**/*.test.ts",
-      "**/*.test.js",
-      "**/*.spec.ts",
-      "**/*.spec.js"
-    ]
+    "enabled": false,
+    "severity": "off"
   },
   "vitest/no-duplicate-hooks": {
     "enabled": true,
@@ -5330,7 +5354,7 @@
   },
   "vitest/no-identical-title": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5340,7 +5364,17 @@
   },
   "vitest/no-import-node-test": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/no-importing-vitest-globals": {
+    "enabled": false,
+    "severity": "off",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5428,6 +5462,126 @@
       "**/*.spec.js"
     ]
   },
+  "vitest/no-unneeded-async-expect-function": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-after-all-blocks": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-after-each-blocks": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-all": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-before-all-blocks": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-before-each-blocks": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-describe-blocks": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-expect-groups": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/padding-around-test-blocks": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-called-exactly-once-with": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-called-once": {
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-called-times": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
   "vitest/prefer-called-with": {
     "enabled": true,
     "severity": "warn",
@@ -5439,6 +5593,16 @@
     ]
   },
   "vitest/prefer-comparison-matcher": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-describe-function-title": {
     "enabled": true,
     "severity": "warn",
     "files": [
@@ -5488,6 +5652,16 @@
       "**/*.spec.js"
     ]
   },
+  "vitest/prefer-expect-type-of": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
   "vitest/prefer-hooks-in-order": {
     "enabled": true,
     "severity": "warn",
@@ -5499,6 +5673,26 @@
     ]
   },
   "vitest/prefer-hooks-on-top": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-import-in-mock": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-importing-vitest-globals": {
     "enabled": true,
     "severity": "warn",
     "files": [
@@ -5528,6 +5722,10 @@
       "**/*.spec.js"
     ]
   },
+  "vitest/prefer-mock-return-shorthand": {
+    "enabled": false,
+    "severity": "off"
+  },
   "vitest/prefer-snapshot-hint": {
     "enabled": true,
     "severity": "warn",
@@ -5539,6 +5737,16 @@
     ]
   },
   "vitest/prefer-spy-on": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-strict-boolean-matchers": {
     "enabled": true,
     "severity": "warn",
     "files": [
@@ -5569,8 +5777,8 @@
     ]
   },
   "vitest/prefer-to-be-falsy": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5589,6 +5797,16 @@
     ]
   },
   "vitest/prefer-to-be-truthy": {
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/prefer-to-contain": {
     "enabled": true,
     "severity": "warn",
     "files": [
@@ -5598,7 +5816,7 @@
       "**/*.spec.js"
     ]
   },
-  "vitest/prefer-to-contain": {
+  "vitest/prefer-to-have-been-called-times": {
     "enabled": true,
     "severity": "warn",
     "files": [
@@ -5628,6 +5846,26 @@
       "**/*.spec.js"
     ]
   },
+  "vitest/prefer-vi-mocked": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/require-awaited-expect-poll": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
   "vitest/require-hook": {
     "enabled": true,
     "severity": "warn",
@@ -5640,7 +5878,27 @@
   },
   "vitest/require-local-test-context-for-concurrent-snapshots": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/require-mock-type-parameters": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/require-test-timeout": {
+    "enabled": false,
+    "severity": "off",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5670,7 +5928,7 @@
   },
   "vitest/valid-describe-callback": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5680,7 +5938,17 @@
   },
   "vitest/valid-expect": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
+  "vitest/valid-expect-in-promise": {
+    "enabled": true,
+    "severity": "warn",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
@@ -5690,13 +5958,17 @@
   },
   "vitest/valid-title": {
     "enabled": true,
-    "severity": "error",
+    "severity": "warn",
     "files": [
       "**/*.test.ts",
       "**/*.test.js",
       "**/*.spec.ts",
       "**/*.spec.js"
     ]
+  },
+  "vitest/warn-todo": {
+    "enabled": false,
+    "severity": "off"
   },
   "vue/array-bracket-newline": {
     "enabled": false,
