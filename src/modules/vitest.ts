@@ -15,6 +15,8 @@ const config: Linter.Config[] = [
       'vitest/no-hooks': 'off',
       // requiring expect.assertions() or expect.hasAssertions() in every test is too strict
       'vitest/prefer-expect-assertions': 'off',
+      // enforce *.spec.ts/js naming convention
+      'vitest/consistent-test-filename': ['error', { pattern: '.*\\.spec\\.[tj]sx?$' }],
     },
   },
 ]
