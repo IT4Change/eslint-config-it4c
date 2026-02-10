@@ -11,6 +11,8 @@ const config: Linter.Config[] = [
     rules: {
       ...(pluginVitest.configs.recommended.rules as Linter.RulesRecord),
       ...(pluginVitest.configs.all.rules as Linter.RulesRecord),
+      // allow beforeEach, afterEach, etc. in tests
+      'vitest/no-hooks': 'off',
     },
   },
 ]
