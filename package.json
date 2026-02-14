@@ -27,8 +27,14 @@
     "inspect-rules": "tsx scripts/inspect-rules.ts",
     "inspect-rules:check": "tsx scripts/inspect-rules.ts | diff rules.json -",
     "generate-rules-md": "tsx scripts/generate-rules-md.ts",
-    "update-rules": "tsx scripts/inspect-rules.ts > rules.json && npm run generate-rules-md"
+    "update-rules": "tsx scripts/inspect-rules.ts > rules.json && npm run generate-rules-md",
+    "size": "size-limit"
   },
+  "size-limit": [
+    { "path": "dist/index.js", "limit": "2 kB" },
+    { "path": "dist/prettier.js", "limit": "1 kB" },
+    { "path": "dist/modules/*.js", "limit": "5 kB" }
+  ],
   "peerDependencies": {
     "eslint": ">= 9"
   },
@@ -36,6 +42,7 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.6.0",
     "@eslint/js": "^9.39.2",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
+    "@vitest/eslint-plugin": "^1.6.7",
     "@vue/eslint-config-typescript": "^14.6.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
@@ -45,15 +52,16 @@
     "eslint-plugin-no-catch-all": "^1.1.0",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-security": "^3.0.1",
-    "@vitest/eslint-plugin": "^1.6.7",
     "eslint-plugin-vue": "^10.7.0",
     "eslint-plugin-yml": "^3.0.0",
     "neostandard": "^0.12.2",
     "typescript-eslint": "^8.54.0"
   },
   "devDependencies": {
+    "@size-limit/file": "^12.0.0",
     "@types/eslint-plugin-security": "^3.0.1",
     "eslint": "^9.39.2",
+    "size-limit": "^12.0.0",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vite": "^7.3.1",
