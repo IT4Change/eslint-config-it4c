@@ -2,9 +2,9 @@ import pluginComments, {
   configs as commentsConfigs,
 } from '@eslint-community/eslint-plugin-eslint-comments'
 
-import type { Linter } from 'eslint'
-
 import { defaultFiles as files } from '../files'
+
+import type { Linter } from 'eslint'
 
 const config: Linter.Config[] = [
   {

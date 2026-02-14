@@ -1,8 +1,8 @@
 import eslintJs from '@eslint/js'
 
-import type { Linter } from 'eslint'
-
 import { defaultFiles as files } from '../files'
+
+import type { Linter } from 'eslint'
 
 const config: Linter.Config[] = [
   { ...eslintJs.configs.recommended, files },
