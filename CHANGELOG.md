@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.2](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.11.1...eslint-config-it4c-v0.11.2) (2026-02-14)
+
+
+### Bug Fixes
+
+* **eslint:** exlcude playwright files & typecheck for vitest ([#65](https://github.com/IT4Change/eslint-config-it4c/issues/65)) ([3d683c6](https://github.com/IT4Change/eslint-config-it4c/commit/3d683c66457b914ee9048fce47c8b2630ad5a43b))
+
 ## [0.11.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.11.0...eslint-config-it4c-v0.11.1) (2026-02-14)
 
 
