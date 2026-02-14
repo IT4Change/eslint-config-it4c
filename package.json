@@ -31,9 +31,18 @@
     "size": "size-limit"
   },
   "size-limit": [
-    { "path": "dist/index.js", "limit": "2 kB" },
-    { "path": "dist/prettier.js", "limit": "1 kB" },
-    { "path": "dist/modules/*.js", "limit": "5 kB" }
+    {
+      "path": "dist/index.js",
+      "limit": "2 kB"
+    },
+    {
+      "path": "dist/prettier.js",
+      "limit": "1 kB"
+    },
+    {
+      "path": "dist/modules/*.js",
+      "limit": "5 kB"
+    }
   ],
   "peerDependencies": {
     "eslint": ">= 9"
