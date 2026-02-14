@@ -1,10 +1,13 @@
 import eslintJs from '@eslint/js'
 
+import { defaultFiles as files } from '#src/files'
+
 import type { Linter } from 'eslint'
 
 const config: Linter.Config[] = [
-  eslintJs.configs.recommended,
+  { ...eslintJs.configs.recommended, files },
   {
+    files,
     rules: {
       'no-console': 'error',
       'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
