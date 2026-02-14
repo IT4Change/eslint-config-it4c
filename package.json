@@ -68,7 +68,7 @@
     "eslint-plugin-vue": "^10.7.0",
     "eslint-plugin-yml": "^3.0.0",
     "neostandard": "^0.12.2",
-    "typescript-eslint": "^8.54.0"
+    "typescript-eslint": "^8.55.0"
   },
   "devDependencies": {
     "@size-limit/file": "^12.0.0",
