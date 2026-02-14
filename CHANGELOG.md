@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.11.0...eslint-config-it4c-v0.11.1) (2026-02-14)
+
+
+### Bug Fixes
+
+* **eslint:** fix json and yaml matcher to only match appropriate files on all configs ([#63](https://github.com/IT4Change/eslint-config-it4c/issues/63)) ([eccefaf](https://github.com/IT4Change/eslint-config-it4c/commit/eccefaf894c78c9c9367fe60861d680f2e567722))
+
 ## [0.11.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.10.0...eslint-config-it4c-v0.11.0) (2026-02-14)
 
 
