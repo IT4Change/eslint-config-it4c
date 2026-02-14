@@ -1,14 +1,17 @@
 import { flatConfigs as importXFlatConfigs } from 'eslint-plugin-import-x'
 import neostandard from 'neostandard'
 
+import { defaultFiles as files } from '#src/files'
+
 import type { Linter } from 'eslint'
 
 const { plugins: _, ...importXTypescript } = importXFlatConfigs.typescript
 
 const config: Linter.Config[] = [
-  ...neostandard({ noStyle: true }),
-  importXTypescript as Linter.Config,
+  ...neostandard({ noStyle: true }).map((cfg) => (cfg.files ? cfg : { ...cfg, files })),
+  { ...importXTypescript, files } as Linter.Config,
   {
+    files,
     rules: {
       'import-x/export': 'error',
       'import-x/no-empty-named-blocks': 'error',

@@ -18,6 +18,10 @@
       "default": "./dist/modules/*.js"
     }
   },
+  "imports": {
+    "#src/*": "./src/*",
+    "#root/*": "./*"
+  },
   "files": [
     "dist"
   ],

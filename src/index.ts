@@ -18,6 +18,8 @@ import yaml from './modules/yaml'
 
 import type { Linter } from 'eslint'
 
+export { defaultFiles } from './files'
+
 // Export all modules individually
 export {
   // Base modules

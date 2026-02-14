@@ -2,27 +2,50 @@
   "@eslint-community/eslint-comments/disable-enable-pair": {
     "enabled": true,
     "severity": "error",
-    "options": [
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
       {
-        "allowWholeFile": true
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "allowWholeFile": true
+          }
+        ]
       }
     ]
   },
   "@eslint-community/eslint-comments/no-aggregating-enable": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "@eslint-community/eslint-comments/no-duplicate-disable": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "@eslint-community/eslint-comments/no-restricted-disable": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "@eslint-community/eslint-comments/no-unlimited-disable": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "@eslint-community/eslint-comments/no-unused-disable": {
     "enabled": false,
@@ -30,7 +53,10 @@
   },
   "@eslint-community/eslint-comments/no-unused-enable": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "@eslint-community/eslint-comments/no-use": {
     "enabled": false,
@@ -1567,6 +1593,9 @@
   "accessor-pairs": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "setWithoutGet": true,
@@ -1576,15 +1605,24 @@
   },
   "array-bracket-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "array-bracket-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "array-callback-return": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "allowImplicit": false,
@@ -1594,19 +1632,31 @@
   },
   "array-element-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "arrow-body-style": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "arrow-parens": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "arrow-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "block-scoped-var": {
     "enabled": false,
@@ -1614,11 +1664,17 @@
   },
   "block-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "brace-style": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "callback-return": {
     "enabled": false,
@@ -1627,6 +1683,9 @@
   "camelcase": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "allow": [
@@ -1647,15 +1706,24 @@
   },
   "comma-dangle": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "comma-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "comma-style": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "complexity": {
     "enabled": false,
@@ -1663,7 +1731,10 @@
   },
   "computed-property-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "consistent-return": {
     "enabled": false,
@@ -1676,6 +1747,9 @@
   "constructor-super": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -1685,6 +1759,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -1709,8 +1789,22 @@
     ]
   },
   "curly": {
-    "enabled": false,
-    "severity": 0
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "options": [
+      "multi-line"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": 0
+      }
+    ]
   },
   "default-case": {
     "enabled": false,
@@ -1718,7 +1812,10 @@
   },
   "default-case-last": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "default-param-last": {
     "enabled": false,
@@ -1726,19 +1823,44 @@
   },
   "dot-location": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "dot-notation": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "options": [
+      {
+        "allowKeywords": true
+      }
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "eol-last": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "eqeqeq": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "always",
       {
@@ -1748,11 +1870,17 @@
   },
   "for-direction": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "func-call-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "func-name-matching": {
     "enabled": false,
@@ -1768,19 +1896,31 @@
   },
   "function-call-argument-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "function-paren-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "generator-star-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "getter-return": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -1847,15 +1987,24 @@
   },
   "implicit-arrow-linebreak": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/consistent-type-specifier-style": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/default": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/dynamic-import-chunkname": {
     "enabled": false,
@@ -1863,15 +2012,32 @@
   },
   "import-x/export": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "import-x/exports-last": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/extensions": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "never",
       {
@@ -1881,11 +2047,25 @@
   },
   "import-x/first": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "import-x/group-exports": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/imports-first": {
     "enabled": false,
@@ -1897,83 +2077,182 @@
   },
   "import-x/named": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "import-x/namespace": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/newline-after-import": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-absolute-path": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "options": [
+      {
+        "esmodule": true,
+        "commonjs": true,
+        "amd": false
+      }
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "import-x/no-amd": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-anonymous-default-export": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-commonjs": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-cycle": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-default-export": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-deprecated": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-duplicates": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "import-x/no-dynamic-require": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-empty-named-blocks": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-extraneous-dependencies": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-import-module-exports": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-internal-modules": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-mutable-exports": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-named-as-default": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-named-as-default-member": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-named-default": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "import-x/no-named-export": {
     "enabled": false,
@@ -1981,19 +2260,31 @@
   },
   "import-x/no-namespace": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-nodejs-modules": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-relative-packages": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-relative-parent-imports": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "ignore": [
@@ -2012,11 +2303,17 @@
   },
   "import-x/no-self-import": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-unassigned-import": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "allow": [
@@ -2028,23 +2325,46 @@
   },
   "import-x/no-unresolved": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-unused-modules": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-useless-path-segments": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/no-webpack-loader-syntax": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "import-x/order": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "groups": [
@@ -2075,7 +2395,10 @@
   },
   "import-x/prefer-default-export": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "import-x/prefer-namespace-import": {
     "enabled": false,
@@ -2083,15 +2406,24 @@
   },
   "import-x/unambiguous": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "indent": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "indent-legacy": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "init-declarations": {
     "enabled": false,
@@ -2685,15 +3017,24 @@
   },
   "jsx-quotes": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "key-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "keyword-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "line-comment-position": {
     "enabled": false,
@@ -2701,11 +3042,17 @@
   },
   "linebreak-style": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "lines-around-comment": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "lines-around-directive": {
     "enabled": false,
@@ -2729,7 +3076,10 @@
   },
   "max-len": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "max-lines": {
     "enabled": false,
@@ -2753,7 +3103,10 @@
   },
   "max-statements-per-line": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "multiline-comment-style": {
     "enabled": false,
@@ -2761,7 +3114,10 @@
   },
   "multiline-ternary": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/callback-return": {
     "enabled": false,
@@ -2769,11 +3125,17 @@
   },
   "n/exports-style": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/file-extension-in-import": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "never",
       {
@@ -2786,11 +3148,17 @@
   },
   "n/global-require": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/handle-callback-err": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "^(err|error)$"
     ]
@@ -2801,19 +3169,47 @@
   },
   "n/no-callback-literal": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "n/no-deprecated-api": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "n/no-exports-assign": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-extraneous-import": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-extraneous-require": {
     "enabled": false,
@@ -2821,11 +3217,17 @@
   },
   "n/no-hide-core-modules": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-missing-import": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-missing-require": {
     "enabled": false,
@@ -2833,19 +3235,47 @@
   },
   "n/no-mixed-requires": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-new-require": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "n/no-path-concat": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "n/no-process-env": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-process-exit": {
     "enabled": false,
@@ -2853,15 +3283,24 @@
   },
   "n/no-restricted-import": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-restricted-require": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-sync": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-top-level-await": {
     "enabled": false,
@@ -2874,6 +3313,9 @@
   "n/no-unpublished-import": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -2888,7 +3330,10 @@
   },
   "n/no-unpublished-require": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/no-unsupported-features/es-builtins": {
     "enabled": false,
@@ -2904,55 +3349,94 @@
   },
   "n/prefer-global/buffer": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-global/console": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-global/process": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-global/text-decoder": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-global/text-encoder": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-global/url": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-global/url-search-params": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-node-protocol": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-promises/dns": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/prefer-promises/fs": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/process-exit-as-throw": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "n/shebang": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "new-cap": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "newIsCap": true,
@@ -2963,7 +3447,10 @@
   },
   "new-parens": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "newline-after-var": {
     "enabled": false,
@@ -2975,7 +3462,10 @@
   },
   "newline-per-chained-call": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-alert": {
     "enabled": false,
@@ -2983,11 +3473,30 @@
   },
   "no-array-constructor": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-async-promise-executor": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-await-in-loop": {
     "enabled": false,
@@ -3003,11 +3512,25 @@
   },
   "no-caller": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-case-declarations": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-catch-all/no-catch-all": {
     "enabled": true,
@@ -3020,6 +3543,9 @@
   "no-class-assign": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3029,6 +3555,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3054,23 +3586,54 @@
   },
   "no-compare-neg-zero": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-cond-assign": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-confusing-arrow": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-console": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-const-assign": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3080,6 +3643,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3105,14 +3674,28 @@
   },
   "no-constant-binary-expression": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-constant-condition": {
     "enabled": true,
     "severity": "error",
-    "options": [
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
       {
-        "checkLoops": false
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "checkLoops": false
+          }
+        ]
       }
     ]
   },
@@ -3126,15 +3709,48 @@
   },
   "no-control-regex": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-debugger": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-delete-var": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-div-regex": {
     "enabled": false,
@@ -3143,6 +3759,9 @@
   "no-dupe-args": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3152,6 +3771,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3178,6 +3803,9 @@
   "no-dupe-class-members": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3187,6 +3815,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3212,11 +3846,17 @@
   },
   "no-dupe-else-if": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-dupe-keys": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3226,6 +3866,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3251,7 +3897,18 @@
   },
   "no-duplicate-case": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-duplicate-imports": {
     "enabled": false,
@@ -3264,15 +3921,37 @@
   "no-empty": {
     "enabled": true,
     "severity": "error",
-    "options": [
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
       {
-        "allowEmptyCatch": true
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "allowEmptyCatch": true
+          }
+        ]
       }
     ]
   },
   "no-empty-character-class": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-empty-function": {
     "enabled": false,
@@ -3280,11 +3959,25 @@
   },
   "no-empty-pattern": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-empty-static-block": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-eq-null": {
     "enabled": false,
@@ -3292,23 +3985,54 @@
   },
   "no-eval": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-ex-assign": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-extend-native": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-extra-bind": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-extra-boolean-cast": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-extra-label": {
     "enabled": false,
@@ -3316,23 +4040,46 @@
   },
   "no-extra-parens": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-extra-semi": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-fallthrough": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-floating-decimal": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-func-assign": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3342,6 +4089,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3367,7 +4120,18 @@
   },
   "no-global-assign": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-implicit-coercion": {
     "enabled": false,
@@ -3378,23 +4142,29 @@
     "severity": "off"
   },
   "no-implied-eval": {
-    "enabled": true,
-    "severity": "error",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts"
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
         ],
-        "severity": "off"
+        "severity": "error"
       }
     ]
   },
   "no-import-assign": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3404,6 +4174,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3437,7 +4213,18 @@
   },
   "no-invalid-regexp": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-invalid-this": {
     "enabled": false,
@@ -3446,7 +4233,16 @@
   "no-irregular-whitespace": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      },
       {
         "files": [
           "*.yaml",
@@ -3460,7 +4256,10 @@
   },
   "no-iterator": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-label-var": {
     "enabled": false,
@@ -3469,6 +4268,9 @@
   "no-labels": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "allowLoop": false,
@@ -3478,7 +4280,10 @@
   },
   "no-lone-blocks": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-lonely-if": {
     "enabled": false,
@@ -3496,7 +4301,18 @@
   },
   "no-loss-of-precision": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-magic-numbers": {
     "enabled": false,
@@ -3504,11 +4320,25 @@
   },
   "no-misleading-character-class": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-mixed-operators": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-mixed-requires": {
     "enabled": false,
@@ -3516,7 +4346,10 @@
   },
   "no-mixed-spaces-and-tabs": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-multi-assign": {
     "enabled": false,
@@ -3524,15 +4357,24 @@
   },
   "no-multi-spaces": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-multi-str": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-multiple-empty-lines": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-native-reassign": {
     "enabled": false,
@@ -3552,15 +4394,24 @@
   },
   "no-new": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-new-func": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-new-native-nonconstructor": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3570,6 +4421,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3635,15 +4492,24 @@
   },
   "no-new-wrappers": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-nonoctal-decimal-escape": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-obj-calls": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3653,6 +4519,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3678,15 +4550,32 @@
   },
   "no-object-constructor": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-octal": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-octal-escape": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-param-reassign": {
     "enabled": false,
@@ -3714,19 +4603,31 @@
   },
   "no-proto": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-prototype-builtins": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-redeclare": {
     "enabled": true,
     "severity": "error",
-    "options": [
-      {
-        "builtinGlobals": false
-      }
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
     ],
     "exceptions": [
       {
@@ -3737,6 +4638,17 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "builtinGlobals": false
+          }
+        ]
       },
       {
         "files": [
@@ -3762,7 +4674,18 @@
   },
   "no-regex-spaces": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-restricted-exports": {
     "enabled": false,
@@ -3791,6 +4714,9 @@
   "no-return-assign": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "except-parens"
     ]
@@ -3812,23 +4738,43 @@
   "no-self-assign": {
     "enabled": true,
     "severity": "error",
-    "options": [
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
       {
-        "props": true
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "props": true
+          }
+        ]
       }
     ]
   },
   "no-self-compare": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-sequences": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-setter-return": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3873,15 +4819,40 @@
   },
   "no-shadow-restricted-names": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-spaced-func": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-sparse-arrays": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-sync": {
     "enabled": false,
@@ -3889,11 +4860,17 @@
   },
   "no-tabs": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-template-curly-in-string": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-ternary": {
     "enabled": false,
@@ -3902,6 +4879,9 @@
   "no-this-before-super": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3911,6 +4891,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3935,23 +4921,29 @@
     ]
   },
   "no-throw-literal": {
-    "enabled": true,
-    "severity": "error",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts"
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
         ],
-        "severity": "off"
+        "severity": "error"
       }
     ]
   },
   "no-trailing-spaces": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-unassigned-vars": {
     "enabled": false,
@@ -3960,6 +4952,9 @@
   "no-undef": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -3969,6 +4964,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -3994,7 +4995,10 @@
   },
   "no-undef-init": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-undefined": {
     "enabled": false,
@@ -4005,16 +5009,39 @@
     "severity": "off"
   },
   "no-unexpected-multiline": {
-    "enabled": false,
-    "severity": 0
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": 0
+      }
+    ]
   },
   "no-unmodified-loop-condition": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-unneeded-ternary": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "defaultAssignment": false
@@ -4024,6 +5051,9 @@
   "no-unreachable": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -4033,6 +5063,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -4058,15 +5094,32 @@
   },
   "no-unreachable-loop": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-unsafe-finally": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-unsafe-negation": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -4076,6 +5129,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -4101,43 +5160,104 @@
   },
   "no-unsafe-optional-chaining": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-unused-expressions": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "allowShortCircuit": true,
+            "allowTernary": true,
+            "allowTaggedTemplates": true
+          }
+        ]
+      }
+    ]
   },
   "no-unused-labels": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-unused-private-class-members": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-unused-vars": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_"
+          }
+        ]
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "args": "none",
+            "caughtErrors": "none",
+            "ignoreRestSiblings": true,
+            "vars": "all"
+          }
+        ]
+      }
+    ]
   },
   "no-use-before-define": {
-    "enabled": true,
-    "severity": "error",
-    "options": [
-      {
-        "functions": false,
-        "classes": false,
-        "variables": false
-      }
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
     ],
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts"
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
         ],
-        "severity": "off"
+        "severity": "error",
+        "options": [
+          {
+            "functions": false,
+            "classes": false,
+            "variables": false
+          }
+        ]
       }
     ]
   },
@@ -4147,19 +5267,47 @@
   },
   "no-useless-backreference": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-useless-call": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-useless-catch": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-useless-computed-key": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-useless-concat": {
     "enabled": false,
@@ -4167,32 +5315,60 @@
   },
   "no-useless-constructor": {
     "enabled": false,
-    "severity": "off"
-  },
-  "no-useless-escape": {
-    "enabled": true,
-    "severity": "error"
-  },
-  "no-useless-rename": {
-    "enabled": true,
-    "severity": "error"
-  },
-  "no-useless-return": {
-    "enabled": true,
-    "severity": "error"
-  },
-  "no-var": {
-    "enabled": true,
-    "severity": "warn",
+    "severity": "off",
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts"
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
         ],
         "severity": "error"
+      }
+    ]
+  },
+  "no-useless-escape": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
+  },
+  "no-useless-rename": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
+  },
+  "no-useless-return": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
+  },
+  "no-var": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "warn"
       },
       {
         "files": [
@@ -4218,7 +5394,23 @@
   },
   "no-void": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "options": [
+      {
+        "allowAsStatement": true
+      }
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "no-warning-comments": {
     "enabled": false,
@@ -4226,11 +5418,17 @@
   },
   "no-whitespace-before-property": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-with": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
@@ -4240,6 +5438,12 @@
           "**/*.cts"
         ],
         "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
       },
       {
         "files": [
@@ -4265,23 +5469,38 @@
   },
   "nonblock-statement-body-position": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "object-curly-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "object-curly-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "object-property-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "object-shorthand": {
     "enabled": true,
     "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "properties"
     ]
@@ -4289,6 +5508,9 @@
   "one-var": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "initialized": "never"
@@ -4297,7 +5519,10 @@
   },
   "one-var-declaration-per-line": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "operator-assignment": {
     "enabled": false,
@@ -4305,11 +5530,17 @@
   },
   "operator-linebreak": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "padded-blocks": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "padding-line-between-statements": {
     "enabled": false,
@@ -4317,14 +5548,51 @@
   },
   "prefer-arrow-callback": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "prefer-const": {
     "enabled": true,
     "severity": "error",
-    "options": [
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
       {
-        "destructuring": "all"
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "destructuring": "all"
+          }
+        ]
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
       }
     ]
   },
@@ -4353,17 +5621,20 @@
     "severity": "off"
   },
   "prefer-promise-reject-errors": {
-    "enabled": true,
-    "severity": "error",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts"
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
         ],
-        "severity": "off"
+        "severity": "error"
       }
     ]
   },
@@ -4374,6 +5645,9 @@
   "prefer-regex-literals": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "disallowRedundantWrapping": true
@@ -4454,59 +5728,109 @@
   },
   "prettier/prettier": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/always-return": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/avoid-new": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/catch-or-return": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-callback-in-promise": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-multiple-resolved": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-native": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-nesting": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-new-statics": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-promise-in-callback": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-return-in-finally": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/no-return-wrap": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/param-names": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "promise/prefer-await-to-callbacks": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/prefer-await-to-then": {
     "enabled": false,
@@ -4514,23 +5838,38 @@
   },
   "promise/prefer-catch": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/spec-only": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "promise/valid-params": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "quote-props": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "quotes": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "radix": {
     "enabled": false,
@@ -4598,19 +5937,31 @@
   },
   "react/jsx-boolean-value": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-child-element-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-closing-bracket-location": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-closing-tag-location": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-curly-brace-presence": {
     "enabled": false,
@@ -4618,15 +5969,24 @@
   },
   "react/jsx-curly-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-curly-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-equals-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-filename-extension": {
     "enabled": false,
@@ -4634,30 +5994,48 @@
   },
   "react/jsx-first-prop-new-line": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-fragments": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "syntax"
     ]
   },
   "react/jsx-handler-names": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-indent": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-indent-props": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-key": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "checkFragmentShorthand": true
@@ -4670,11 +6048,17 @@
   },
   "react/jsx-max-props-per-line": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-no-bind": {
     "enabled": false,
@@ -4682,7 +6066,10 @@
   },
   "react/jsx-no-comment-textnodes": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-no-constructed-context-values": {
     "enabled": false,
@@ -4690,7 +6077,10 @@
   },
   "react/jsx-no-duplicate-props": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-no-leaked-render": {
     "enabled": false,
@@ -4707,6 +6097,9 @@
   "react/jsx-no-target-blank": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "enforceDynamicLinks": "always"
@@ -4716,6 +6109,9 @@
   "react/jsx-no-undef": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "allowGlobals": true
@@ -4728,7 +6124,10 @@
   },
   "react/jsx-one-expression-per-line": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-pascal-case": {
     "enabled": false,
@@ -4736,7 +6135,10 @@
   },
   "react/jsx-props-no-multi-spaces": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-props-no-spread-multi": {
     "enabled": false,
@@ -4756,23 +6158,38 @@
   },
   "react/jsx-space-before-closing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-tag-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-uses-react": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-uses-vars": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/jsx-wrap-multilines": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-access-state-in-setstate": {
     "enabled": false,
@@ -4792,7 +6209,10 @@
   },
   "react/no-children-prop": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-danger": {
     "enabled": false,
@@ -4800,11 +6220,17 @@
   },
   "react/no-danger-with-children": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-deprecated": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-did-mount-set-state": {
     "enabled": false,
@@ -4816,11 +6242,17 @@
   },
   "react/no-direct-mutation-state": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-find-dom-node": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-invalid-html-attribute": {
     "enabled": false,
@@ -4828,7 +6260,10 @@
   },
   "react/no-is-mounted": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-multi-comp": {
     "enabled": false,
@@ -4848,7 +6283,10 @@
   },
   "react/no-render-return-value": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/no-set-state": {
     "enabled": false,
@@ -4857,6 +6295,9 @@
   "react/no-string-refs": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "noTemplateLiterals": true
@@ -4874,6 +6315,9 @@
   "react/no-unescaped-entities": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       {
         "forbid": [
@@ -4945,11 +6389,17 @@
   },
   "react/require-render-return": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/self-closing-comp": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "react/sort-comp": {
     "enabled": false,
@@ -4999,79 +6449,136 @@
   },
   "require-yield": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "rest-spread-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-bidi-characters": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-buffer-noassert": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-child-process": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-disable-mustache-escape": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-eval-with-expression": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-new-buffer": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-no-csrf-before-method-override": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-non-literal-fs-filename": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-non-literal-regexp": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-non-literal-require": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-object-injection": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-possible-timing-attacks": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-pseudoRandomBytes": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "security/detect-unsafe-regex": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "semi": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "semi-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "semi-style": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "sort-imports": {
     "enabled": false,
@@ -5087,23 +6594,38 @@
   },
   "space-before-blocks": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "space-before-function-paren": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "space-in-parens": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "space-infix-ops": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "space-unary-ops": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "spaced-comment": {
     "enabled": false,
@@ -5129,23 +6651,38 @@
   },
   "switch-colon-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "symbol-description": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "template-curly-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "template-tag-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "unicode-bom": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "never"
     ]
@@ -5153,19 +6690,41 @@
   "use-isnan": {
     "enabled": true,
     "severity": "error",
-    "options": [
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
       {
-        "enforceForSwitchCase": true,
-        "enforceForIndexOf": true
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "enforceForSwitchCase": true,
+            "enforceForIndexOf": true
+          }
+        ]
       }
     ]
   },
   "valid-typeof": {
     "enabled": true,
     "severity": "error",
-    "options": [
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
       {
-        "requireStringLiterals": true
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "requireStringLiterals": true
+          }
+        ]
       }
     ]
   },
@@ -5972,19 +7531,31 @@
   },
   "vue/array-bracket-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/array-bracket-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/array-element-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/arrow-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/attribute-hyphenation": {
     "enabled": true,
@@ -6037,15 +7608,24 @@
   },
   "vue/block-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/block-tag-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/brace-style": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/camelcase": {
     "enabled": false,
@@ -6053,15 +7633,24 @@
   },
   "vue/comma-dangle": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/comma-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/comma-style": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/comment-directive": {
     "enabled": true,
@@ -6132,7 +7721,10 @@
   },
   "vue/dot-location": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/dot-notation": {
     "enabled": false,
@@ -6152,7 +7744,10 @@
   },
   "vue/func-call-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/html-button-has-type": {
     "enabled": false,
@@ -6160,11 +7755,27 @@
   },
   "vue/html-closing-bracket-newline": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/html-closing-bracket-spacing": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/html-comment-content-newline": {
     "enabled": false,
@@ -6180,19 +7791,51 @@
   },
   "vue/html-end-tags": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/html-indent": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/html-quotes": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/html-self-closing": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": 0
+      }
+    ]
   },
   "vue/jsx-uses-vars": {
     "enabled": true,
@@ -6227,11 +7870,17 @@
   },
   "vue/key-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/keyword-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/match-component-file-name": {
     "enabled": false,
@@ -6247,6 +7896,12 @@
     "exceptions": [
       {
         "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue",
           "**/*.ts",
           "**/*.tsx",
@@ -6259,7 +7914,10 @@
   },
   "vue/max-len": {
     "enabled": false,
-    "severity": 0
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/max-lines-per-block": {
     "enabled": false,
@@ -6279,15 +7937,34 @@
   },
   "vue/multiline-html-element-content-newline": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/multiline-ternary": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/mustache-interpolation-spacing": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/new-line-between-multi-line-property": {
     "enabled": false,
@@ -6609,7 +8286,10 @@
   },
   "vue/no-extra-parens": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/no-implicit-coercion": {
     "enabled": false,
@@ -6648,7 +8328,15 @@
   },
   "vue/no-multi-spaces": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/no-multiple-objects-in-class": {
     "enabled": false,
@@ -6777,7 +8465,15 @@
   },
   "vue/no-spaces-around-equal-signs-in-attribute": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/no-sparse-arrays": {
     "enabled": false,
@@ -6915,15 +8611,24 @@
   },
   "vue/object-curly-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/object-curly-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/object-property-newline": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/object-shorthand": {
     "enabled": false,
@@ -6935,7 +8640,10 @@
   },
   "vue/operator-linebreak": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/order-in-components": {
     "enabled": true,
@@ -6994,7 +8702,10 @@
   },
   "vue/quote-props": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/require-component-is": {
     "enabled": true,
@@ -7111,11 +8822,22 @@
   },
   "vue/script-indent": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/singleline-html-element-content-newline": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "exceptions": [
+      {
+        "files": [
+          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+        ],
+        "severity": "off"
+      }
+    ]
   },
   "vue/slot-name-casing": {
     "enabled": false,
@@ -7127,15 +8849,24 @@
   },
   "vue/space-in-parens": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/space-infix-ops": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/space-unary-ops": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/static-class-names-order": {
     "enabled": false,
@@ -7143,7 +8874,10 @@
   },
   "vue/template-curly-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "vue/this-in-template": {
     "enabled": true,
@@ -7313,15 +9047,24 @@
   },
   "wrap-iife": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "wrap-regex": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "yield-star-spacing": {
     "enabled": false,
-    "severity": "off"
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "yml/block-mapping": {
     "enabled": false,
@@ -7438,6 +9181,9 @@
   "yoda": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "options": [
       "never"
     ]
