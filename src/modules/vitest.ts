@@ -5,8 +5,14 @@ import type { Linter } from 'eslint'
 const config: Linter.Config[] = [
   {
     files: ['**/*.test.ts', '**/*.test.js', '**/*.spec.ts', '**/*.spec.js'],
+    ignores: ['**/*.visual.spec.ts'], // playwright tests
     plugins: {
       vitest: pluginVitest,
+    },
+    settings: {
+      vitest: {
+        typecheck: true,
+      },
     },
     rules: {
       ...(pluginVitest.configs.recommended.rules as Linter.RulesRecord),
