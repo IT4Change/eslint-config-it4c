@@ -2920,15 +2920,30 @@
   },
   "jsonc/no-bigint-literals": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-binary-expression": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-binary-numeric-literals": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-comments": {
     "enabled": false,
@@ -2936,23 +2951,48 @@
   },
   "jsonc/no-dupe-keys": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-escape-sequence-in-identifier": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-floating-decimal": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-hexadecimal-numeric-literals": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-infinity": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-irregular-whitespace": {
     "enabled": false,
@@ -2960,23 +3000,48 @@
   },
   "jsonc/no-multi-str": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-nan": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-number-props": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-numeric-separators": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-octal": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-octal-escape": {
     "enabled": false,
@@ -2984,39 +3049,84 @@
   },
   "jsonc/no-octal-numeric-literals": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-parenthesized": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-plus-sign": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-regexp-literals": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-sparse-arrays": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-template-literals": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-undefined-value": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-unicode-codepoint-escapes": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-useless-escape": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/object-curly-newline": {
     "enabled": false,
@@ -3032,11 +3142,21 @@
   },
   "jsonc/quote-props": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/quotes": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/sort-array-values": {
     "enabled": false,
@@ -3048,15 +3168,30 @@
   },
   "jsonc/space-unary-ops": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/valid-json-number": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/vue-custom-block/no-parsing-error": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsx-quotes": {
     "enabled": false,
@@ -9163,23 +9298,43 @@
   },
   "yml/no-empty-document": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.yaml",
+      "**/*.yml"
+    ]
   },
   "yml/no-empty-key": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.yaml",
+      "**/*.yml"
+    ]
   },
   "yml/no-empty-mapping-value": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.yaml",
+      "**/*.yml"
+    ]
   },
   "yml/no-empty-sequence-entry": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.yaml",
+      "**/*.yml"
+    ]
   },
   "yml/no-irregular-whitespace": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.yaml",
+      "**/*.yml"
+    ]
   },
   "yml/no-multiple-empty-lines": {
     "enabled": false,
@@ -9187,7 +9342,11 @@
   },
   "yml/no-tab-indent": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.yaml",
+      "**/*.yml"
+    ]
   },
   "yml/no-trailing-zeros": {
     "enabled": false,
@@ -9219,7 +9378,11 @@
   },
   "yml/vue-custom-block/no-parsing-error": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.yaml",
+      "**/*.yml"
+    ]
   },
   "yoda": {
     "enabled": true,
