@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.11.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.10.0...eslint-config-it4c-v0.11.0) (2026-02-14)
+
+
+### Features
+
+* **eslint:** css lint ([#62](https://github.com/IT4Change/eslint-config-it4c/issues/62)) ([16d2aa4](https://github.com/IT4Change/eslint-config-it4c/commit/16d2aa4254569936fe83f07ee180c23b6340ac3c))
+* **eslint:** limit bundle size ([#60](https://github.com/IT4Change/eslint-config-it4c/issues/60)) ([fc43afc](https://github.com/IT4Change/eslint-config-it4c/commit/fc43afcc8d8c9cbd0fbc5323447f15898aa910ab))
+
+
+### Bug Fixes
+
+* **eslint:** limit files to match ([#59](https://github.com/IT4Change/eslint-config-it4c/issues/59)) ([36cda4e](https://github.com/IT4Change/eslint-config-it4c/commit/36cda4e1e97a04291055f1d06da63c95327ee35d))
+
 ## [0.10.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.9.0...eslint-config-it4c-v0.10.0) (2026-02-10)
 
 
