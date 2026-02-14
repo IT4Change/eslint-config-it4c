@@ -1,7 +1,10 @@
 import type { Linter } from 'eslint'
 
+import { defaultFiles as files } from '../files'
+
 const config: Linter.Config[] = [
   {
+    files,
     rules: {
       'n/exports-style': 'error',
       'n/file-extension-in-import': [

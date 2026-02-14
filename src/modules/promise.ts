@@ -1,7 +1,10 @@
 import type { Linter } from 'eslint'
 
+import { defaultFiles as files } from '../files'
+
 const config: Linter.Config[] = [
   {
+    files,
     rules: {
       'promise/always-return': 'error',
       'promise/avoid-new': 'error',
