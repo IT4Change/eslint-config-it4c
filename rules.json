@@ -1788,6 +1788,49 @@
       }
     ]
   },
+  "css/no-duplicate-imports": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/no-empty-blocks": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/no-invalid-at-rules": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/no-invalid-properties": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/prefer-logical-properties": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "css/use-baseline": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/use-layers": {
+    "enabled": false,
+    "severity": "off"
+  },
   "curly": {
     "enabled": true,
     "severity": "error",

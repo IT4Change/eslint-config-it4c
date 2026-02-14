@@ -1,13 +1,14 @@
 // eslint-disable-next-line import-x/no-deprecated -- no stable alternative for flat config
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 
-import config, { vue2, vue3, jest, vitest, graphql, react } from '#src/index'
+import config, { css, vue2, vue3, jest, vitest, graphql, react } from '#src/index'
 
 import type { Linter } from 'eslint'
 
 // Combine default config with all optional modules
 const allConfigs: Linter.Config[] = [
   ...config,
+  ...css,
   ...vue2,
   ...vue3,
   ...jest,

@@ -1,5 +1,6 @@
 // Base modules (included in default config)
 import comments from './modules/comments'
+import css from './modules/css'
 import eslint from './modules/eslint'
 import graphql from './modules/graphql'
 import importX from './modules/import-x'
@@ -34,6 +35,7 @@ export {
   typescript,
   yaml,
   // Optional modules
+  css,
   graphql,
   jest,
   react,
