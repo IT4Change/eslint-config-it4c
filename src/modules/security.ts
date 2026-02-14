@@ -1,6 +1,6 @@
 import pluginSecurity from 'eslint-plugin-security'
 
-import { defaultFiles as files } from '../files'
+import { defaultFiles as files } from '#src/files'
 
 import type { Linter } from 'eslint'
 

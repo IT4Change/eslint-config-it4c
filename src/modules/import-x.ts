@@ -1,7 +1,7 @@
 import { flatConfigs as importXFlatConfigs } from 'eslint-plugin-import-x'
 import neostandard from 'neostandard'
 
-import { defaultFiles as files } from '../files'
+import { defaultFiles as files } from '#src/files'
 
 import type { Linter } from 'eslint'
 
