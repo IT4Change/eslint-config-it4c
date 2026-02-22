@@ -1788,7 +1788,21 @@
       }
     ]
   },
+  "css/font-family-fallbacks": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
   "css/no-duplicate-imports": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/no-duplicate-keyframe-selectors": {
     "enabled": true,
     "severity": "error",
     "files": [
@@ -1802,7 +1816,28 @@
       "**/*.css"
     ]
   },
+  "css/no-important": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/no-invalid-at-rule-placement": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
   "css/no-invalid-at-rules": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
+  "css/no-invalid-named-grid-areas": {
     "enabled": true,
     "severity": "error",
     "files": [
@@ -1816,13 +1851,28 @@
       "**/*.css"
     ]
   },
+  "css/no-unmatchable-selectors": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.css"
+    ]
+  },
   "css/prefer-logical-properties": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "css/relative-font-units": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "css/selector-complexity": {
     "enabled": false,
     "severity": "off"
   },
   "css/use-baseline": {
     "enabled": true,
-    "severity": "warn",
+    "severity": "error",
     "files": [
       "**/*.css"
     ]
@@ -2995,8 +3045,13 @@
     ]
   },
   "jsonc/no-irregular-whitespace": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.json",
+      "**/*.json5",
+      "**/*.jsonc"
+    ]
   },
   "jsonc/no-multi-str": {
     "enabled": true,
