@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.12.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.12.0...eslint-config-it4c-v0.12.1) (2026-07-29)
+
+
+### Bug Fixes
+
+* **eslint:** bump eslint/js ([#97](https://github.com/IT4Change/eslint-config-it4c/issues/97)) ([34b0c20](https://github.com/IT4Change/eslint-config-it4c/commit/34b0c20f3c8f094a07e5d98283db53a53302fb74))
+* **eslint:** package updates ([#94](https://github.com/IT4Change/eslint-config-it4c/issues/94)) ([c4e5cb9](https://github.com/IT4Change/eslint-config-it4c/commit/c4e5cb926b666f60c67434727d027e369fbe34a7))
+* **eslint:** remove neostandard & fix inter dependencies ([#96](https://github.com/IT4Change/eslint-config-it4c/issues/96)) ([aff8b30](https://github.com/IT4Change/eslint-config-it4c/commit/aff8b30cd51241c3c4f1f1fb66e59ceca81599ed))
+
 ## [0.12.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.11.2...eslint-config-it4c-v0.12.0) (2026-02-22)
 
 
