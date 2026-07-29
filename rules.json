@@ -2335,8 +2335,8 @@
     ]
   },
   "import-x/no-unused-modules": {
-    "enabled": true,
-    "severity": "error",
+    "enabled": false,
+    "severity": "off",
     "files": [
       "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
     ]
@@ -4639,8 +4639,11 @@
     ]
   },
   "no-unassigned-vars": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-undef": {
     "enabled": true,
@@ -4880,8 +4883,11 @@
     ]
   },
   "no-useless-assignment": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "no-useless-backreference": {
     "enabled": true,
@@ -5259,8 +5265,11 @@
     "severity": "off"
   },
   "preserve-caught-error": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
   },
   "prettier/prettier": {
     "enabled": true,

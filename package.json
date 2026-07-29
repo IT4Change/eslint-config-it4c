@@ -49,12 +49,12 @@
     }
   ],
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">= 10"
   },
   "dependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.7.2",
     "@eslint/css": "^1.4.0",
-    "@eslint/js": "^9.39.3",
+    "@eslint/js": "^10.0.1",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@vitest/eslint-plugin": "^1.6.24",
     "@vue/eslint-config-typescript": "^14.9.0",
