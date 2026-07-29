@@ -9,11 +9,11 @@ const config: Linter.Config[] = [
       '@graphql-eslint': graphqlPlugin as unknown as Record<string, unknown>,
     },
     ...graphqlConfigs['flat/schema-recommended'],
-  } as Linter.Config,
+  },
   {
     files: ['**/*.graphql'],
     ...graphqlConfigs['flat/operations-recommended'],
-  } as Linter.Config,
+  },
   {
     files: ['**/*.graphql'],
     rules: {
