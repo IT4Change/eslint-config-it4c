@@ -14,7 +14,11 @@ const config: Linter.Config[] = [
       'import-x/no-empty-named-blocks': 'error',
       'import-x/no-extraneous-dependencies': 'error',
       'import-x/no-mutable-exports': 'error',
-      'import-x/no-unused-modules': 'error',
+      // Off for two reasons: the rule is a no-op under ESLint 10 (FileEnumerator API
+      // removed) and prints a notice on every run, and it never did anything here
+      // anyway — it needs `unusedExports` or `missingExports` to check something.
+      // Enabling it meaningfully is a separate decision, not a side effect of an upgrade.
+      'import-x/no-unused-modules': 'off',
       'import-x/no-named-as-default': 'error',
       'import-x/no-named-as-default-member': 'error',
       'import-x/no-amd': 'error',
