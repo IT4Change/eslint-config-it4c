@@ -9,7 +9,7 @@ const { plugins: _, ...importXTypescript } = importXFlatConfigs.typescript
 
 const config: Linter.Config[] = [
   ...neostandard({ noStyle: true }).map((cfg) => (cfg.files ? cfg : { ...cfg, files })),
-  { ...importXTypescript, files } as Linter.Config,
+  { ...importXTypescript, files },
   {
     files,
     rules: {

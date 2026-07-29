@@ -7718,6 +7718,16 @@
       "**/*.spec.js"
     ]
   },
+  "vitest/unbound-method": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "**/*.test.ts",
+      "**/*.test.js",
+      "**/*.spec.ts",
+      "**/*.spec.js"
+    ]
+  },
   "vitest/valid-describe-callback": {
     "enabled": true,
     "severity": "warn",
@@ -8917,6 +8927,10 @@
     "enabled": false,
     "severity": "off"
   },
+  "vue/prefer-single-event-payload": {
+    "enabled": false,
+    "severity": "off"
+  },
   "vue/prefer-template": {
     "enabled": false,
     "severity": "off"
@@ -8926,6 +8940,10 @@
     "severity": "off"
   },
   "vue/prefer-use-template-ref": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/prefer-v-model": {
     "enabled": false,
     "severity": "off"
   },
@@ -9402,6 +9420,10 @@
       "**/*.yaml",
       "**/*.yml"
     ]
+  },
+  "yml/no-trailing-spaces": {
+    "enabled": false,
+    "severity": "off"
   },
   "yml/no-trailing-zeros": {
     "enabled": false,
