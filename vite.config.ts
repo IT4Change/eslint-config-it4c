@@ -37,7 +37,7 @@ export default defineConfig(async () => {
           /^@vitest/,
           /^@typescript-eslint/,
           /^eslint/,
-          /^neostandard/,
+          /^globals$/,
           /^typescript-eslint/,
           /^prettier$/,
         ],

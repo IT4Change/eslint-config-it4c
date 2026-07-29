@@ -1,13 +1,8 @@
-import pluginNoCatchAll from 'eslint-plugin-no-catch-all'
 import { configs as tseslintConfigs } from 'typescript-eslint'
 
 import type { Linter } from 'eslint'
 
 const config: Linter.Config[] = [
-  {
-    plugins: { 'no-catch-all': pluginNoCatchAll },
-    rules: { 'no-catch-all/no-catch-all': 'error' },
-  },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
     languageOptions: {
