@@ -1,3 +1,6 @@
+import pluginN from 'eslint-plugin-n'
+import globals from 'globals'
+
 import { defaultFiles as files } from '#src/files'
 
 import type { Linter } from 'eslint'
@@ -5,8 +8,14 @@ import type { Linter } from 'eslint'
 const config: Linter.Config[] = [
   {
     files,
+    languageOptions: { globals: globals.node },
+    plugins: { n: pluginN },
     rules: {
       'n/exports-style': 'error',
+      'n/handle-callback-err': ['error', '^(err|error)$'],
+      'n/no-deprecated-api': 'warn',
+      'n/no-exports-assign': 'error',
+      'n/process-exit-as-throw': 'error',
       'n/file-extension-in-import': [
         'error',
         'never',

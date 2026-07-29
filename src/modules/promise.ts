@@ -1,3 +1,5 @@
+import pluginPromise from 'eslint-plugin-promise'
+
 import { defaultFiles as files } from '#src/files'
 
 import type { Linter } from 'eslint'
@@ -5,6 +7,7 @@ import type { Linter } from 'eslint'
 const config: Linter.Config[] = [
   {
     files,
+    plugins: { promise: pluginPromise },
     rules: {
       'promise/always-return': 'error',
       'promise/avoid-new': 'error',
