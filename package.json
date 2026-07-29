@@ -77,7 +77,7 @@
     "@size-limit/file": "^13.0.2",
     "@types/eslint-plugin-promise": "^7.3.0",
     "@types/eslint-plugin-security": "^3.0.1",
-    "eslint": "^9.39.2",
+    "eslint": "^10.8.0",
     "size-limit": "^13.0.2",
     "tsx": "^4.23.1",
     "typescript": "^5.9.3",
