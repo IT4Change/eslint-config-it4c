@@ -5,9 +5,11 @@ import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
+import type { UserConfig } from 'vite'
+
 const modulesDir = resolve(__dirname, 'src/modules')
 
-export default defineConfig(async () => {
+export default defineConfig(async (): Promise<UserConfig> => {
   const files = await readdir(modulesDir)
   const moduleEntries = files
     .filter((f) => f.endsWith('.ts'))
@@ -49,7 +51,7 @@ export default defineConfig(async () => {
       tsconfigPaths(),
       dts({
         include: ['src/**/*.ts'],
-        outDir: 'dist',
+        outDirs: 'dist',
         entryRoot: 'src',
         tsconfigPath: './tsconfig.json',
       }),
