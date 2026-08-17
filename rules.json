@@ -3508,7 +3508,21 @@
       "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
     ]
   },
+  "n/prefer-import/assert-strict": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
+  },
   "n/prefer-node-protocol": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ]
+  },
+  "n/prefer-process-get-builtin-module": {
     "enabled": true,
     "severity": "error",
     "files": [
