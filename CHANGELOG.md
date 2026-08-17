@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.13.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.12.1...eslint-config-it4c-v0.13.0) (2026-08-17)
+
+
+### Features
+
+* **etst:** update plugin-n ([#103](https://github.com/IT4Change/eslint-config-it4c/issues/103)) ([996e478](https://github.com/IT4Change/eslint-config-it4c/commit/996e478b026507b0e269c873db8d67250d37c743))
+
+
+### Bug Fixes
+
+* **workflow:** update typescript ([#105](https://github.com/IT4Change/eslint-config-it4c/issues/105)) ([eb22f3c](https://github.com/IT4Change/eslint-config-it4c/commit/eb22f3c812644cb10ff0304c2910c71a30a598f0))
+
 ## [0.12.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.12.0...eslint-config-it4c-v0.12.1) (2026-07-29)
 
 
