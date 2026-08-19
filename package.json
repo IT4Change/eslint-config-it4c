@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-it4c",
-  "version": "0.13.1",
+  "version": "0.13.2",
   "type": "module",
   "repository": {
     "type": "git",

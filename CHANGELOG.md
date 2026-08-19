@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.2](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.13.1...eslint-config-it4c-v0.13.2) (2026-08-19)
+
+
+### Bug Fixes
+
+* **other:** fix package url ([#113](https://github.com/IT4Change/eslint-config-it4c/issues/113)) ([fbad3db](https://github.com/IT4Change/eslint-config-it4c/commit/fbad3db6f68802bdd535f508b30208da171ed83e))
+
 ## [0.13.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.13.0...eslint-config-it4c-v0.13.1) (2026-08-19)
 
 
