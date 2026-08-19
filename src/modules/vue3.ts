@@ -2,7 +2,7 @@ import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescri
 import pluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
-import { scopeVueTsConfigs, vueAndTsFiles } from '#src/vue-scope'
+import { prettierDisabledVueRules, scopeVueTsConfigs, vueAndTsFiles } from '#src/vue-scope'
 
 import type { Linter } from 'eslint'
 
@@ -16,10 +16,9 @@ const config: Linter.Config[] = [
   {
     files: vueAndTsFiles,
     languageOptions: { globals: globals.browser },
-    rules: {
-      // Prettier handles this
-      'vue/max-attributes-per-line': 'off',
-    },
+    // Covers `vue/max-attributes-per-line` and the ten other formatting rules Vue's
+    // recommended set enables, all of which Prettier owns
+    rules: prettierDisabledVueRules,
   },
 ]
 
