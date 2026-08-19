@@ -24,16 +24,14 @@ jobs:
         with:
           app-id: ${{ vars.RELEASE_APP_ID }}
           private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
-          # Narrow the minted token to what release-please does. Without these it inherits
-          # every permission the app is installed with; the workflow-level block above
-          # governs GITHUB_TOKEN only and does not constrain this one.
-          #   contents      — commits, branches, tags, the GitHub release
-          #   pull-requests — the release pull request
-          #   issues        — its `autorelease: pending`/`tagged` labels, which go through
-          #                   the issues API and are therefore a separate scope
-          permission-contents: write
-          permission-pull-requests: write
-          permission-issues: write
+          # Deliberately NOT narrowed with `permission-contents`/`-pull-requests`/`-issues`
+          # the way the Ocelot release workflows are. Requesting a scope explicitly makes
+          # GitHub verify it against this installation and fail the whole step with 422
+          # ("The permissions requested are not granted to this installation") if even one
+          # is missing — the it4c-release-bot installation on IT4Change is not granted the
+          # same set as the one on Ocelot-Social-Community. Without these inputs the token
+          # inherits the installation's permissions, which is what release-please needs.
+          # Re-add them only after checking the installation's granted permissions.
       - uses: googleapis/release-please-action@v5
         id: release
         with:
@@ -107,6 +105,7 @@ jobs:
     #                     The attested subject is computed from the tarball's bytes, so
     #                     provenance survives packing in a different job.
     permissions:
+      contents: read
       id-token: write
     steps:
       # No checkout at all: the Node version is literal below and the tarball arrives as an
@@ -141,6 +140,7 @@ jobs:
     if: needs.release-please.outputs.release_created == 'true'
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       packages: write
     steps:
       - uses: actions/setup-node@v7
