@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.13.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.13.0...eslint-config-it4c-v0.13.1) (2026-08-19)
+
+
+### Bug Fixes
+
+* **eslint:** fix broken curly rule ([#109](https://github.com/IT4Change/eslint-config-it4c/issues/109)) ([a69ea45](https://github.com/IT4Change/eslint-config-it4c/commit/a69ea45559c37e2224187327748bbe4471b5fcd1))
+* **eslint:** fix rule list generation ([#108](https://github.com/IT4Change/eslint-config-it4c/issues/108)) ([0f5e6a1](https://github.com/IT4Change/eslint-config-it4c/commit/0f5e6a1dbd181d67a9ffaeab178c2f56009858ca))
+* **eslint:** fix typescriptlinting in vue ([#106](https://github.com/IT4Change/eslint-config-it4c/issues/106)) ([6e7a93c](https://github.com/IT4Change/eslint-config-it4c/commit/6e7a93c0fcd20b6d2aad0812c3d12558ea8fc20a))
+* **eslint:** fix vue prettier ([#110](https://github.com/IT4Change/eslint-config-it4c/issues/110)) ([6b113a0](https://github.com/IT4Change/eslint-config-it4c/commit/6b113a01c3681891cc51b3bcbca86ac3cb51943c))
+* **workflow:** fix release workflow permissions ([#112](https://github.com/IT4Change/eslint-config-it4c/issues/112)) ([227d2c5](https://github.com/IT4Change/eslint-config-it4c/commit/227d2c5503df8dd9df03a450b71e1068208db44c))
+* **workflow:** implement trusted publishing ([#111](https://github.com/IT4Change/eslint-config-it4c/issues/111)) ([4f9db4c](https://github.com/IT4Change/eslint-config-it4c/commit/4f9db4c5f893120a6b9917e1ea011fd596a5bb19))
+
 ## [0.13.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.12.1...eslint-config-it4c-v0.13.0) (2026-08-17)
 
 
