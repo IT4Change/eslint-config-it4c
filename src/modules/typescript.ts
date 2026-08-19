@@ -2,6 +2,11 @@ import { configs as tseslintConfigs } from 'typescript-eslint'
 
 import type { Linter } from 'eslint'
 
+// Deliberately excludes `**/*.vue`: type-aware linting needs `projectService`, which
+// SFCs only get once the consumer's tsconfig includes them. The `vue2`/`vue3` modules
+// cover `.vue` with the non-type-aware `vueTsConfigs.strict` instead — keep both sides
+// in sync, a file extension that neither module claims ends up with the core rules but
+// without their @typescript-eslint counterparts.
 const config: Linter.Config[] = [
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],

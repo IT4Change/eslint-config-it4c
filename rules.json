@@ -649,9 +649,39 @@
   "@typescript-eslint/ban-ts-comment": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
     "options": [
       {
         "minimumDescriptionLength": 10
+      }
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "minimumDescriptionLength": 10
+          }
+        ]
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "minimumDescriptionLength": 10
+          }
+        ]
       }
     ]
   },
@@ -767,7 +797,27 @@
   },
   "@typescript-eslint/no-array-constructor": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-array-delete": {
     "enabled": true,
@@ -830,7 +880,27 @@
   },
   "@typescript-eslint/no-duplicate-enum-values": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-duplicate-type-constituents": {
     "enabled": true,
@@ -844,7 +914,27 @@
   },
   "@typescript-eslint/no-dynamic-delete": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-empty-function": {
     "enabled": false,
@@ -856,19 +946,99 @@
   },
   "@typescript-eslint/no-empty-object-type": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-explicit-any": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-extra-non-null-assertion": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-extraneous-class": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-floating-promises": {
     "enabled": true,
@@ -936,7 +1106,27 @@
   },
   "@typescript-eslint/no-invalid-void-type": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-loop-func": {
     "enabled": true,
@@ -968,7 +1158,27 @@
   },
   "@typescript-eslint/no-misused-new": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-misused-promises": {
     "enabled": true,
@@ -1002,19 +1212,99 @@
   },
   "@typescript-eslint/no-namespace": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-non-null-asserted-nullish-coalescing": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-non-null-asserted-optional-chain": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-non-null-assertion": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-redeclare": {
     "enabled": false,
@@ -1032,7 +1322,27 @@
   },
   "@typescript-eslint/no-require-imports": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-restricted-imports": {
     "enabled": false,
@@ -1054,7 +1364,27 @@
   },
   "@typescript-eslint/no-this-alias": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-type-alias": {
     "enabled": false,
@@ -1126,7 +1456,27 @@
   },
   "@typescript-eslint/no-unnecessary-type-constraint": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unnecessary-type-conversion": {
     "enabled": true,
@@ -1180,7 +1530,27 @@
   },
   "@typescript-eslint/no-unsafe-declaration-merging": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-enum-comparison": {
     "enabled": true,
@@ -1194,7 +1564,27 @@
   },
   "@typescript-eslint/no-unsafe-function-type": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unsafe-member-access": {
     "enabled": true,
@@ -1232,7 +1622,27 @@
   },
   "@typescript-eslint/no-unused-expressions": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-unused-private-class-members": {
     "enabled": false,
@@ -1240,7 +1650,42 @@
   },
   "@typescript-eslint/no-unused-vars": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error",
+        "options": [
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_"
+          }
+        ]
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-use-before-define": {
     "enabled": true,
@@ -1254,7 +1699,27 @@
   },
   "@typescript-eslint/no-useless-constructor": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/no-useless-default-assignment": {
     "enabled": true,
@@ -1282,7 +1747,27 @@
   },
   "@typescript-eslint/no-wrapper-object-types": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/non-nullable-type-assertion-style": {
     "enabled": false,
@@ -1304,7 +1789,27 @@
   },
   "@typescript-eslint/prefer-as-const": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-destructuring": {
     "enabled": false,
@@ -1350,11 +1855,51 @@
   },
   "@typescript-eslint/prefer-literal-enum-member": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-namespace-keyword": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/prefer-nullish-coalescing": {
     "enabled": true,
@@ -1560,7 +2105,27 @@
   },
   "@typescript-eslint/triple-slash-reference": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/typedef": {
     "enabled": false,
@@ -1578,7 +2143,27 @@
   },
   "@typescript-eslint/unified-signatures": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "@typescript-eslint/use-unknown-in-catch-callback-variable": {
     "enabled": true,
@@ -1762,10 +2347,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -1994,10 +2581,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -3598,14 +4187,32 @@
     "severity": "off"
   },
   "no-array-constructor": {
-    "enabled": false,
-    "severity": "off",
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "error"
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
       }
     ]
   },
@@ -3671,10 +4278,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -3727,10 +4336,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -3802,10 +4413,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -3830,10 +4443,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -3865,10 +4480,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4011,10 +4628,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4072,10 +4691,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4273,10 +4894,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4303,10 +4926,12 @@
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4345,10 +4970,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4432,10 +5059,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4536,10 +5165,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4617,10 +5248,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4677,10 +5310,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4754,10 +5389,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4796,10 +5433,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -4814,21 +5453,50 @@
     ]
   },
   "no-unused-expressions": {
-    "enabled": false,
-    "severity": "off",
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "options": [
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true,
+        "allowTaggedTemplates": true
+      }
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "error",
-        "options": [
-          {
-            "allowShortCircuit": true,
-            "allowTernary": true,
-            "allowTaggedTemplates": true
-          }
-        ]
+        "severity": "off"
+      },
+      {
+        "files": [
+          "*.json",
+          "**/*.json",
+          "*.json5",
+          "**/*.json5",
+          "*.jsonc",
+          "**/*.jsonc"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
       }
     ]
   },
@@ -4847,15 +5515,12 @@
     ]
   },
   "no-unused-vars": {
-    "enabled": false,
-    "severity": "off",
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
-      {
-        "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
-        ],
-        "severity": "error"
-      },
       {
         "files": [
           "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
@@ -4867,6 +5532,47 @@
             "varsIgnorePattern": "^_"
           }
         ]
+      },
+      {
+        "files": [
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "*.json",
+          "**/*.json",
+          "*.json5",
+          "**/*.json5",
+          "*.jsonc",
+          "**/*.jsonc"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "*.yaml",
+          "**/*.yaml",
+          "*.yml",
+          "**/*.yml"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
       }
     ]
   },
@@ -4936,14 +5642,32 @@
     "severity": "off"
   },
   "no-useless-constructor": {
-    "enabled": false,
-    "severity": "off",
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "error"
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
+          "**/*.vue"
+        ],
+        "severity": "off"
       }
     ]
   },
@@ -4986,10 +5710,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "error"
@@ -5037,10 +5763,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "off"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "off"
@@ -5157,10 +5885,12 @@
       },
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "error"
@@ -5242,10 +5972,12 @@
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "error"
@@ -5264,10 +5996,12 @@
     "exceptions": [
       {
         "files": [
-          "**/*.ts",
-          "**/*.tsx",
-          "**/*.mts",
-          "**/*.cts",
+          "**/*.vue"
+        ],
+        "severity": "error"
+      },
+      {
+        "files": [
           "**/*.vue"
         ],
         "severity": "error"
@@ -6539,11 +7273,49 @@
   },
   "vue/attribute-hyphenation": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/attributes-order": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/block-lang": {
     "enabled": true,
@@ -6584,7 +7356,26 @@
   },
   "vue/block-order": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/block-spacing": {
     "enabled": false,
@@ -6669,7 +7460,26 @@
   },
   "vue/component-definition-name-casing": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/component-name-in-template-casing": {
     "enabled": false,
@@ -6720,7 +7530,26 @@
   },
   "vue/first-attribute-linebreak": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/func-call-spacing": {
     "enabled": false,
@@ -6734,26 +7563,60 @@
     "severity": "off"
   },
   "vue/html-closing-bracket-newline": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
   "vue/html-closing-bracket-spacing": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
@@ -6770,50 +7633,118 @@
     "severity": "off"
   },
   "vue/html-end-tags": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
   "vue/html-indent": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
   "vue/html-quotes": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
   "vue/html-self-closing": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": 0,
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": 0
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
@@ -6871,14 +7802,31 @@
     "severity": "off"
   },
   "vue/max-attributes-per-line": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       },
       {
         "files": [
@@ -6913,17 +7861,53 @@
   },
   "vue/multi-word-component-names": {
     "enabled": true,
-    "severity": "error"
-  },
-  "vue/multiline-html-element-content-newline": {
-    "enabled": true,
-    "severity": "warn",
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "error"
+      }
+    ]
+  },
+  "vue/multiline-html-element-content-newline": {
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
@@ -6935,14 +7919,31 @@
     ]
   },
   "vue/mustache-interpolation-spacing": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
@@ -6956,11 +7957,49 @@
   },
   "vue/no-arrow-functions-in-watch": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-async-in-computed-properties": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-bare-strings-in-template": {
     "enabled": false,
@@ -6972,11 +8011,49 @@
   },
   "vue/no-child-content": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-computed-properties-in-data": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-console": {
     "enabled": false,
@@ -6988,7 +8065,14 @@
   },
   "vue/no-custom-modifiers-on-v-model": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ]
   },
   "vue/no-deprecated-data-object-declaration": {
     "enabled": true,
@@ -7223,11 +8307,49 @@
   },
   "vue/no-dupe-keys": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-dupe-v-else-if": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-duplicate-attr-inheritance": {
     "enabled": false,
@@ -7235,7 +8357,26 @@
   },
   "vue/no-duplicate-attributes": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-duplicate-class-names": {
     "enabled": false,
@@ -7251,7 +8392,26 @@
   },
   "vue/no-export-in-script-setup": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-expose-after-await": {
     "enabled": true,
@@ -7300,21 +8460,57 @@
   },
   "vue/no-lone-template": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/no-loss-of-precision": {
     "enabled": false,
     "severity": "off"
   },
   "vue/no-multi-spaces": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
@@ -7324,15 +8520,60 @@
   },
   "vue/no-multiple-slot-args": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/no-multiple-template-root": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ]
   },
   "vue/no-mutating-props": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-negated-condition": {
     "enabled": false,
@@ -7344,7 +8585,26 @@
   },
   "vue/no-parsing-error": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-potential-component-option-typo": {
     "enabled": false,
@@ -7352,7 +8612,26 @@
   },
   "vue/no-ref-as-operand": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-ref-object-reactivity-loss": {
     "enabled": false,
@@ -7360,22 +8639,98 @@
   },
   "vue/no-required-prop-with-default": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/no-reserved-component-names": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-reserved-keys": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-reserved-props": {
     "enabled": true,
     "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
     "options": [
       {
         "vueVersion": 2
+      }
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
       }
     ]
   },
@@ -7437,21 +8792,76 @@
   },
   "vue/no-shared-component-data": {
     "enabled": true,
-    "severity": "error"
-  },
-  "vue/no-side-effects-in-computed-properties": {
-    "enabled": true,
-    "severity": "error"
-  },
-  "vue/no-spaces-around-equal-signs-in-attribute": {
-    "enabled": true,
-    "severity": "warn",
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "error"
+      }
+    ]
+  },
+  "vue/no-side-effects-in-computed-properties": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
+  },
+  "vue/no-spaces-around-equal-signs-in-attribute": {
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
@@ -7465,11 +8875,49 @@
   },
   "vue/no-template-key": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-template-shadow": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/no-template-target-blank": {
     "enabled": false,
@@ -7477,7 +8925,26 @@
   },
   "vue/no-textarea-mustache": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-this-in-before-route-enter": {
     "enabled": false,
@@ -7501,7 +8968,26 @@
   },
   "vue/no-unused-components": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-unused-emit-declarations": {
     "enabled": false,
@@ -7517,11 +9003,49 @@
   },
   "vue/no-unused-vars": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-use-computed-property-like-method": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-use-v-else-with-v-for": {
     "enabled": false,
@@ -7529,7 +9053,26 @@
   },
   "vue/no-use-v-if-with-v-for": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-useless-concat": {
     "enabled": false,
@@ -7541,7 +9084,26 @@
   },
   "vue/no-useless-template-attributes": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-useless-v-bind": {
     "enabled": false,
@@ -7549,7 +9111,14 @@
   },
   "vue/no-v-for-template-key": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ]
   },
   "vue/no-v-for-template-key-on-child": {
     "enabled": true,
@@ -7564,11 +9133,37 @@
   },
   "vue/no-v-html": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/no-v-model-argument": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ]
   },
   "vue/no-v-text": {
     "enabled": false,
@@ -7576,7 +9171,26 @@
   },
   "vue/no-v-text-v-html-on-component": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/no-watch-after-await": {
     "enabled": true,
@@ -7616,7 +9230,26 @@
   },
   "vue/one-component-per-file": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/operator-linebreak": {
     "enabled": false,
@@ -7627,7 +9260,26 @@
   },
   "vue/order-in-components": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/padding-line-between-blocks": {
     "enabled": false,
@@ -7686,7 +9338,26 @@
   },
   "vue/prop-name-casing": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/quote-props": {
     "enabled": false,
@@ -7697,7 +9368,26 @@
   },
   "vue/require-component-is": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/require-default-export": {
     "enabled": false,
@@ -7705,7 +9395,26 @@
   },
   "vue/require-default-prop": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/require-direct-export": {
     "enabled": false,
@@ -7748,15 +9457,72 @@
   },
   "vue/require-prop-type-constructor": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/require-prop-types": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/require-render-return": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/require-slots-as-functions": {
     "enabled": true,
@@ -7790,11 +9556,49 @@
   },
   "vue/require-v-for-key": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/require-valid-default-prop": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/restricted-component-names": {
     "enabled": false,
@@ -7802,11 +9606,49 @@
   },
   "vue/return-in-computed-property": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/return-in-emits-validator": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/script-indent": {
     "enabled": false,
@@ -7816,14 +9658,31 @@
     ]
   },
   "vue/singleline-html-element-content-newline": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
+    "files": [
+      "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+    ],
     "exceptions": [
       {
         "files": [
-          "**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx,vue}"
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
         ],
-        "severity": "off"
+        "severity": "warn"
+      },
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
       }
     ]
   },
@@ -7869,15 +9728,72 @@
   },
   "vue/this-in-template": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/use-v-on-exact": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/v-bind-style": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/v-for-delimiter-style": {
     "enabled": false,
@@ -7910,19 +9826,95 @@
   },
   "vue/v-on-style": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/v-slot-style": {
     "enabled": true,
-    "severity": "warn"
+    "severity": "warn",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "warn"
+      }
+    ]
   },
   "vue/valid-attribute-name": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-define-emits": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-define-options": {
     "enabled": true,
@@ -7937,51 +9929,255 @@
   },
   "vue/valid-define-props": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-model-definition": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ]
   },
   "vue/valid-next-tick": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-template-root": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-bind": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-bind-sync": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ]
   },
   "vue/valid-v-cloak": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-else": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-else-if": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-for": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-html": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-if": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-is": {
     "enabled": true,
@@ -8007,31 +10203,164 @@
   },
   "vue/valid-v-model": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-on": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-once": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-pre": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-show": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-slot": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "vue/valid-v-text": {
     "enabled": true,
-    "severity": "error"
+    "severity": "error",
+    "files": [
+      "**/*.vue",
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.mts",
+      "**/*.cts"
+    ],
+    "exceptions": [
+      {
+        "files": [
+          "**/*.vue",
+          "**/*.ts",
+          "**/*.tsx",
+          "**/*.mts",
+          "**/*.cts"
+        ],
+        "severity": "error"
+      }
+    ]
   },
   "wrap-iife": {
     "enabled": false,
