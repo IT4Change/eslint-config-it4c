@@ -7216,37 +7216,23 @@
     "severity": "off"
   },
   "vue/html-closing-bracket-newline": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/html-closing-bracket-spacing": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/html-comment-content-newline": {
@@ -7262,71 +7248,43 @@
     "severity": "off"
   },
   "vue/html-end-tags": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/html-indent": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/html-quotes": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/html-self-closing": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/jsx-uses-vars": {
@@ -7406,20 +7364,13 @@
     ]
   },
   "vue/multiline-html-element-content-newline": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/multiline-ternary": {
@@ -7433,20 +7384,13 @@
     ]
   },
   "vue/mustache-interpolation-spacing": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/new-line-between-multi-line-property": {
@@ -7817,20 +7761,13 @@
     "severity": "off"
   },
   "vue/no-multi-spaces": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/no-multiple-objects-in-class": {
@@ -8014,20 +7951,13 @@
     ]
   },
   "vue/no-spaces-around-equal-signs-in-attribute": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/no-sparse-arrays": {
@@ -8517,20 +8447,13 @@
     ]
   },
   "vue/singleline-html-element-content-newline": {
-    "enabled": true,
-    "severity": "warn",
+    "enabled": false,
+    "severity": "off",
     "files": [
+      "js",
       "ts",
       "vue",
       "spec.ts"
-    ],
-    "exceptions": [
-      {
-        "files": [
-          "js"
-        ],
-        "severity": "off"
-      }
     ]
   },
   "vue/slot-name-casing": {

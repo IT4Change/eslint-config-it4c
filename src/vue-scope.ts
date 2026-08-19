@@ -1,7 +1,19 @@
+import configPrettier from 'eslint-config-prettier'
+
 import type { Linter } from 'eslint'
 
 export const vueFiles = ['**/*.vue']
 export const vueAndTsFiles = ['**/*.vue', '**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts']
+
+// The prettier module is last in the default config, but consumers spread `vue2`/`vue3`
+// after it, which switches eslint-plugin-vue's formatting rules back on. That is not
+// harmless: `vue/singleline-html-element-content-newline` wants a line break inside
+// `<div :title="a">text</div>`, Prettier collapses it back, and `--fix` deadlocks on a
+// warning it can never resolve. So the vue modules re-apply the `vue/*` half of
+// eslint-config-prettier themselves.
+export const prettierDisabledVueRules: Linter.RulesRecord = Object.fromEntries(
+  Object.entries(configPrettier.rules).filter(([name]) => name.startsWith('vue/')),
+)
 
 const isTypescriptEslintConfig = (name: string | undefined): boolean =>
   name?.startsWith('typescript-eslint/') ?? false
