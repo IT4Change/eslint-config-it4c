@@ -25,7 +25,9 @@ const config: Linter.Config[] = [
       'accessor-pairs': ['error', { setWithoutGet: true, enforceForClassMembers: true }],
       'array-callback-return': ['error', { allowImplicit: false, checkForEach: false }],
       camelcase: ['error', { allow: ['^UNSAFE_'], properties: 'never', ignoreGlobals: true }],
-      curly: ['error', 'multi-line'],
+      // `curly` is deliberately not set here — eslint-config-prettier would disable it
+      // again, since the prettier module comes last. It is applied in `index.ts` after
+      // that module, with the option that does not conflict.
       'default-case-last': 'error',
       eqeqeq: ['error', 'always', { null: 'ignore' }],
       'new-cap': ['error', { newIsCap: true, capIsNew: false, properties: true }],

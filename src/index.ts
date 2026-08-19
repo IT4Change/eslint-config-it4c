@@ -1,4 +1,5 @@
 // Base modules (included in default config)
+import { defaultFiles } from './files'
 import comments from './modules/comments'
 import css from './modules/css'
 import eslint from './modules/eslint'
@@ -57,6 +58,15 @@ const config: Linter.Config[] = [
   ...json,
   ...yaml,
   ...prettier,
+  // Has to come after the prettier module. eslint-config-prettier disables `curly`
+  // defensively because the `multi-line` and `multi-or-nest` options conflict with
+  // Prettier's line wrapping — a statement Prettier wraps is one those options then
+  // reject. `all` has no such dependency on line length and is the option its README
+  // names as safe, so it is re-applied here instead of being silently dropped.
+  {
+    files: defaultFiles,
+    rules: { curly: ['error', 'all'] },
+  },
 ]
 
 export default config

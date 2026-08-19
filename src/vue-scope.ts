@@ -24,6 +24,8 @@ const isTypescriptEslintConfig = (name: string | undefined): boolean =>
 // `typescript-eslint/base` and restores `vue-eslint-parser` for `.vue`.
 export const scopeVueTsConfigs = (configs: Linter.Config[]): Linter.Config[] =>
   configs.map((cfg) => {
-    if (isTypescriptEslintConfig(cfg.name)) return { ...cfg, files: vueFiles }
+    if (isTypescriptEslintConfig(cfg.name)) {
+      return { ...cfg, files: vueFiles }
+    }
     return cfg.files ? cfg : { ...cfg, files: vueAndTsFiles }
   })
