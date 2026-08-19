@@ -2,6 +2,10 @@
   "name": "eslint-config-it4c",
   "version": "0.13.1",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IT4Change/eslint-config-it4c.git"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
