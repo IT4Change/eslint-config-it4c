@@ -1828,10 +1828,10 @@
     "severity": "off"
   },
   "curly": {
-    "enabled": false,
-    "severity": "off",
+    "enabled": true,
+    "severity": "error",
     "options": [
-      "multi-line"
+      "all"
     ],
     "files": [
       "js",

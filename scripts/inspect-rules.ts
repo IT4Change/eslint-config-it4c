@@ -55,10 +55,14 @@ for (const [name] of builtinRules) {
 
 for (const entry of allConfigs) {
   const plugins = entry.plugins as Record<string, { rules?: Record<string, unknown> }> | undefined
-  if (!plugins) continue
+  if (!plugins) {
+    continue
+  }
 
   for (const [prefix, plugin] of Object.entries(plugins)) {
-    if (!plugin.rules) continue
+    if (!plugin.rules) {
+      continue
+    }
     for (const name of Object.keys(plugin.rules)) {
       availableRules.add(`${prefix}/${name}`)
     }
@@ -97,7 +101,9 @@ const settingFor = (
   name: string,
 ): { severity: string | number; options?: unknown[] } | undefined => {
   const value = resolved.get(label)?.get(name)
-  if (value === undefined) return undefined
+  if (value === undefined) {
+    return undefined
+  }
   if (Array.isArray(value)) {
     const [severity, ...options] = value
     return {
