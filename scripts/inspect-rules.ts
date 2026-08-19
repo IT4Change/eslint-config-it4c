@@ -1,3 +1,4 @@
+import { ESLint } from 'eslint'
 // eslint-disable-next-line import-x/no-deprecated -- no stable alternative for flat config
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 
@@ -15,6 +16,19 @@ const allConfigs: Linter.Config[] = [
   ...vitest,
   ...graphql,
   ...react,
+]
+
+// One representative path per module so no rule stays invisible for lack of a matching
+// file type. Order matters: it breaks ties when picking the base severity below.
+const probes = [
+  { label: 'js', path: 'probe.js' },
+  { label: 'ts', path: 'probe.ts' },
+  { label: 'vue', path: 'probe.vue' },
+  { label: 'spec.ts', path: 'probe.spec.ts' },
+  { label: 'json', path: 'probe.json' },
+  { label: 'yml', path: 'probe.yml' },
+  { label: 'css', path: 'probe.css' },
+  { label: 'graphql', path: 'probe.graphql' },
 ]
 
 interface RuleException {
@@ -41,141 +55,121 @@ for (const [name] of builtinRules) {
 
 for (const entry of allConfigs) {
   const plugins = entry.plugins as Record<string, { rules?: Record<string, unknown> }> | undefined
-  if (plugins) {
-    for (const [prefix, plugin] of Object.entries(plugins)) {
-      if (plugin.rules) {
-        for (const name of Object.keys(plugin.rules)) {
-          availableRules.add(`${prefix}/${name}`)
-        }
-      }
+  if (!plugins) continue
+
+  for (const [prefix, plugin] of Object.entries(plugins)) {
+    if (!plugin.rules) continue
+    for (const name of Object.keys(plugin.rules)) {
+      availableRules.add(`${prefix}/${name}`)
     }
   }
 }
 
-// Collect all configured rules from config entries
-// Separate global rules (no files) from file-specific exceptions
-const globalRules = new Map<string, Linter.RuleEntry>()
-const fileSpecificRules = new Map<string, Array<{ files: string[]; setting: Linter.RuleEntry }>>()
+// Resolve the effective config per probe. Reimplementing the flat-config cascade by hand
+// is not possible from the raw entries: a rule's value depends on which globs match the
+// file, so neither the first nor the last occurrence is generally the winning one. ESLint
+// does the merging itself here.
+const eslint = new ESLint({
+  overrideConfigFile: true,
+  overrideConfig: allConfigs as ESLint.Options['overrideConfig'],
+})
 
-for (const entry of allConfigs) {
-  const rules = entry.rules as Record<string, Linter.RuleEntry> | undefined
-  if (!rules) continue
-
-  const files = entry.files as string[] | undefined
-
-  for (const [name, value] of Object.entries(rules)) {
-    if (!files) {
-      // Global rule (no files restriction)
-      globalRules.set(name, value)
-    } else {
-      // File-specific rule
-      const existing = fileSpecificRules.get(name) ?? []
-      existing.push({ files, setting: value })
-      fileSpecificRules.set(name, existing)
-    }
-  }
+// Keyed as a Map rather than the plain RulesRecord so rule names stay safe lookup keys
+const resolved = new Map<string, Map<string, Linter.RuleEntry>>()
+for (const { label, path } of probes) {
+  const cfg = (await eslint.calculateConfigForFile(path)) as { rules?: Linter.RulesRecord }
+  resolved.set(label, new Map(Object.entries(cfg.rules ?? {})))
 }
 
-// Helper to extract severity from rule setting
-const getSeverity = (setting: Linter.RuleEntry | undefined): string | number =>
-  setting === undefined ? 'off' : Array.isArray(setting) ? setting[0] : setting
+const severityNames = new Map<number, string>([
+  [0, 'off'],
+  [1, 'warn'],
+  [2, 'error'],
+])
 
-// Helper to extract options from rule setting
-const getOptions = (setting: Linter.RuleEntry): unknown[] | undefined =>
-  Array.isArray(setting) && setting.length > 1 ? setting.slice(1) : undefined
+const normalizeSeverity = (value: Linter.RuleSeverity): string | number =>
+  typeof value === 'number' ? (severityNames.get(value) ?? value) : value
+
+// Effective setting of a rule for one probe, or undefined when the rule is not registered
+// there (its plugin is not part of that file type's config at all).
+const settingFor = (
+  label: string,
+  name: string,
+): { severity: string | number; options?: unknown[] } | undefined => {
+  const value = resolved.get(label)?.get(name)
+  if (value === undefined) return undefined
+  if (Array.isArray(value)) {
+    const [severity, ...options] = value
+    return {
+      severity: normalizeSeverity(severity),
+      ...(options.length > 0 ? { options } : {}),
+    }
+  }
+  return { severity: normalizeSeverity(value) }
+}
+
+const isEnabled = (severity: string | number): boolean => severity !== 'off' && severity !== 0
 
 // Build result
 const result = new Map<string, RuleEntry>()
 for (const name of [...availableRules].sort((a, b) => a.localeCompare(b))) {
-  const globalSetting = globalRules.get(name)
-  const fileSpecific = fileSpecificRules.get(name)
+  // Probes where the rule is not registered say nothing about it and are left out, so a
+  // TypeScript-only rule is not diluted to `off` by the JSON and YAML probes.
+  const settings = probes
+    .map(({ label }) => ({ label, setting: settingFor(label, name) }))
+    .filter(
+      (
+        probe,
+      ): probe is { label: string; setting: { severity: string | number; options?: unknown[] } } =>
+        Boolean(probe.setting),
+    )
 
-  let severity: string | number
-  let options: unknown[] | undefined
-  let exceptions: RuleException[] | undefined
-
-  if (globalSetting !== undefined) {
-    // Has global rule - use it as base, file-specific as exceptions
-    severity = getSeverity(globalSetting)
-    options = getOptions(globalSetting)
-
-    if (fileSpecific) {
-      const excs: RuleException[] = []
-      for (const { files, setting } of fileSpecific) {
-        const fileSeverity = getSeverity(setting)
-        if (fileSeverity !== severity) {
-          const exception: RuleException = {
-            files,
-            severity: fileSeverity,
-          }
-          const fileOptions = getOptions(setting)
-          if (fileOptions) {
-            exception.options = fileOptions
-          }
-          excs.push(exception)
-        }
-      }
-      if (excs.length > 0) {
-        exceptions = excs
-      }
-    }
-  } else if (fileSpecific && fileSpecific.length > 0) {
-    // No global rule, only file-specific - treat file-specific as enabled with files restriction
-    // Use the first file-specific rule as the primary definition
-    const primary = fileSpecific[0]
-    severity = getSeverity(primary.setting)
-    options = getOptions(primary.setting)
-
-    // The files restriction is part of the main entry, not an exception
-    const entry: RuleEntry = {
-      enabled: severity !== 'off' && severity !== 0,
-      severity,
-      files: primary.files,
-    }
-    if (options) {
-      entry.options = options
-    }
-
-    // Additional file-specific rules with different config become exceptions
-    if (fileSpecific.length > 1) {
-      const excs: RuleException[] = []
-      for (let i = 1; i < fileSpecific.length; i++) {
-        // eslint-disable-next-line security/detect-object-injection -- index is controlled by loop
-        const { files, setting } = fileSpecific[i]
-        const fileSeverity = getSeverity(setting)
-        const exception: RuleException = {
-          files,
-          severity: fileSeverity,
-        }
-        const fileOptions = getOptions(setting)
-        if (fileOptions) {
-          exception.options = fileOptions
-        }
-        excs.push(exception)
-      }
-      if (excs.length > 0) {
-        entry.exceptions = excs
-      }
-    }
-
-    result.set(name, entry)
+  if (settings.length === 0) {
+    result.set(name, { enabled: false, severity: 'off' })
     continue
-  } else {
-    severity = 'off'
   }
 
-  const enabled = severity !== 'off' && severity !== 0
+  // Group probes by identical setting; the largest group is the base, the rest deviate.
+  // Ties fall to the group whose first probe comes earliest, keeping output stable.
+  const groups = new Map<
+    string,
+    { labels: string[]; severity: string | number; options?: unknown[] }
+  >()
+  for (const { label, setting } of settings) {
+    const key = JSON.stringify([setting.severity, setting.options ?? null])
+    const group = groups.get(key)
+    if (group) {
+      group.labels.push(label)
+    } else {
+      groups.set(key, {
+        labels: [label],
+        severity: setting.severity,
+        ...(setting.options ? { options: setting.options } : {}),
+      })
+    }
+  }
+
+  const [base, ...deviations] = [...groups.values()].sort(
+    (a, b) => b.labels.length - a.labels.length,
+  )
 
   const entry: RuleEntry = {
-    enabled,
-    severity,
+    enabled: settings.some(({ setting }) => isEnabled(setting.severity)),
+    severity: base.severity,
   }
-
-  if (options) {
-    entry.options = options
+  if (base.options) {
+    entry.options = base.options
   }
-  if (exceptions) {
-    entry.exceptions = exceptions
+  // Only annotate the scope when the base does not hold for every probe
+  if (base.labels.length !== probes.length) {
+    entry.files = base.labels
+  }
+  if (deviations.length > 0) {
+    entry.exceptions = deviations.map((group) => ({
+      files: group.labels,
+      severity: group.severity,
+      ...(group.options ? { options: group.options } : {}),
+    }))
   }
 
   result.set(name, entry)
