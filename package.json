@@ -79,7 +79,7 @@
     "typescript-eslint": "^8.69.0"
   },
   "devDependencies": {
-    "@size-limit/file": "^13.0.2",
+    "@size-limit/file": "^14.0.0",
     "@types/eslint-plugin-promise": "^7.3.0",
     "@types/eslint-plugin-security": "^3.0.1",
     "eslint": "^10.8.0",
