@@ -4,6 +4,13 @@ updates:
     directory: /
     schedule:
       interval: weekly
+    groups:
+      # The plugins pin size-limit as an exact peer (`@size-limit/file@14.2.0` wants
+      # `size-limit@14.2.0`), so a bump of one alone fails `npm ci` with ERESOLVE (#121, #126).
+      size-limit:
+        patterns:
+          - 'size-limit'
+          - '@size-limit/*'
   - package-ecosystem: github-actions
     directory: /
     schedule:
