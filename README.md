@@ -170,3 +170,7 @@ A complete list of all configured rules is available in [RULES.md](RULES.md).
 | `npm run inspect-rules:check` | Verify that `rules.json` matches the current config |
 | `npm run update-rules` | Regenerate `rules.json` and `RULES.md` |
 | `npm run generate-rules-md` | Regenerate `RULES.md` from `rules.json` |
+
+## License
+
+[Apache License 2.0](LICENSE)
