@@ -27,6 +27,7 @@ function getDocUrl(rule: string): string | null {
     '@eslint-community/eslint-comments': (name) =>
       `https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/${name}.html`,
     '@graphql-eslint': (name) => `https://the-guild.dev/graphql/eslint/rules/${name}`,
+    '@intlify/vue-i18n': (name) => `https://eslint-plugin-vue-i18n.intlify.dev/rules/${name}.html`,
     '@typescript-eslint': (name) => `https://typescript-eslint.io/rules/${name}/`,
     'import-x': (name) =>
       `https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/${name}.md`,

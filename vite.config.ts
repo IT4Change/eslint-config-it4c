@@ -35,6 +35,7 @@ export default defineConfig(async (): Promise<UserConfig> => {
           /^@eslint/,
           /^@eslint-community/,
           /^@graphql-eslint/,
+          /^@intlify/,
           /^@vue/,
           /^@vitest/,
           /^@typescript-eslint/,

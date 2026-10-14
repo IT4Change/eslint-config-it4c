@@ -517,6 +517,124 @@
       "graphql"
     ]
   },
+  "@intlify/vue-i18n/key-format-style": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-deprecated-i18n-component": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-deprecated-i18n-place-attr": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-deprecated-i18n-places-prop": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-deprecated-modulo-syntax": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-deprecated-tc": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-deprecated-v-t": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-duplicate-keys-in-locale": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "locale"
+    ]
+  },
+  "@intlify/vue-i18n/no-dynamic-keys": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-html-messages": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-i18n-t-path-prop": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-missing-keys": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "js",
+      "ts",
+      "vue",
+      "spec.ts"
+    ]
+  },
+  "@intlify/vue-i18n/no-missing-keys-in-other-locales": {
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "locale"
+    ]
+  },
+  "@intlify/vue-i18n/no-raw-text": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-unknown-locale": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/no-unused-keys": {
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "extensions": [
+          ".js",
+          ".mjs",
+          ".cjs",
+          ".ts",
+          ".mts",
+          ".cts",
+          ".jsx",
+          ".tsx",
+          ".vue"
+        ]
+      }
+    ],
+    "files": [
+      "locale"
+    ]
+  },
+  "@intlify/vue-i18n/no-v-html": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/prefer-linked-key-with-paren": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/prefer-sfc-lang-attr": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/sfc-locale-attr": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/valid-message-syntax": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "@intlify/vue-i18n/valid-plural-forms": {
+    "enabled": false,
+    "severity": "off"
+  },
   "@typescript-eslint/adjacent-overload-signatures": {
     "enabled": false,
     "severity": "off"
@@ -2920,21 +3038,24 @@
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-binary-expression": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-binary-numeric-literals": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-comments": {
@@ -2945,35 +3066,40 @@
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-escape-sequence-in-identifier": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-floating-decimal": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-hexadecimal-numeric-literals": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-infinity": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-irregular-whitespace": {
@@ -2989,42 +3115,48 @@
       }
     ],
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-multi-str": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-nan": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-number-props": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-numeric-separators": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-octal": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-octal-escape": {
@@ -3035,56 +3167,64 @@
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-parenthesized": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-plus-sign": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-regexp-literals": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-sparse-arrays": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-template-literals": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-undefined-value": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-unicode-codepoint-escapes": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/no-useless-escape": {
@@ -3096,7 +3236,8 @@
       }
     ],
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/object-curly-newline": {
@@ -3115,14 +3256,16 @@
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/quotes": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/sort-array-values": {
@@ -3130,28 +3273,44 @@
     "severity": "off"
   },
   "jsonc/sort-keys": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "options": [
+      {
+        "pathPattern": ".*",
+        "order": {
+          "type": "asc",
+          "caseSensitive": false,
+          "natural": false
+        }
+      }
+    ],
+    "files": [
+      "locale"
+    ]
   },
   "jsonc/space-unary-ops": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/valid-json-number": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsonc/vue-custom-block/no-parsing-error": {
     "enabled": true,
     "severity": "error",
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "jsx-quotes": {
@@ -4337,6 +4496,7 @@
     "exceptions": [
       {
         "files": [
+          "locale",
           "yml"
         ],
         "severity": "off",
@@ -5134,6 +5294,22 @@
     "exceptions": [
       {
         "files": [
+          "json",
+          "locale"
+        ],
+        "severity": "off",
+        "options": [
+          {
+            "allowShortCircuit": false,
+            "allowTernary": false,
+            "allowTaggedTemplates": false,
+            "enforceForJSX": false,
+            "ignoreDirectives": false
+          }
+        ]
+      },
+      {
+        "files": [
           "js"
         ],
         "severity": "error",
@@ -5142,21 +5318,6 @@
             "allowShortCircuit": true,
             "allowTernary": true,
             "allowTaggedTemplates": true,
-            "enforceForJSX": false,
-            "ignoreDirectives": false
-          }
-        ]
-      },
-      {
-        "files": [
-          "json"
-        ],
-        "severity": "off",
-        "options": [
-          {
-            "allowShortCircuit": false,
-            "allowTernary": false,
-            "allowTaggedTemplates": false,
             "enforceForJSX": false,
             "ignoreDirectives": false
           }
@@ -5209,6 +5370,7 @@
       {
         "files": [
           "json",
+          "locale",
           "yml"
         ],
         "severity": "off",
@@ -6191,7 +6353,8 @@
       "safe"
     ],
     "files": [
-      "json"
+      "json",
+      "locale"
     ]
   },
   "switch-colon-spacing": {

@@ -66,10 +66,47 @@ export default [...eslint, ...typescript, ...importX, ...vue3, ...prettier]
 | --- | --- |
 | `vue3` | Vue 3 + TypeScript support |
 | `vue2` | Vue 2 + TypeScript support |
+| `vueI18n` | Translation keys (vue-i18n): missing, unused, out of sync between locales, sorted |
 | `jest` | Jest testing rules |
 | `vitest` | Vitest testing rules |
 | `graphql` | GraphQL schema and operations linting |
 | `react` | React support (placeholder) |
+
+### `vueI18n`
+
+Checks the translation keys of a vue-i18n project (Nuxt i18n, vue-i18n, or anything calling
+`$t('…')` / `t('…')`) against its locale files:
+
+- `no-missing-keys`: the code asks only for keys the locales define,
+- `no-missing-keys-in-other-locales`: every locale defines the same keys,
+- `no-unused-keys`: no key outlives its last use,
+- `jsonc/sort-keys`: the keys are sorted (case-insensitively), `--fix` sorts them.
+
+The locale files are expected as `locales/*.json`, relative to the directory ESLint runs in.
+Keys that are only built at runtime (`` t(`category.${slug}`) ``) cannot be seen by the linter;
+name those families in `no-unused-keys`' `ignores`:
+
+```ts
+// eslint.config.ts
+import config, { vueI18n } from 'eslint-config-it4c'
+
+export default [
+  ...config,
+  ...vueI18n,
+  {
+    files: ['**/locales/*.json'],
+    rules: {
+      '@intlify/vue-i18n/no-unused-keys': [
+        'error',
+        { extensions: ['.js', '.ts', '.vue'], ignores: ['/^category\\./'] },
+      ],
+    },
+  },
+]
+```
+
+Keeping the locales elsewhere: set `settings['vue-i18n'].localeDir` (a glob) and scope the
+override to those files.
 
 ## Prettier Config
 
@@ -117,6 +154,7 @@ export default prettierConfig
 - `eslint-plugin-prettier`
 - `@eslint-community/eslint-plugin-eslint-comments`
 - `@graphql-eslint/eslint-plugin`
+- `@intlify/eslint-plugin-vue-i18n`
 - `eslint-plugin-no-catch-all`
 - `neostandard`
 

@@ -14,6 +14,7 @@ import react from './modules/react'
 import security from './modules/security'
 import typescript from './modules/typescript'
 import vitest from './modules/vitest'
+import vueI18n from './modules/vue-i18n'
 import vue2 from './modules/vue2'
 import vue3 from './modules/vue3'
 import yaml from './modules/yaml'
@@ -43,6 +44,7 @@ export {
   vitest,
   vue2,
   vue3,
+  vueI18n,
 }
 
 // Default config: Base modules combined
