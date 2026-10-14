@@ -8095,6 +8095,10 @@
     "enabled": false,
     "severity": "off"
   },
+  "vue/no-shadow-native-events": {
+    "enabled": false,
+    "severity": "off"
+  },
   "vue/no-shared-component-data": {
     "enabled": true,
     "severity": "error",
