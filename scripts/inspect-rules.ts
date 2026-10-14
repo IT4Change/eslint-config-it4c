@@ -2,7 +2,7 @@ import { ESLint } from 'eslint'
 // eslint-disable-next-line import-x/no-deprecated -- no stable alternative for flat config
 import { builtinRules } from 'eslint/use-at-your-own-risk'
 
-import config, { css, vue2, vue3, jest, vitest, graphql, react } from '#src/index'
+import config, { css, vue2, vue3, vueI18n, jest, vitest, graphql, react } from '#src/index'
 
 import type { Linter } from 'eslint'
 
@@ -12,6 +12,7 @@ const allConfigs: Linter.Config[] = [
   ...css,
   ...vue2,
   ...vue3,
+  ...vueI18n,
   ...jest,
   ...vitest,
   ...graphql,
@@ -26,6 +27,7 @@ const probes = [
   { label: 'vue', path: 'probe.vue' },
   { label: 'spec.ts', path: 'probe.spec.ts' },
   { label: 'json', path: 'probe.json' },
+  { label: 'locale', path: 'locales/probe.json' },
   { label: 'yml', path: 'probe.yml' },
   { label: 'css', path: 'probe.css' },
   { label: 'graphql', path: 'probe.graphql' },
