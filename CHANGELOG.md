@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.14.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.14.0...eslint-config-it4c-v0.14.1) (2026-10-17)
+
+
+### Build System & Dependencies
+
+* **deps:** bump @eslint-community/eslint-plugin-eslint-comments from 4.7.2 to 4.8.1 ([#139](https://github.com/IT4Change/eslint-config-it4c/issues/139)) ([33137ba](https://github.com/IT4Change/eslint-config-it4c/commit/33137bab5e8040ea1e8f0c483da28a308ca0427c))
+* **deps:** bump eslint-plugin-jest from 29.16.6 to 29.17.0 ([#138](https://github.com/IT4Change/eslint-config-it4c/issues/138)) ([f78c1d7](https://github.com/IT4Change/eslint-config-it4c/commit/f78c1d7a7737d4f291481b7b677afe3bc89676ca))
+
 ## [0.14.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.13.2...eslint-config-it4c-v0.14.0) (2026-10-14)
 
 
