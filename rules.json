@@ -6150,6 +6150,16 @@
       "spec.ts"
     ]
   },
+  "security/detect-invisible-characters": {
+    "enabled": true,
+    "severity": "warn",
+    "files": [
+      "js",
+      "ts",
+      "vue",
+      "spec.ts"
+    ]
+  },
   "security/detect-new-buffer": {
     "enabled": true,
     "severity": "warn",
