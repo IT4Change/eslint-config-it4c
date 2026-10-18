@@ -3844,19 +3844,7 @@
     "options": [
       {
         "capIsNew": false,
-        "capIsNewExceptions": [
-          "Array",
-          "Boolean",
-          "Date",
-          "Error",
-          "Function",
-          "Number",
-          "Object",
-          "RegExp",
-          "String",
-          "Symbol",
-          "BigInt"
-        ],
+        "capIsNewExceptions": [],
         "newIsCap": true,
         "newIsCapExceptions": [],
         "properties": true
@@ -5168,6 +5156,11 @@
   "no-unmodified-loop-condition": {
     "enabled": true,
     "severity": "error",
+    "options": [
+      {
+        "checkConditionalExpressions": false
+      }
+    ],
     "files": [
       "js",
       "ts",
