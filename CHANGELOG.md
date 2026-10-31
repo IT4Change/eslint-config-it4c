@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.14.2](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.14.1...eslint-config-it4c-v0.14.2) (2026-10-31)
+
+
+### Build System & Dependencies
+
+* **deps:** bump @eslint/css from 2.0.0 to 2.0.1 ([#142](https://github.com/IT4Change/eslint-config-it4c/issues/142)) ([2cb2aa2](https://github.com/IT4Change/eslint-config-it4c/commit/2cb2aa2916feaf31b3c72c04d76dfcd9211bef2c))
+* **deps:** bump @graphql-eslint/eslint-plugin from 4.4.1 to 4.4.2 ([#145](https://github.com/IT4Change/eslint-config-it4c/issues/145)) ([541333c](https://github.com/IT4Change/eslint-config-it4c/commit/541333ccb5553fe2eea2b32729953a7436bc3569))
+* **deps:** bump eslint-plugin-n from 18.4.1 to 18.5.0 ([#143](https://github.com/IT4Change/eslint-config-it4c/issues/143)) ([f5a960c](https://github.com/IT4Change/eslint-config-it4c/commit/f5a960c0a06cc73250306d4e93315a8cdfdb1181))
+* **deps:** bump eslint-plugin-prettier from 5.5.6 to 5.5.7 ([#144](https://github.com/IT4Change/eslint-config-it4c/issues/144)) ([0eb8ad7](https://github.com/IT4Change/eslint-config-it4c/commit/0eb8ad7a873ce8c97cbce2d119223baa5a529f8b))
+
 ## [0.14.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.14.0...eslint-config-it4c-v0.14.1) (2026-10-18)
 
 
