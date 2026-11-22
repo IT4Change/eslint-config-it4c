@@ -7620,8 +7620,13 @@
     "severity": "off"
   },
   "vue/no-content-outside-block": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "ts",
+      "vue",
+      "spec.ts"
+    ]
   },
   "vue/no-custom-modifiers-on-v-model": {
     "enabled": true,
@@ -7633,8 +7638,13 @@
     ]
   },
   "vue/no-define-model-default": {
-    "enabled": false,
-    "severity": "off"
+    "enabled": true,
+    "severity": "error",
+    "files": [
+      "ts",
+      "vue",
+      "spec.ts"
+    ]
   },
   "vue/no-deprecated-data-object-declaration": {
     "enabled": true,

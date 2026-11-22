@@ -2,7 +2,12 @@ import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescri
 import pluginVue from 'eslint-plugin-vue'
 import globals from 'globals'
 
-import { prettierDisabledVueRules, scopeVueTsConfigs, vueAndTsFiles } from '#src/vue-scope'
+import {
+  extraVueRules,
+  prettierDisabledVueRules,
+  scopeVueTsConfigs,
+  vueAndTsFiles,
+} from '#src/vue-scope'
 
 import type { Linter } from 'eslint'
 
@@ -16,9 +21,15 @@ const config: Linter.Config[] = [
   {
     files: vueAndTsFiles,
     languageOptions: { globals: globals.browser },
-    // Covers `vue/max-attributes-per-line` and the ten other formatting rules Vue's
-    // recommended set enables, all of which Prettier owns
-    rules: prettierDisabledVueRules,
+    rules: {
+      ...extraVueRules,
+      // A `defineModel` default only applies in the child, so a parent that passes no
+      // value ends up with child and parent state out of sync
+      'vue/no-define-model-default': 'error',
+      // Covers `vue/max-attributes-per-line` and the ten other formatting rules Vue's
+      // recommended set enables, all of which Prettier owns
+      ...prettierDisabledVueRules,
+    },
   },
 ]
 
