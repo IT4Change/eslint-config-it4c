@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.15.0](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.14.1...eslint-config-it4c-v0.15.0) (2026-11-22)
+
+
+### Features
+
+* **eslint:** enable vue/no-content-outside-block and vue/no-define-model-default ([#152](https://github.com/IT4Change/eslint-config-it4c/issues/152)) ([477df9c](https://github.com/IT4Change/eslint-config-it4c/commit/477df9c40057d026939a7c9e188a1b0d5d9d0d03))
+
+
+### Build System & Dependencies
+
+* **deps-dev:** bump the size-limit group with 2 updates ([#147](https://github.com/IT4Change/eslint-config-it4c/issues/147)) ([4b07855](https://github.com/IT4Change/eslint-config-it4c/commit/4b0785552cec5e1479623f59f1b98bf072761785))
+* **deps-dev:** bump vite from 8.3.4 to 8.3.5 ([#149](https://github.com/IT4Change/eslint-config-it4c/issues/149)) ([368582c](https://github.com/IT4Change/eslint-config-it4c/commit/368582c6f70d43a67112939d1a3a04e38c711024))
+* **deps:** bump @eslint/css from 2.0.0 to 2.0.1 ([#142](https://github.com/IT4Change/eslint-config-it4c/issues/142)) ([2cb2aa2](https://github.com/IT4Change/eslint-config-it4c/commit/2cb2aa2916feaf31b3c72c04d76dfcd9211bef2c))
+* **deps:** bump @graphql-eslint/eslint-plugin from 4.4.1 to 4.4.2 ([#145](https://github.com/IT4Change/eslint-config-it4c/issues/145)) ([541333c](https://github.com/IT4Change/eslint-config-it4c/commit/541333ccb5553fe2eea2b32729953a7436bc3569))
+* **deps:** bump eslint-plugin-n from 18.4.1 to 18.5.0 ([#143](https://github.com/IT4Change/eslint-config-it4c/issues/143)) ([f5a960c](https://github.com/IT4Change/eslint-config-it4c/commit/f5a960c0a06cc73250306d4e93315a8cdfdb1181))
+* **deps:** bump eslint-plugin-prettier from 5.5.6 to 5.5.7 ([#144](https://github.com/IT4Change/eslint-config-it4c/issues/144)) ([0eb8ad7](https://github.com/IT4Change/eslint-config-it4c/commit/0eb8ad7a873ce8c97cbce2d119223baa5a529f8b))
+* **deps:** bump globals from 17.11.0 to 17.13.0 ([#150](https://github.com/IT4Change/eslint-config-it4c/issues/150)) ([0d9019c](https://github.com/IT4Change/eslint-config-it4c/commit/0d9019cec3c8a59a5d9dfbebcda07769443ce1a9))
+* **eslint:** bump eslint-plugin-vue from 10.11.1 to 10.12.1 ([#148](https://github.com/IT4Change/eslint-config-it4c/issues/148)) ([87d5e84](https://github.com/IT4Change/eslint-config-it4c/commit/87d5e84cbb1781fc83f39e58e71683c4e27663e3))
+
 ## [0.14.1](https://github.com/IT4Change/eslint-config-it4c/compare/eslint-config-it4c-v0.14.0...eslint-config-it4c-v0.14.1) (2026-10-18)
 
 
