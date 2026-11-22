@@ -7619,6 +7619,10 @@
     "enabled": false,
     "severity": "off"
   },
+  "vue/no-content-outside-block": {
+    "enabled": false,
+    "severity": "off"
+  },
   "vue/no-custom-modifiers-on-v-model": {
     "enabled": true,
     "severity": "error",
@@ -7627,6 +7631,10 @@
       "vue",
       "spec.ts"
     ]
+  },
+  "vue/no-define-model-default": {
+    "enabled": false,
+    "severity": "off"
   },
   "vue/no-deprecated-data-object-declaration": {
     "enabled": true,
@@ -7985,6 +7993,10 @@
     ]
   },
   "vue/no-potential-component-option-typo": {
+    "enabled": false,
+    "severity": "off"
+  },
+  "vue/no-props-shadow": {
     "enabled": false,
     "severity": "off"
   },
