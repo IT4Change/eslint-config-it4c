@@ -15,6 +15,12 @@ export const prettierDisabledVueRules: Linter.RulesRecord = Object.fromEntries(
   Object.entries(configPrettier.rules).filter(([name]) => name.startsWith('vue/')),
 )
 
+// Opt-in rules on top of Vue's recommended sets. Content outside the top-level SFC blocks
+// is silently dropped by the SFC compiler, so it is almost always a mistake.
+export const extraVueRules: Linter.RulesRecord = {
+  'vue/no-content-outside-block': 'error',
+}
+
 const isTypescriptEslintConfig = (name: string | undefined): boolean =>
   name?.startsWith('typescript-eslint/') ?? false
 
